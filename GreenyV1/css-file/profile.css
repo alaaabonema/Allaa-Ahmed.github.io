@@ -1,0 +1,1181 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --h1size:  50px;
+    --h2size:  40px;
+    --h3size:  24px;
+    --h4size:  20px;
+    --h5size:  18px;
+    --h6size:  16px;
+    --bodysize:  16px;
+    --h1height:  58px;
+    --h2height:  48px;
+    --h3height:  32px;
+    --h4height:  28px;
+    --h5height:  26px;
+    --h6height:  26px;
+    --bodyheight:  26px;
+    --pfamily:  "Rubik", sans-serif;
+    --red:  #ff3838;
+    --gray:  #777777;
+    --text:  #555555;
+    --blue:  #1494a9;
+    --white:  #ffffff;
+    --chalk:  #f5f5f5;
+    --green:  #11b76b;
+    --purple:  #b12fad;
+    --orange:  #e86121;
+    --yellow:  #ffab10;
+    --body:  #f5f6f7;
+    --border:  #e8e8e8;
+    --heading:  #39404a;
+    --primary:  #119744;
+    --sub-heading:  #565765;
+    --green-chalk:  #ddffd5;
+    --green-dark:  #072f17;
+    --gray-chalk:  #cccccc;
+    --intro-bg:  #f8fffa;
+    --facebook:  #3b5998;
+    --linkedin:  #0e76a8;
+    --twitter:  #00acee;
+    --google:  #E60023;
+    --instagram:  #F77737;
+    --primary-bshadow:  0px 15px 35px 0px rgba(0, 0, 0, 0.1);
+    --primary-tshadow:  2px 3px 8px rgba(0, 0, 0, 0.1) ;
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --bs-gradient: linear-gradient(180deg,rgba(255,255,255,0.15),rgba(255,255,255,0));
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+a:hover
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+/* end global rules*/
+/*start profile */
+.my-profile
+{
+    position: relative;
+    margin-top: 140px;
+    background-color: #ddd;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.profile
+{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.profile-header
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+.profile-header h3
+{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding-left: 10px;
+    color: black;
+    font-weight: bold;
+}
+.profile-button
+{
+    width: 130px;
+    height: 35px;
+    margin-top: 15px;
+    margin-right: 15px;
+    background-color: #ddffd5;
+    color: #119744;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: .6s;
+    cursor: pointer;
+}
+.profile-button:hover
+{
+    color: #fff;
+    border: 1px solid #119744;
+    background-color: #119744;
+}
+.pro-form
+{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pro-img img
+{
+    margin-left: 25px;
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 75px;
+    outline: 1px solid #119744;
+    padding: 2px;
+    cursor: pointer;
+}
+.pro-name,
+.pro-mail
+{
+    margin-left: 40px;
+}
+.pro-name h4,
+.pro-mail h4
+{
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: black;
+}
+.pro-name #name,
+.pro-mail #mail
+{
+    width: 340px;
+    height: 40px;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.pro-name #name:focus,
+.pro-mail #mail:focus
+{
+    outline:1px solid #11b76b;
+}
+.pro-pass
+{
+    width: 160px;
+    height: 40px;
+    background-color: #119744;
+    margin-left: 60px;
+    margin-top: 35px;
+    text-align: center;
+    border-radius: 5px;
+    transition: .6s;
+    cursor: pointer;
+}
+.pro-pass a
+{
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+.pro-pass:hover{
+    background-color: #11b76b;
+}
+/*start profile media*/
+@media(max-width:1199px)
+{
+.pro-name #name,
+.pro-mail #mail
+{
+    width: 220px;
+}
+}
+@media(max-width:991px)
+{
+    .profile-header h3
+    {
+        font-size: 17px;
+    }
+.pro-form
+{
+    flex-direction: column;
+}
+.pro-name #name,
+.pro-mail #mail
+{
+    width: 90%;
+    margin-bottom: 25px;
+}
+.pro-img
+{
+    display: block;
+    margin: auto;
+}
+.pro-pass
+{
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+}
+}
+/*end profile media*/
+/*start contact*/
+.contact
+{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.contact-header
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+.contact-header h3
+{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding-left: 10px;
+    color: black;
+    font-weight: bold;
+}
+.contact-button
+{
+    width: 130px;
+    height: 35px;
+    margin-top: 15px;
+    margin-right: 15px;
+    background-color: #ddffd5;
+    color: #119744;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: .6s;
+    cursor: pointer;
+}
+.contact-button:hover
+{
+    color: #fff;
+    border: 1px solid #119744;
+    background-color: #119744;
+}
+.card-contain
+{
+    display: flex;
+}
+.contact-card
+{
+    width: 95%;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    border: 1px solid #ddd;
+    background-color: #f5f6f7;
+    border-radius: 10px;
+    transition: .7s;
+    cursor: pointer;
+}
+.contact-card:hover
+{
+    border: 1px solid #11b76b;
+    background-color: #ddffd5;
+}
+.card-info
+{
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+.card-info h4
+{
+    text-transform: capitalize;
+    font-size: 17px;
+}
+ .contact-card .card-info p
+{
+    text-transform: capitalize;
+    font-size: 17px;
+    line-height: 45px;
+}
+.card-icons
+{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+}
+.card-icons.select
+{
+    opacity: 1;
+}
+.card-icons i
+{
+    font-size: 19px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: .6s;
+}
+.card-icons .fa-edit
+{
+    color: #119744;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.card-icons .fa-edit:hover
+{
+    background-color: #119744;
+    color: #fff;
+}
+.card-icons .fa-pinterest
+{
+    color: #E60023;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.card-icons .fa-pinterest:hover
+{
+    background-color: #E60023;
+    color: #fff;
+}
+@media(max-width:1199px)
+{
+    .card-contain
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-card
+    {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+/*end contact*/
+/*start contact*/
+.address
+{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.address-header
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+.address-header h3
+{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding-left: 10px;
+    color: black;
+    font-weight: bold;
+}
+.address-button
+{
+    width: 130px;
+    height: 35px;
+    margin-top: 15px;
+    margin-right: 15px;
+    background-color: #ddffd5;
+    color: #119744;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: .6s;
+    cursor: pointer;
+}
+.address-button:hover
+{
+    color: #fff;
+    border: 1px solid #119744;
+    background-color: #119744;
+}
+.address-contain
+{
+    display: flex;
+}
+.address-card
+{
+    width: 95%;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    border: 1px solid #ddd;
+    background-color: #f5f6f7;
+    border-radius: 10px;
+    transition: .7s;
+    cursor: pointer;
+}
+.address-card:hover
+{
+    border: 1px solid #11b76b;
+    background-color: #ddffd5;
+}
+.card-info
+{
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+.card-info h4
+{
+    text-transform: capitalize;
+    font-size: 17px;
+}
+.address-card .card-info p
+{
+    font-size: 13px;
+    line-height: 25px;
+    padding-right: 35px;
+}
+.address-card .card-icons
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+}
+.card-icons.select
+{
+    opacity: 1;
+}
+.card-icons i
+{
+    font-size: 19px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: .6s;
+}
+.card-icons .fa-edit
+{
+    color: #119744;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.card-icons .fa-edit:hover
+{
+    background-color: #119744;
+    color: #fff;
+}
+.card-icons .fa-pinterest
+{
+    color: #E60023;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.card-icons .fa-pinterest:hover
+{
+    background-color: #E60023;
+    color: #fff;
+}
+@media(max-width:1199px)
+{
+    .address-contain
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .address-card
+    {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+/*end address*/
+/*start contact*/
+.payment
+{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+.payment-header
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+.payment-header h3
+{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding-left: 10px;
+    color: black;
+    font-weight: bold;
+}
+.payment-button
+{
+    width: 130px;
+    height: 35px;
+    margin-top: 15px;
+    margin-right: 15px;
+    background-color: #ddffd5;
+    color: #119744;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: .6s;
+    cursor: pointer;
+}
+.payment-button:hover
+{
+    color: #fff;
+    border: 1px solid #119744;
+    background-color: #119744;
+}
+.payment-contain
+{
+    display: flex;
+}
+.payment-card
+{
+    width: 95%;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    border: 1px solid #ddd;
+    background-color: #f5f6f7;
+    border-radius: 10px;
+    transition: .7s;
+    cursor: pointer;
+}
+.payment-card:hover
+{
+    border: 1px solid #11b76b;
+    background-color: #ddffd5;
+}
+.card-info
+{
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+.card-info h5
+{
+    text-transform: capitalize;
+    font-size: 13px;
+    line-height: 25px;
+}
+ .payment-card .card-info p
+{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 25px;
+    letter-spacing: 1.7px;
+}
+.card-info span
+{
+    line-height: 45px;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.card-icons
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+}
+.card-icons.select
+{
+    opacity: 1;
+}
+.card-icons i
+{
+    font-size: 19px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: .6s;
+}
+.card-icons .fa-edit
+{
+    color: #119744;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.card-icons .fa-edit:hover
+{
+    background-color: #119744;
+    color: #fff;
+}
+.card-icons .fa-pinterest
+{
+    color: #E60023;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.card-icons .fa-pinterest:hover
+{
+    background-color: #E60023;
+    color: #fff;
+}
+@media(max-width:1199px)
+{
+    .payment-contain
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .payment-card
+    {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+/*end payment*/
+/* start fixed form*/
+.modal-form
+{
+    width: 380px;
+    height: 450px;
+    position: fixed;
+    z-index: 999999999999999999999999999999999999999999;
+    top: 15%;
+    right: 35%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #ddd;
+    display: none;
+}
+.modal-form .form-icon
+{
+    position: absolute;
+    z-index: 999999999999999999999999999999999999999999999;
+    right: -15px;
+    top: -15px;
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .6s;
+}
+.modal-form .form-icon i
+{
+    line-height: 32px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.modal-form .form-icon:hover
+{
+    background-color: #119744;
+    color: #fff;
+}
+.modal-form .form-title h3
+{  
+    text-transform: capitalize;
+    padding-left: 10px;
+    line-height: 35px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.modal-form .form-group
+{
+    width: 90%;
+    margin-left: 5%;
+    height: 40px;
+    border: #ddd;
+    outline: transparent;
+    margin-top: 40px;
+}
+.form-label
+{
+    text-transform: capitalize;
+    font-size: 17px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+.form-control
+{
+    outline: transparent;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+.form-btn
+{
+    width: 90%;
+    display: block;
+    margin-left:5%;
+    margin-top: 60px;
+    height: 40px;
+    background-color: #11b76b;
+    color: #fff;
+    border: 1px solid #11b76b;
+    border-radius: 10px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+@media(max-width:991px)
+{
+    .modal-form{
+        right: 30%;
+    }
+}
+@media(max-width:767px)
+{
+    .modal-form{
+        right: 25%;
+    }
+}
+@media(max-width:600px)
+{
+    .modal-form{
+        width: 260px;
+    }
+}
+@media(max-width:350px)
+{
+    .modal-form{
+        width: 200px;
+        right:10%;
+    }
+}
+/*end fixed form*/
+/*start modal contact fixed form*/
+/* start fixed contact form*/
+.modal-contact-form
+{
+    width: 420px;
+    height: 360px;
+    position: fixed;
+    z-index: 999999999999999999999999999999999999999999;
+    top: 22%;
+    right: 35%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #ddd;
+    display: none;
+}
+.modal-contact-form .form-icon
+{
+    position: absolute;
+    z-index: 999999999999999999999999999999999999999999999;
+    right: 210px;
+    top: -45px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .6s;
+}
+.modal-contact-form .form-icon i
+{
+    line-height: 25px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.modal-contact-form .form-icon:hover
+{
+    background-color: #119744;
+    color: #fff;
+}
+.modal-contact-form .form-title h3
+{  
+    text-transform: capitalize;
+    padding-left: 10px;
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.modal-contact-form .form-group
+{
+    width: 90%;
+    margin-left: 5%;
+    height: 40px;
+    border: #ddd;
+    outline: transparent;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.form-label
+{
+    text-transform: capitalize;
+    font-size: 17px;
+    line-height: 25px;
+    padding-left: 5px;
+}
+.form-select
+{
+    width: 98%;
+    display: block;
+    height: 40px;
+    border: 1px solid #ddd;
+    outline:  1px solid #ddd;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.modal-contact-form .form-control
+{
+    border: 1px solid #ddd;
+    outline:  1px solid #ddd;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+@media(max-width:991px)
+{
+    .modal-contact-form
+    {
+        right: 25%;
+    }
+}
+@media(max-width:767px)
+{
+    .modal-contact-form
+    {
+        right: 20%;
+    }
+}
+@media(max-width:600px)
+{
+    .modal-contact-form
+    {
+        right: 20%;
+        width: 280px;
+    }
+    .modal-contact-form .form-icon
+    {
+        right: 110px;
+    }
+}
+@media(max-width:400px)
+{
+    .modal-contact-form
+    {
+        right: 15%;
+        width: 210px;
+    }
+    .modal-contact-form .form-icon
+    {
+        right: 90px;
+    }
+}
+/*end contact fixed form*/
+/* start address contact form*/
+.modal-address-form
+{
+    width: 400px;
+    height: 460px;
+    position: fixed;
+    z-index: 999999999999999999999999999999999999999999;
+    top: 15%;
+    right: 35%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #ddd;
+    display: none;
+}
+.modal-address-form .form-icon
+{
+    position: absolute;
+    z-index: 999999999999999999999999999999999999999999999;
+    right: 200px;
+    top: -35px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .6s;
+}
+.modal-address-form .form-icon i
+{
+    line-height: 25px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.modal-address-form .form-icon:hover
+{
+    background-color: #119744;
+    color: #fff;
+}
+.modal-address-form .form-title h3
+{  
+    text-transform: capitalize;
+    padding-left: 10px;
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.modal-address-form .form-group
+{
+    width: 90%;
+    margin-left: 5%;
+    height: 40px;
+    border: #ddd;
+    outline: transparent;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.modal-address-form .form-group #address
+{
+    height: 140px;
+}
+.form-label
+{
+    text-transform: capitalize;
+    font-size: 17px;
+    line-height: 25px;
+    padding-left: 5px;
+}
+.form-select
+{
+    width: 98%;
+    display: block;
+    height: 40px;
+    border: 1px solid #ddd;
+    outline:  1px solid #ddd;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.modal-address-form .form-control
+{
+    border: 1px solid #ddd;
+    outline:  1px solid #ddd;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.modal-address-form  .form-btn
+{
+    margin-top: 180px;
+}
+@media(max-width:991px)
+{
+    .modal-address-form
+    {
+        right: 25%;
+    }
+}
+@media(max-width:767px)
+{
+    .modal-address-form
+    {
+        right: 15%;
+    }
+}
+@media(max-width:600px)
+{
+    .modal-address-form
+    {
+        right: 20%;
+        width: 280px;
+    }
+    .modal-address-form .form-icon
+    {
+        right: 110px;
+    }
+}
+@media(max-width:400px)
+{
+    .modal-address-form
+    {
+        right: 13%;
+        width: 210px;
+    }
+    .modal-address-form .form-icon
+    {
+        right: 90px;
+    }
+}
+/*end address fixed form*/
+/* start payment contact form*/
+.modal-payment-form
+{
+    width: 420px;
+    height: 260px;
+    position: fixed;
+    z-index: 999999999999999999999999999999999999999999;
+    top: 27%;
+    right: 35%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #ddd;
+    display: none;
+}
+.modal-payment-form .form-icon
+{
+    position: absolute;
+    z-index: 999999999999999999999999999999999999999999999;
+    right: 210px;
+    top: -45px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .6s;
+}
+.modal-payment-form .form-icon i
+{
+    line-height: 25px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.modal-payment-form .form-icon:hover
+{
+    background-color: #119744;
+    color: #fff;
+}
+.modal-payment-form .form-title h3
+{  
+    text-transform: capitalize;
+    padding-left: 10px;
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.modal-payment-form .form-group
+{
+    width: 90%;
+    margin-left: 5%;
+    height: 40px;
+    border: #ddd;
+    outline: transparent;
+    margin-top: 35px;
+    margin-bottom: 50px;
+}
+.form-label
+{
+    text-transform: capitalize;
+    font-size: 17px;
+    line-height: 25px;
+    padding-left: 5px;
+}
+.form-select
+{
+    width: 98%;
+    display: block;
+    height: 40px;
+    border: 1px solid #ddd;
+    outline:  1px solid #ddd;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.modal-payment-form .form-control
+{
+    border: 1px solid #ddd;
+    outline:  1px solid #ddd;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+@media(max-width:991px)
+{
+    .modal-payment-form
+    {
+        right: 25%;
+    }
+}
+@media(max-width:767px)
+{
+    .modal-payment-form
+    {
+        right: 20%;
+    }
+}
+@media(max-width:600px)
+{
+    .modal-payment-form
+    {
+        right: 20%;
+        width: 280px;
+    }
+    .modal-payment-form .form-icon
+    {
+        right: 110px;
+    }
+}
+@media(max-width:400px)
+{
+    .modal-payment-form
+    {
+        right: 15%;
+        width: 210px;
+    }
+    .modal-payment-form .form-icon
+    {
+        right: 90px;
+    }
+}
+/*end payment fixed form*/
+/*end profile*/

@@ -1,0 +1,352 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --h1size:  50px;
+    --h2size:  40px;
+    --h3size:  24px;
+    --h4size:  20px;
+    --h5size:  18px;
+    --h6size:  16px;
+    --bodysize:  16px;
+    --h1height:  58px;
+    --h2height:  48px;
+    --h3height:  32px;
+    --h4height:  28px;
+    --h5height:  26px;
+    --h6height:  26px;
+    --bodyheight:  26px;
+    --pfamily:  "Rubik", sans-serif;
+    --red:  #ff3838;
+    --gray:  #777777;
+    --text:  #555555;
+    --blue:  #1494a9;
+    --white:  #ffffff;
+    --chalk:  #f5f5f5;
+    --green:  #11b76b;
+    --purple:  #b12fad;
+    --orange:  #e86121;
+    --yellow:  #ffab10;
+    --body:  #f5f6f7;
+    --border:  #e8e8e8;
+    --heading:  #39404a;
+    --primary:  #119744;
+    --sub-heading:  #565765;
+    --green-chalk:  #ddffd5;
+    --green-dark:  #072f17;
+    --gray-chalk:  #cccccc;
+    --intro-bg:  #f8fffa;
+    --facebook:  #3b5998;
+    --linkedin:  #0e76a8;
+    --twitter:  #00acee;
+    --google:  #E60023;
+    --instagram:  #F77737;
+    --primary-bshadow:  0px 15px 35px 0px rgba(0, 0, 0, 0.1);
+    --primary-tshadow:  2px 3px 8px rgba(0, 0, 0, 0.1) ;
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    --bs-gradient: linear-gradient(180deg,rgba(255,255,255,0.15),rgba(255,255,255,0));
+}
+a:hover
+{
+    text-decoration: none;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--border);
+}
+/*end */
+/*start banner*/
+.log-banner
+{
+    height: 90px;
+    border-bottom: 1px solid #ddd;
+}
+.log-banner img
+{
+    display: block;
+    margin: auto;
+    width: 200px;
+    padding-top: 20px;
+}
+/*end banner*/
+.log-head
+{
+    text-align: center;
+    padding-top: 20px;
+}
+.log-head h3
+{
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 45px;
+    color: #198754;
+    font-size: 28px;
+}
+.log-head p
+{
+    color: #777;
+    font-size: 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.log-form
+{
+    width: 100%;
+    height: 470px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.left-log
+{
+    padding-left: 25px;
+    padding-top: 40px;
+    position: relative;
+}
+.left-log .log-face,
+.left-log .log-twitter,
+.left-log .log-google,
+.left-log .log-inst
+{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 10px;
+}
+.left-log .log-face
+{
+background-color: #0e76a8;
+}
+.left-log .log-twitter
+{
+    background-color: #0dcaf0;
+}
+.left-log .log-google
+{
+    background-color: #E60023;
+}
+.left-log .log-inst
+{
+    background-color: #e86121;
+}
+.left-log .log-face a,
+.left-log .log-twitter a,
+.left-log .log-google a,
+.left-log .log-inst a
+{
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.line span
+{
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateY(150px);
+}
+.right-log
+{
+    padding-top: 45px;
+}
+.right-log #mail,
+.right-log #pass,
+.right-log #log
+{
+    width: 100%;
+    height: 45px;
+    background-color:var(--chalk);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.right-log #log
+{
+    background-color: #11b76b;
+    color: #fff;
+    margin-top: 20px;
+}
+.right-log label
+{
+    color: #777;
+    text-transform:  capitalize;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.right-log span
+{
+    padding-left: 10%;
+    font-size: 14px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.right-log #del
+{
+    background-color: transparent;
+    border: transparent;
+    font-size: 14px;
+    letter-spacing: 1.3px;
+    text-transform: capitalize;
+    color: #119744;
+}
+/*end form*/
+.account
+{
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.account span
+{
+    line-height: 60px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.account a
+{
+    color: #11b76b;
+    padding-left: 10px;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.log-foot
+{
+    text-align: center;
+}
+.log-foot p
+{
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    line-height: 50px;
+}
+.log-foot small
+{
+    color: #119744;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+}
+/*end form*/
+@media(max-width:991px)
+{
+    .log-form
+    {
+        height: 800px;
+    }
+}
+@media(max-width:330px)
+{
+    .log-form
+    {
+        height: 900px;
+    }
+    .log-foot
+    {
+        display: none;
+    }
+}
+/*change-password style*/
+.form-contain .log-form
+{
+    height: 450px;
+}
+.change-form #pass,
+.change-form #log
+{
+    width: 100%;
+    height: 40px;
+    background-color:var(--chalk);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+.right-log
+{
+    padding-top: 45px;
+}
+.change-form #log
+{
+    background-color: #11b76b;
+    color: #fff;
+    margin-top: 20px;
+}
+.change-form label
+{
+    color: #777;
+    text-transform:  capitalize;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.change-form span
+{
+    font-size: 17px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+.change-form a
+{
+    font-size: 17px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #11b76b;
+    padding-left: 10px;
+}
+
+/*end change password style*/
