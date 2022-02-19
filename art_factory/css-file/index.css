@@ -1,0 +1,661 @@
+/*global rules*/
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+@font-face
+{
+    src: url(../Tajawal/Tajawal-ExtraBold.ttf);
+    font-family: 'tajawal';
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'tajawal';
+    padding-top: 70px;
+}
+/*start animation up-and-down*/
+@keyframes up-and-down
+{
+    0%
+    {
+        transform: translateY(-40px);
+    }
+    50%
+    {
+        transform: translateY(0px);
+    }
+    100%
+    {
+        transform: translateY(60px);
+    }
+}
+
+/*end animation up-and-down*/
+
+/*end global rules*/
+/*start navbar*/
+.navbar-default
+{
+    height: 70px;
+    max-height: 70px;
+    background-color: transparent;
+    color: #fff;
+    border-bottom: 1px solid transparent;
+}
+.navbar-default .navbar-brand
+{
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: .8px;
+    line-height: 35px;
+    color: #fff;
+}
+.navbar-nav li a
+{
+    font-size: 16px;
+    letter-spacing: .8px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.navbar-default .navbar-nav li a 
+{
+    color: #fff;
+}
+.navbar-nav li a.select
+{
+    color: var(--orange);
+}
+.nav .open .dropdown-menu
+{
+    left: 0;
+    right: auto;
+    background-color: #777;
+}
+.dropdown-menu li a
+{
+    padding: 10px;
+    text-align: center;
+}
+.navbar-default .navbar-nav li a:hover
+{
+    color: var(--orange);
+}
+/*end navbar*/
+/*start header*/
+header
+{
+    width: 100%;
+    overflow-x:hidden;
+    position: relative;
+    background-image: url(../images/banner-bg.png);
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin-top: -70px;
+}
+.header-land
+{
+    background-image: url(../images/banner-bg.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 222;
+}
+.header-content
+{
+    position: absolute;
+    top: 20%;
+}
+.header-content .header-text
+{
+    margin-top: 50px;
+}
+.header-content .header-text h1
+{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'tajawal';
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 80px;
+}
+.header-content .header-text p
+{
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 35px;
+}
+.header-text .header-button
+{
+    background-color: var(--red);
+    color: #fff;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 25px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: .5s;
+    letter-spacing: 1px;
+}
+.header-text .header-button:hover
+{
+    background-color: var(--teal);
+}
+.header-img
+{
+    width: 90%;
+    transition: .6s;
+}
+.header-img img
+{
+    width: 90%;
+    animation-name: up-and-down;
+    animation-duration: 3s;
+    animation-delay: .2s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.scroll-to-top
+{
+    position: fixed;
+    bottom: 15px;
+    right: 25px;
+    background-color: black;
+    color: var(--cyan);
+    padding: 8px 10px;
+    z-index: 55545;
+    cursor: pointer;
+}
+/*end header*/
+/*start about section*/
+.about
+{
+    width: 100%;
+    overflow-x:hidden ;
+    padding-top: 100px;
+    position: relative;
+}
+.about-img
+{
+    width: 100%;
+    opacity: 0;
+}
+.about-img img
+{
+    width: 94%;
+    margin-top: 5%;
+}
+.about .about-text
+{
+    padding-bottom: 160px;
+}
+.about .about-text h2
+{
+      letter-spacing: 1px;
+      line-height: 45px;
+      font-family: 'tajawal';
+}
+.about .about-text p
+{
+    font-size: 16px;
+    color: #6c757d;
+    letter-spacing: 1px;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+.about .about-text a:hover
+{
+     text-decoration: none;
+}
+.about .about-button
+{
+    width: 160px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: var(--cyan);
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    transition: .5s;
+}
+.about .about-button:hover
+{
+    background-color: var(--blue);
+}
+.info-img
+{
+    display: flex;
+}
+.info-img img
+{
+    width: 60px;
+    height: 60px;
+    margin: 15px 15px;
+}
+/*end about section*/
+/*start services section*/
+.services
+{
+    position: relative;
+    width:100%;
+    height: 100vh;
+    background-color: var(--cyan);
+    background-size: cover;
+    margin-bottom: 100px;
+}
+.services .services-box
+{
+    width: 80%;
+    background-color: #fff;
+    height: 60vh;
+    margin-top: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 2px 2px 2px #ddd;
+    text-align: center;
+    border-radius: 25px;
+}
+.services .services-box img
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.services .services-box h4
+{
+    text-transform: capitalize;
+    font-family: 'tajawal';
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.services .services-box p
+{
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #777;
+    padding: 5px 25px;
+}
+.services .services-button
+{
+    width: 125px;
+    display: block;
+    margin: auto;
+    background-color: var(--cyan);
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 10px 5px;
+    border-radius: 25px;
+    margin-top: 25px;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+.services .services-button:hover
+{
+    background-color: var(--blue);
+}
+/*carousel icons*/
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-left
+{
+    left: 18px;
+    top: 60%;
+}
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right
+{
+    right: 18px;
+    top: 60%;
+}
+.carousel-control.left
+{
+    background-color: transparent;
+    background-image: none;
+    text-shadow: none;
+}
+.carousel-control.right
+{
+    background-color: transparent;
+    background-image: none;
+    text-shadow: none;
+}
+.carousel-indicators
+{
+    position: absolute;
+    bottom: -15%;
+    z-index: 555;
+}
+.carousel-indicators li
+{
+    width: 12px;
+    height: 12px;
+}
+.carousel-indicators li.active
+{
+    width: 14px;
+    height: 14px;
+    background-color: var(--light);
+}
+/*carousel icons*/
+/*end section services*/
+/*start section FREQUENTLY*/
+.FREQUENTLY
+{
+    width: 100%;
+    overflow-x: hidden;
+    padding-bottom: 100px;
+}
+.FREQUENTLY .FREQUENTLY-header
+{
+    padding-top: 50px;
+    padding-bottom: 90px;
+}
+.FREQUENTLY .FREQUENTLY-header h2
+{
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    line-height: 70px;
+}
+.FREQUENTLY .FREQUENTLY-header p
+{
+    color: #777;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    line-height: 40px;
+    font-size: 16px;
+    width: 50%;
+    margin: auto;
+}
+.FREQUENTLY-left 
+{
+    margin-right: 35px;
+}
+.FREQUENTLY-left h3
+{
+    font-size: 28px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 40px;
+    padding-bottom: 35px;
+}
+.FREQUENTLY-left p
+{
+    color: #777;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 33px;
+    padding-bottom: 30px;
+}
+.FREQUENTLY-left strong
+{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.FREQUENTLY-left a
+{
+    font-size: 18px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    padding-left: 10px;
+}
+.FREQUENTLY-left a:hover
+{
+    text-decoration: none;
+    color: var(--primary);
+}
+.FREQUENTLY-left .frequently-button
+{
+    width: 140px;
+    background-color: var(--info);
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 8px 5px;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 40px;
+    transition: .5s;
+    cursor: pointer;
+}
+.FREQUENTLY-left .frequently-button:hover
+{
+    background-color: var(--blue);
+}
+/*end fraq left*/
+/*start fraq right*/
+.FREQUENTLY-right
+{
+    position: relative;
+    margin-top: 60px;
+    overflow-y:hidden;
+}
+.FREQUENTLY-right .first-question,
+.FREQUENTLY-right .second-question,
+.FREQUENTLY-right .third-question,
+.FREQUENTLY-right .fourth-question,
+.FREQUENTLY-right .fifth-question
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ddd;
+    box-shadow: 3px 3px 3px #ddd;
+    padding-left: 10px;
+    background-color: #eee;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+.FREQUENTLY-right .first-question.max-size,
+.FREQUENTLY-right .second-question.max-size,
+.FREQUENTLY-right .third-question.max-size,
+.FREQUENTLY-right .fourth-question.max-size,
+.FREQUENTLY-right .fifth-question.max-size
+{
+    height: 240px;
+}
+.FREQUENTLY-right .first-question .fraq-icon,
+.FREQUENTLY-right .second-question .fraq-icon,
+.FREQUENTLY-right .third-question .fraq-icon,
+.FREQUENTLY-right .fourth-question .fraq-icon,
+.FREQUENTLY-right .fifth-question .fraq-icon
+{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+.FREQUENTLY-right .first-question .fraq-icon i,
+.FREQUENTLY-right .second-question .fraq-icon i,
+.FREQUENTLY-right .third-question .fraq-icon i,
+.FREQUENTLY-right .fourth-question .fraq-icon i,
+.FREQUENTLY-right .fifth-question .fraq-icon i
+{
+    font-size: 18px;
+    padding: 5px;
+}
+.FREQUENTLY-right .first-question h3,
+.FREQUENTLY-right .second-question h3,
+.FREQUENTLY-right .third-question h3,
+.FREQUENTLY-right .fourth-question h3,
+.FREQUENTLY-right .fifth-question h3
+{
+    letter-spacing: 1.2px;
+    font-size: 22px;
+    text-transform: capitalize;
+    line-height: 15px;
+} 
+.FREQUENTLY-right .first-question p,
+.FREQUENTLY-right .second-question p,
+.FREQUENTLY-right .third-question p,
+.FREQUENTLY-right .fourth-question p,
+.FREQUENTLY-right .fifth-question p
+{
+    font-size: 16px;
+    color: #777;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    opacity: 0;
+}
+.FREQUENTLY-right .first-question.max-size p,
+.FREQUENTLY-right .second-question.max-size p,
+.FREQUENTLY-right .third-question.max-size p,
+.FREQUENTLY-right .fourth-question.max-size p,
+.FREQUENTLY-right .fifth-question.max-size p
+{
+    opacity: 1;
+}
+/*end faq section*/
+/*start contact*/
+.contact
+{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--cyan);
+    height: 60vh;
+    margin-bottom: 85px;
+}
+.contact .contact-form
+{
+    width: 70%;
+    height: 50vh;
+    margin: auto;
+    margin-top: 5vh;
+    background-color:var(--info);
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px #ddd ,5px 5px 5px #777;
+}
+.contact .contact-form #name
+{
+    width: 90%;
+    height: 35px;
+    display: block;
+    margin: auto;
+    margin-bottom: 35px;
+    margin-top: 55px;
+    background-color: var(--light);
+    outline: 1px solid transparent;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    padding: 12px;
+}
+.contact .contact-form #mail
+{
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 45px;
+    height: 35px;
+    outline: 1px solid transparent;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    padding: 12px;
+}
+.contact .contact-form #message
+{
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-top: 35px;
+    height: 100px;
+    outline: 1px solid transparent;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    padding: 12px;
+}
+.contact .contact-form #submit
+{
+    width: 120px;
+    padding: 8px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+/*end contact section*/
+/*start footer */
+footer
+{
+    width: 100%;
+    overflow: hidden;
+    height: 10vh;
+    background-color: var(--blue);
+}
+.footer-content
+{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.foot-text
+{
+    font-size: 16px;
+    line-height: 4vh;
+    margin-bottom: 5px;
+    color: #fff;
+    text-align: center;
+    line-height: 10vh;
+    margin-left: 15%;
+}
+.foot-icon
+{
+    text-align: center;
+    line-height: 10vh;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    margin-right: 35%;
+}
+.foot-icon i
+{
+    cursor: pointer;
+    margin-left: 15px;
+}

@@ -1,0 +1,463 @@
+/*start navbar at media*/
+/*md screen*/
+@media(max-width:998px)
+{
+    navbar-default
+{
+    background-color: #f8f9fa;
+    height: 70px;
+    max-height: 70px;
+}
+.navbar-default .navbar-brand
+{
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 35px;
+}
+.navbar-nav li a
+{
+    font-size: 12px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+}
+/* button toggle at mobile*/
+@media(max-width:767px)
+{
+    .navbar-default .navbar-toggle
+    {
+        margin-top: 20px;
+    }
+    .navbar-nav li
+    {
+        width: 100%;
+        text-align: center;
+        background-color: #777;
+        margin-bottom: 1px;
+        border-bottom: 1px solid #777;
+    }
+    .navbar-nav li a
+{
+    font-size: 13px;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.navbar-nav li a.select
+{
+    color: var(--orange);
+    background-color: #ddd;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li
+{
+    width: 100%;
+    text-align: center;
+} 
+.navbar-default .navbar-nav .open .dropdown-menu>li>a
+{
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom: 1px solid #ddd;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover
+{
+    color: var(--orange);
+}
+.navbar-collapse.in
+{
+    overflow-y: visible;
+}
+}
+/*end toggle*/
+/*end navbar*/
+/*start header*/
+@media(max-width:991px)
+{
+     /*start header*/
+
+.header-content
+{
+    position: absolute;
+    top: 15%;
+}
+.header-content .header-text
+{
+    margin-top: 50px;
+    text-align: center;
+}
+.header-content .header-text h1
+{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'tajawal';
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 60px;
+}
+.header-content .header-text p
+{
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+.header-text .header-button
+{
+    background-color: var(--red);
+    color: #fff;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 25px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: .5s;
+    letter-spacing: 1px;
+    display: block;
+    margin: auto;
+}
+
+.header-img
+{
+    width: 50%;
+    transition: .6s;
+    display: block;
+    margin: auto;
+    margin-top: 16%;
+}
+.header-img img
+{
+    width: 60%;
+}
+/*end header*/
+}
+/*start header small screen*/
+@media(max-width:767px)
+{
+     /*start header*/
+.header-content
+{
+    position: absolute;
+    top: 10%;
+}
+.header-content .header-text
+{
+    margin-top: 50px;
+    text-align: center;
+}
+.header-content .header-text h1
+{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'tajawal';
+    letter-spacing: 1px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 60px;
+}
+.header-content .header-text p
+{
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+.header-text .header-button
+{
+    background-color: var(--red);
+    color: #fff;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .5s;
+    letter-spacing: 1px;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.header-img
+{
+    width: 50%;
+    transition: .6s;
+    display: block;
+    margin: auto;
+    margin-top: 7.5%;
+    margin-left: 35%;
+}
+.header-img img
+{
+    width: 65%;
+}
+}
+/*end header*/
+/*start about*/
+@media(max-width:767px)
+{
+.about-text
+{
+    text-align: center;
+}
+.about .about-text h2
+{
+    font-size: 20px;
+}
+.about .about-text p
+{
+    font-size: 14px;
+}
+
+.about .about-button
+{
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+}
+.info-img
+{
+    display: flex;
+    flex-direction: column;
+}
+.info-img img
+{
+    display: block;
+    margin: auto;
+}
+.info-text h3
+{
+    font-size: 18px;
+}
+.info-text p
+{
+    font-size: 14px;
+    color: #777;
+}
+}
+/*end about section*/
+/*start services*/
+@media(max-width:991px)
+{
+    .services
+    {
+        padding-top: 80px;
+        margin-top: 50px;
+    }
+    .services .services-box
+    {
+        margin-top: 15%;
+    }
+    .carousel-indicators
+    {
+        bottom: -25%;
+    }
+}
+/*end services*/
+/*start faq questions*/
+@media(max-width:991px)
+{
+    .FREQUENTLY-left
+    {
+        text-align: center;
+    }
+    .FREQUENTLY-left .frequently-button
+    {
+        display: block;
+        margin: auto;
+        margin-top: 25px;
+    }
+}
+@media(max-width:615px)
+{
+    .FREQUENTLY .FREQUENTLY-header h2
+    {
+        font-size: 30px;
+    }
+    .FREQUENTLY .FREQUENTLY-header p
+    {
+        font-size: 15px;
+    }
+    .FREQUENTLY-left h3
+    {
+        font-size: 22px;
+    }
+    .FREQUENTLY-left p
+    {
+        font-size: 13px;
+    }
+.FREQUENTLY-right .first-question h3,
+.FREQUENTLY-right .second-question h3,
+.FREQUENTLY-right .third-question h3,
+.FREQUENTLY-right .fourth-question h3,
+.FREQUENTLY-right .fifth-question h3
+{
+    font-size: 17px;
+}
+    .FREQUENTLY-right .first-question p,
+    .FREQUENTLY-right .second-question p,
+    .FREQUENTLY-right .third-question p,
+    .FREQUENTLY-right .fourth-question p,
+    .FREQUENTLY-right .fifth-question p
+    {
+        font-size: 12px;
+        padding: 5px;
+    }
+.FREQUENTLY-right .first-question.max-size,
+.FREQUENTLY-right .second-question.max-size,
+.FREQUENTLY-right .third-question.max-size,
+.FREQUENTLY-right .fourth-question.max-size,
+.FREQUENTLY-right .fifth-question.max-size
+{
+    height: 280px;
+}
+}
+@media(max-width:350px)
+{
+    .FREQUENTLY-right .first-question h3,
+    .FREQUENTLY-right .second-question h3,
+    .FREQUENTLY-right .third-question h3,
+    .FREQUENTLY-right .fourth-question h3,
+    .FREQUENTLY-right .fifth-question h3
+    {
+        font-size: 10px;
+    }
+    .FREQUENTLY-right .first-question p,
+    .FREQUENTLY-right .second-question p,
+    .FREQUENTLY-right .third-question p,
+    .FREQUENTLY-right .fourth-question p,
+    .FREQUENTLY-right .fifth-question p
+    {
+        font-size: 8px;
+        padding: 2px;
+    }
+    .FREQUENTLY-right .first-question .fraq-icon,
+    .FREQUENTLY-right .second-question .fraq-icon,
+    .FREQUENTLY-right .third-question .fraq-icon,
+    .FREQUENTLY-right .fourth-question .fraq-icon,
+    .FREQUENTLY-right .fifth-question .fraq-icon
+{
+    position: absolute;
+    right: 2px;
+    top: 15px;
+    font-size: 12px;
+}
+}
+/*end faq question*/
+/*start contact*/
+
+/*end contact*/
+@media(max-width:1199px)
+{
+    .contact
+    {
+        height: 70vh;
+    }
+    .contact .contact-form
+    {
+        height: 60vh;
+    }
+}
+@media(max-width:991px)
+{
+    .contact
+    {
+        height: 60vh;
+    }
+    .contact .contact-form
+    {
+        height: 50vh;
+    }
+}
+@media(max-width:768px)
+{
+    .contact
+    {
+        height: 60vh;
+    }
+    .contact .contact-form
+    {
+        height: 50vh;
+    }
+}
+/*start footer*/
+@media(max-width:1199px)
+{
+    .footer-content
+{
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-left:-5%;
+}
+.foot-text
+{
+    font-size: 16px;
+    line-height: 4vh;
+    margin-bottom: 5px;
+}
+.foot-icon
+{
+    text-align: center;
+    line-height: 4vh;
+    margin-left: 45%;
+    margin-top: 5px;
+}
+}
+@media(max-width:800px)
+{
+    .footer-content
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.foot-text
+{
+    font-size: 12px;
+    letter-spacing: .8px;
+    margin-left: 2px;
+    line-height: 4vh;
+}
+.foot-icon
+{
+    font-size: 11px;
+    line-height: 5vh;
+    margin: auto;
+    
+}
+}
+@media(max-width:480px)
+{
+    .footer-content
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.foot-text
+{
+    font-size: 10px;
+    margin-left: 2px;
+    line-height: 3vh;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.foot-icon
+{
+    font-size: 8px;
+    line-height: 2vh;
+}
+}
