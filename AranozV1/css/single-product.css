@@ -1,0 +1,458 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a:hover
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+body
+{
+    width: 100%;
+    overflow-x: hidden;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+/*end global rules*/
+/*start single shop secion*/
+.single-shop
+{
+    padding-top: 160px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.shop-gallery
+{
+    width: 100%;
+    position: relative;
+    padding-bottom: 150px;
+}
+.master-img 
+{
+    width: 70%;
+}
+.master-img img
+{
+    width: 70%;
+    margin-top: 100px;
+    cursor: pointer;
+}
+.shop-thumbnails
+{
+    width: 25%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.shop-thumbnails img
+{
+    width: 65%;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    opacity: .4;
+}
+.shop-thumbnails img.active
+{
+    opacity: 1;
+    border: 1px solid #dc3545;
+}
+.shop-add
+{
+    padding-top: 90px;
+}
+.shop-add h3
+{
+    font-size: 22px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 50px;
+    font-weight: bold;
+}
+.shop-add span
+{
+    font-size: 26px;
+    color: #dc3545;
+    font-weight: bold;
+    line-height: 50px;
+}
+.shop-add p
+{
+    font-size: 14px;
+    line-height: 35px;
+}
+.shop-add small
+{
+    font-size: 14px;
+    padding-left: 15px;
+    text-transform: capitalize;
+    color: #dc3545;
+}
+.shop-add .lead
+{
+    width: 100%;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 20px 20px 0px;
+}
+.add-form
+{
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+.input-group
+{
+    width: 40%;
+}
+.input-group #num
+{
+    width: 50%;
+    text-align: center;
+    border: transparent;
+    background-color: transparent;
+    outline: transparent;
+    color: #e83e8c;
+    background-color: #ddd;
+    margin: 5px;
+    height: 30px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+.input-group i
+{
+    cursor: pointer;
+    font-size: 16px;
+    color: #dc3545;
+}
+.add-form a
+{
+    font-size: 15px;
+    color: #fff;
+    background-color: #e83e8c;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 20px;
+}
+.add-form .fa-heart
+{
+    margin-left: 10px;
+    line-height: 40px;
+    color: crimson;
+}
+@media(max-width:400px)
+{
+    .add-form
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .add-form a
+    {
+        padding: 10px 15px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .add-form .fa-heart
+    {
+        text-align: center;
+        line-height: 10px;
+    }
+    .input-group
+    {
+        width: 90%;
+        margin-left: 15%;
+        margin-bottom: 20px;
+    }
+}
+/*end single shop section*/
+/*start description*/
+.description
+{
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+.description-list
+{
+    display: flex;
+    margin-bottom: 70px;
+}
+.description-list li
+{
+    margin-right: 25px;
+}
+.description-list a
+{
+    color: black;
+    border: 2px solid #ddd;
+    padding: 10px 35px;
+    border-radius: 25px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.description-list a.active
+{
+    background-color: #ff3368;
+    color: #fff;
+    border: 2px solid #ff3368;
+}
+.description-text p
+{
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+@media(max-width:767px)
+{
+    .description-list
+    {
+        flex-direction: column;
+    }
+    .description-list li{
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+}
+/*start specification*/
+.sepecifaction
+{
+    display: none;
+}
+.sepecifaction .spec-text
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+.spec-text p
+{
+    padding-left: 65px;
+    line-height: 30px;
+    padding-top: 10px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.spec-text span
+{
+    padding-right: 25%;
+    line-height: 30px;
+    padding-top: 10px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+/*end specification*/
+/*start comment*/
+.comments
+{
+    width: 100%;
+    overflow-x: hidden;
+    display: none;
+}
+.comment
+{
+    padding-bottom: 45px;
+}
+.comment-owneer
+{
+    display: flex;
+    padding-bottom: 25px;
+}
+.owneer-name h5,
+.owneer-name span
+{
+    font-size: 13px;
+    padding-left: 20px;
+}
+.comment-owneer button
+{
+    margin-left: 30%;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    transition: .7s;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.comment-owneer button:hover
+{
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+    color: #fff;
+}
+.comment p
+{
+    font-size: 14px;
+    letter-spacing: .4px;
+    line-height: 30px;
+}
+/*start post form*/
+.post-comment
+{
+   padding-top: 15px;
+}
+.post-comment h3
+{
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-bottom: 35px;
+}
+#post-name,
+#post-mail,
+#post-phone,
+#post-text
+{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+#post-text
+{
+    height: 90px;
+}
+#post-submit
+{
+    width: 170px;
+    background-color: #ff3368;
+    height: 45px;
+    border: 1px solid #ff3368;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    margin-left: 70%;
+    transition: .7s;
+}
+#post-submit:hover
+{
+    background-color:var(--orange);
+    border-color:var(--orange) ;
+}
+@media(max-width:600px)
+{
+    #post-submit
+    {
+        margin-right: 10%;
+        margin-left: 0%;
+    }
+    .owneer-name h5,
+    .owneer-name span
+{
+    padding-left: 5px;
+    font-size: 10px;
+}
+.comment-owneer button
+{
+    margin-left: 20%;
+}
+}
+/*end post form*/
+/*end comment*/
+/*start previews*/
+.reviews
+{ 
+    display: none;
+}
+.preview-rate
+{
+    display: flex;
+}
+.overall
+{
+    width:50%;
+    background-color: #ecfdff;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.overall h4
+{
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+.overall p
+{
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.overall span
+{
+    line-height: 50px;
+}
+.rates
+{
+    margin-left: 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.rates h3
+{
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 30px;
+}
+.rates a
+{
+    color: #777;
+}
+.rates i
+{
+    color: gold;
+}
+/*end previews*/
+/*end description*/

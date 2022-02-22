@@ -1,0 +1,228 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a:hover
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+body
+{
+    width: 100%;
+    overflow-x: hidden;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+/*end global rules
+/*start header*/
+header
+{
+    width: 100%;
+    overflow-x: hidden;
+    background-image:url("../img/breadcrumb.png");
+    height: 90vh;
+}
+.head-text
+{
+    position: relative;
+    margin-top: 22%;
+    text-align: center;
+}
+.head-text h3
+{
+    font-size: 38px;
+    font-weight: bold;
+    color: black;
+    line-height: 50px;
+    text-transform: capitalize;
+}
+.head-text p
+{
+    text-transform: capitalize;
+    color: #777;
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+@media(max-width:991px)
+{
+    .head-text
+    {
+        margin-top: 45%;
+        margin-left: 20%;
+    }
+}
+/*end header*/
+/*start login section*/
+.login-form
+{
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.login-text
+{
+    width: 100%;
+    height: 600px;
+    background-image: -webkit-linear-gradient(16deg, #ff005a 0%, #ff5d2d 64%, #ffba00 100%);
+    text-align: center;
+    padding-top: 30%;
+}
+.login-text h3
+{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 45px;
+    color: #fff;
+}
+.login-text p
+{
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    padding-right: 10%;
+    padding-left: 10%;
+    color: #fff;
+    padding-bottom: 50px;
+    padding-top: 15px;
+}
+.login-text a
+{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: #fff;
+    width: 165px;
+    border: 1px solid #fff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: .7s;
+}
+.login-text a:hover
+{
+    background-color: #fff;
+    color: #e83e8c;
+}
+.login-form .form
+{
+    width: 100%;
+    padding-top: 70px;
+    padding-left: 15%;
+}
+.login-form .form h3
+{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+.login-form .form h4
+{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding-bottom: 70px;
+}
+.form #user,
+.form #password
+{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: transparent;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
+    padding-left: 15px;
+    outline: transparent;
+    margin-bottom: 20px;
+    letter-spacing: 1.4px;
+}
+.form #check
+{
+    margin-bottom: 30px;
+}
+.form label
+{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding-left: 10px;
+}
+.form #submit
+{
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    background-color: #e83e8c;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #e83e8c;
+    border-radius: 15px;
+    outline: transparent;
+    transition: .7s;
+}
+.form #submit:hover
+{
+    background-color: #ff005a;
+    border: 1px solid #ff005a;
+}
+.form a
+{
+    line-height: 60px;
+    color: #777;
+    padding-left: 70%;
+}
+@media(max-width:991px)
+{
+    .login-form .form
+    {
+        padding-left: 0px;
+    }
+    .form a
+    {
+        padding-left: 40%;
+    }
+}
+/*end login section*/

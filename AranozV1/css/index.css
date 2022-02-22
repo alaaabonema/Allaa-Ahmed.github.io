@@ -1,0 +1,838 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a:hover
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+body
+{
+    width: 100%;
+    overflow-x: hidden;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+/*end global rules
+/*start navbar*/
+.navbar-default
+{
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    z-index: 999999;
+}
+.navbar-brand
+{
+    line-height: 35px;
+}
+.navbar-default .navbar-nav li
+{
+    margin-left: 10px;
+}
+.navbar-default .navbar-nav li a
+{
+    line-height: 40px;
+    font-size: 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.dropdown
+{
+    position: fixed;
+    z-index: 9999;
+}
+.navbar-nav.navbar-right li 
+{
+    line-height: 70px;
+    margin-right: 10px;
+}
+.navbar-nav.navbar-right li  i
+{
+    font-size: 16px;
+    color: #777;
+    cursor: pointer;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus
+{
+    color: var(--red);
+    background-color: transparent;
+}
+/*end navbar*/
+/*start header*/
+header
+{
+    width: 100%;
+    background-color: var(--light);
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+/*end header*/
+/*start banner slider*/
+.main-slider
+{
+    width: 100%;
+    position: relative;
+    top: 190px;
+    display: none;
+    margin-bottom: 200px;
+}
+.banner-slider
+{
+    width: 100%;
+}
+.main-slider .item
+{
+    width: 900px;
+}
+.banner-text h3
+{
+    font-size: 62px;
+    font-weight: bold;
+    line-height: 70px;
+    text-transform: capitalize;
+    color: black;
+}
+.banner-text p
+{
+    font-size: 14px;
+    line-height: 25px;
+    color: #777;
+}
+.banner-button
+{
+    width: 170px;
+    height: 40px;
+    background-color: var(--pink);
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 40px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: .6s;
+}
+.banner-button:hover
+{
+    background-color: var(--danger);
+}
+.main-slider .leftslick
+{
+    position: absolute;
+    right: -25px;
+    top: 35%;
+    background-color: #20c997;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #20c997;
+    color: #fff;
+    cursor: pointer;
+}
+.main-slider .rightslick
+{
+    position: absolute;
+    left: -45px;
+    top: 35%;
+    background-color: #20c997;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #20c997;
+    color: #fff;
+    cursor: pointer;
+}
+/*end banner slider*/
+/*end header*/
+/*start feature category*/
+.feature-category
+{
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 130px;
+}
+.section-head h3
+{
+    font-size: 38px;
+    text-align: center;
+    line-height: 60px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-bottom: 60px;
+}
+.feature-one
+{
+    width: 100%;
+    overflow-x: hidden;
+    padding-bottom: 50px;
+}
+.soaf-box
+{
+    position: relative;
+    width: 100%;
+    height: 420px;
+    transition: .7s;
+}
+.soaf-box:hover .soaf-link
+{
+    display: block;
+}
+.soaf-box.one p,
+.soaf-box.two p
+{
+    font-size: 15px;
+    line-height: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+.soaf-box.one h4,
+.soaf-box.two h4
+{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+.soaf-img
+{
+    position: absolute;
+    right: 20px;
+    top: 40px;
+}
+.soaf-link
+{
+    position: absolute;
+    bottom: 35px;
+    left: 25px;
+    display: none;
+}
+.soaf-link a
+{
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing:.4px;
+    text-transform: uppercase;
+    color: #e83e8c;
+}
+.soaf-img .img-four
+{
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+/*end feature category*/
+/*start awesome shop section*/
+.awesome-shop
+{
+    width: 100%;
+    padding-top: 50px;
+}
+.shop-head
+{
+    padding-left: 15px;
+    padding-bottom: 60px;
+}
+.shop-head h2
+{
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+.shop-head small
+{
+    padding-left: 45px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #777;
+}
+.shop-slider
+{
+    width: 100%;
+}
+.awesome-slider .leftslick
+{
+    position: absolute;
+    right: 100px;
+    top: -60px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid var(--cyan);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.awesome-slider .rightslick
+{
+    position: absolute;
+    right:5px;
+    top: -60px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid var(--cyan);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.shop-card
+{
+    width: 95%;
+    height: 430px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    transition: .6s;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.shop-card:hover
+{
+    box-shadow: 3px 3px 3px #ddd;
+}
+.shop-card:hover .card-text
+{
+    padding-left: 15px;
+}
+.shop-card:hover .card-link
+{
+    display: flex;
+}
+.shop-card:hover .card-link a
+{
+    padding-left: 15px;
+}
+.shop-card:hover .card-link i
+{
+    padding-right: 10px;
+}
+.card-img img
+{
+    width: 94%;
+    margin-bottom: 20px;
+}
+.card-text h3
+{
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 20px;
+}
+.card-text p
+{
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 17px;
+}
+.card-link
+{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    display: none;
+    transition: 2s;
+}
+.card-link a
+{
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--pink);
+    line-height: 30px;
+}
+.card-link i
+{
+    font-size: 18px;
+    color: var(--pink);
+    line-height: 30px;
+}
+/*end awesome shop section*/
+/*start offer section*/
+.offer
+{
+    background-color:#ecfdff;
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 110px;
+    padding-bottom: 100px;
+    margin-bottom: 60px;
+}
+.offer-img
+{
+    width: 100%;
+}
+.offer-img img
+{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 35px;
+}
+.offer-text
+{
+    padding-top: 20px;
+}
+ .offer h2
+ {
+     font-size: 50px;
+     text-transform: capitalize;
+     line-height: 70px;
+     font-weight: bold;
+ }
+ #timer
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#days,
+#hours,
+#minutes,
+#seconds
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 37px;
+    font-weight: bold;
+}
+#days span,
+#hours span,
+#minutes span ,
+#seconds span
+{
+    text-transform: uppercase;
+    color: #777;
+    font-size: 15px;
+    line-height: 40px;
+}
+.input-group
+{
+    width: 100%;
+    position: relative;
+}
+.form-control
+{
+    width: 98%;
+    height: 60px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+.offer-link
+{
+    background-color: #ff3368;
+    padding: 17px 25px;
+    position: absolute;
+    z-index: 9999;
+    right: 0px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    transition: .7s;
+}
+.offer-link:hover
+{
+    color: #fff;
+    background-color: var(--orange);
+}
+/*end offer section*/
+/*start bestsellers shop section*/
+.bestsellers-shop
+{
+    width: 100%;
+    padding-top: 50px;
+    margin-top: 60px;
+    background-color: #fff;
+}
+.shop-head
+{
+    padding-left: 15px;
+    padding-bottom: 60px;
+}
+.shop-head h2
+{
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+.shop-head small
+{
+    padding-left: 45px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #777;
+}
+.best-slider
+{
+    width: 100%;
+}
+.bestsellers-slider .leftslick
+{
+    position: absolute;
+    right: 100px;
+    top: -60px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid var(--cyan);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.bestsellers-slider .rightslick
+{
+    position: absolute;
+    right:5px;
+    top: -60px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid var(--cyan);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.shop-card
+{
+    width: 95%;
+    height: 430px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    transition: .6s;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.shop-card:hover
+{
+    box-shadow: 3px 3px 3px #ddd;
+}
+.shop-card:hover .card-text
+{
+    padding-left: 15px;
+}
+.shop-card:hover .card-link
+{
+    display: flex;
+}
+.shop-card:hover .card-link a
+{
+    padding-left: 15px;
+}
+.shop-card:hover .card-link i
+{
+    padding-right: 10px;
+}
+.card-img img
+{
+    width: 94%;
+    margin-bottom: 20px;
+}
+.card-text h3
+{
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 20px;
+}
+.card-text p
+{
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 17px;
+}
+.card-link
+{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    display: none;
+    transition: 2s;
+}
+.card-link a
+{
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--pink);
+    line-height: 30px;
+}
+.card-link i
+{
+    font-size: 18px;
+    color: var(--pink);
+    line-height: 30px;
+}
+/*end bestsellers shop section*/
+/*start subscribe secion*/
+.subscribe
+{
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url(../img/subscribe_area.png);
+    height: 80vh;
+    padding-top: 20vh;
+    margin-bottom: 50px;
+}
+.sub-content
+{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.sub-content h5
+{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 45px;
+    color: #dc3545;
+}
+.sub-content h2
+{
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-size: 38px;
+}
+.subscribe .input-group
+{
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-top: 40px;
+}
+.subscribe .form-control
+{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+/*end subscribe*/
+/*start brand*/
+.brand
+{
+    padding-top:60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+}
+.brand-img
+{
+    border: 1px solid #ddd;
+    height: 130px;
+    width: 119%;
+    position: relative;
+}
+.brand-img img
+{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.overlay
+{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    transition: .9s;
+}
+.brand-img:hover .overlay
+{
+    display: none;
+}
+/*end brand*/
+/*start footer*/
+footer
+{
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 60px;
+    margin-top: 60px;
+}
+.link-list
+{
+    padding-bottom: 50px;
+}
+.links h3
+{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 60px;
+    font-size: 19px;
+    font-weight: bold;
+}
+.link-list li a
+{
+    font-size: 14px;
+    line-height: 40px;
+    color: #777;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.new-seltter h3
+{
+    line-height: 60px;
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 19px;
+}
+.new-seltter p
+{
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: black;
+    padding-top: 10px;
+}
+.seltter-button
+{
+    margin-top: 60px;
+    width: 100%;
+}
+#selt-email
+{
+    width: 70%;
+    height: 40px;
+    border: 1px solid #ddd;
+    padding-left: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.seltter-button a
+{
+    width: 28%;
+    letter-spacing: 1px;
+    background-color: #dc3545;
+    padding: 12px 14px;
+    color: #fff;
+    border-radius: 10px;
+    transition: .7s;
+}
+.seltter-button a:hover
+{
+    background-color: #ff3368;
+}
+.copyright
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.copyright p
+{
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+.copyright p>i
+{ 
+    color: #ddd;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.copyright p>a
+{
+    color: #dc3545;
+    text-transform: capitalize;
+    padding-left: 5px;
+    font-size: 15px;
+}
+.copyright .icons a
+{
+    color: #777;
+    padding-left: 20px;
+    font-size: 18px;
+}
+/*end footer*/
+/*start tracking order style*/
+.tracking
+{
+    padding-top: 150px;
+    padding-bottom: 120px;
+}
+.tracking p
+{
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+#orderID,
+#ordermail
+{
+    width: 80%;
+    height: 50px;
+    border: transparent;
+    border-bottom: 2px solid #ddd;
+    border-radius: 15px;
+    outline: transparent;
+    margin-bottom: 35px;
+    padding-left: 10px;
+    margin-right: 30%;
+}
+#order-but 
+{
+    background-color: #e83e8c;
+    padding: 12px 50px;
+    border: 1px solid #e83e8c;
+    border-radius: 15px;
+    font-size: 15px;
+    letter-spacing: 1px ;
+    text-transform: capitalize;
+    color: #fff;
+    transition: .4s;
+}
+#order-but:hover
+{
+    background-color: #ff3368;
+    border-color: #ff3368;
+}
+/*end tracking order style*/

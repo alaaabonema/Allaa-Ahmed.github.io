@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aranoz</title>
+    <!--start css files-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/single-product.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <!--end css files-->
+    <!--start js files-->
+    <script src="js-file/html5shiv.min.js"></script>
+    <script src="js-file/respondjs.php"></script>
+    <!--end js files-->
+</head>
+<body>
+    <header>
+        <!--start navbar-->
+        <nav class="navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="my-nav">
+                <ul class="nav navbar-nav">
+                <li class="active"><a href="#">home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">shop <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">shop category</a></li>
+                    <li><a href="#">product detalis</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">pages <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">login</a></li>
+                    <li><a href="#">tracking</a></li>
+                    <li><a href="#">product checkout</a></li>
+                    <li><a href="#">shopping cart</a></li>
+                    <li><a href="#">confirmation</a></li>
+                    <li><a href="#">elements</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">blog <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">single blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                <li><i class="fa fa-search"></i></li>
+                <li><i class="fa fa-heart"></i></li>
+                <li><i class="fa fa-cart-plus"></i></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!--end navbar-->
+        <div class="container">
+        <div class="head-text">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                <h3>product checkout</h3>
+                <p>shop - shop single</p>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!--end header-->
+    <!--start section checkout-->
+    <section class="checkout">
+        <div class="container">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="check-header">
+                <h4>returing customer?<a href="login.html">click here to login</a></h4>
+                <p>If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing & Shipping section.</p>
+                <input type="text" id="check-mail" placeholder="username or email">
+                <input type="password" placeholder="password *" id="check-pass">
+                <input type="submit" id="check-sub" value="log in">
+                <input type="checkbox">
+                <label for="checkbox">remember me</label>
+                <br>
+                <a href="#" class="lost">lost your password?</a>
+                </div>
+                <div class="copon-head">
+                    <h4>you have a copon?<a href="login.html">click here to enter your code</a></h4>
+                    <input type="text" id="copon-code" placeholder="enter copon code">
+                    <input type="submit" id="copon-but" value="apply copon">
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <div class="billing-detailes">
+            <h3>billing detailes</h3>
+            <input type="text" placeholder="first name" id="bill-name">
+            <input type="text" placeholder="last name" id="bill-name">
+            <input type="text" placeholder="company name" id="company-name">
+            <input type="text" placeholder="first name" id="bill-number">
+            <input type="email" placeholder="email address" id="bill-mail">
+            <select id="bill-select">
+                    <option>egypt</option>
+                    <option>united states</option>
+                    <option>russia</option>
+            </select>
+            <input type="text" placeholder="address lin 1" id="bill-address">
+            <input type="text" placeholder="address lin 2" id="bill-address">
+            <input type="text" placeholder="town / city" id="bill-address">
+            <select id="bill-select">
+                <option>distrect</option>
+                <option>distrect</option>
+                <option>district</option>
+        </select>
+        <input type="text" placeholder="postcode / zip" id="bill-post">
+        <h4>shipping detailes</h4>
+        <input type="checkbox">
+        <label for="checkbox">Ship to a different address?</label>
+        <textarea placeholder="order noted"></textarea>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="order-process">
+                    <h3>your order</h3>
+                    <div class="process-text">
+                        <p>product</p>
+                        <span>total</span>
+                    </div>
+                    <div class="process-text">
+                        <p>fresh blackbery</p>
+                        <small>x 02</small>
+                        <span>720 $</span>
+                    </div>
+                    <div class="process-text">
+                        <p>fresh tomato</p>
+                        <small>x 02</small>
+                        <span>720 $</span>
+                    </div>
+                    <div class="process-text">
+                        <p>fresh brocoli</p>
+                        <small>x 02</small>
+                        <span>120 $</span>
+                    </div>
+                    <div class="process-text">
+                        <h4>sub total</h4>
+                        <span>2160 $</span>
+                    </div>
+                    <div class="process-text">
+                        <h4>shipping </h4>
+                        <span>flate rate:50$</span>
+                    </div>
+                    <div class="process-text">
+                        <h4>total </h4>
+                        <span>2210 $</span>
+                    </div>
+                    <input type="checkbox">
+                    <label for="checkbox">check payments</label>
+                    <div class="pay-advice">
+                        <p>Please send a check to Store Name, Store Street, Store
+                            Town, Store State / County, Store Postcode.
+                        </p>
+                    </div>
+                    <input type="checkbox">
+                    <label for="checkbox">paypal</label>
+                    <img src="img/product/single-product/card.jpg" alt="">
+                    <div class="pay-advice">
+                        <p>Please send a check to Store Name, Store Street, Store
+                            Town, Store State / County, Store Postcode.
+                        </p>
+                    </div>
+                    <input type="checkbox">
+                    <label for="checkbox">I’ve read and accept the<a href="#">terms & conditions</a></label>
+                    <button class="process-button">process to paypal</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end class checkout-->
+     <!--start footer-->
+     <footer>
+        <div class="container">
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                <div class="links">
+                    <h3>top products</h3>
+                    <ul class="link-list">
+                        <li><a href="#">Managed Website</a></li>
+                        <li><a href="#">Manage Reputation</a></li>
+                        <li><a href="#">Power Tools</a></li>
+                        <li><a href="#">Marketing Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                <div class="links">
+                    <h3>quieck links</h3>
+                    <ul class="link-list">
+                        <li><a href="#">jobs</a></li>
+                        <li><a href="#">Brand Assets</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                <div class="links">
+                    <h3>feature</h3>
+                    <ul class="link-list">
+                        <li><a href="#">jobs</a></li>
+                        <li><a href="#">Brand Assets</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                <div class="links">
+                    <h3>resources</h3>
+                    <ul class="link-list">
+                        <li><a href="#">guieds</a></li>
+                        <li><a href="#">research</a></li>
+                        <li><a href="#">experts</a></li>
+                        <li><a href="#">agenses</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="new-seltter">
+                    <h3>newseltter</h3>
+                    <p>Heaven fruitful doesn't over lesser in days. Appear creeping</p>
+                </div>
+                <div class="seltter-button">
+                    <input type="email" placeholder="enter your email" id="selt-email">
+                    <a href="#">subscribe</a>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright">
+                <p>Copyright ©2022 All rights reserved |
+                     This template is made with<i class="fa fa-heart"></i>
+                       by <a href="#">Colorlib</a>
+                </p>
+                <div class="icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <!--end footer-->
+      <!--start js files-->
+      <script src="js-file/jquery1.1.js"></script>
+      <script src="js-file/bootstrap.min.js"></script>
+      <script src="js-file/slick.min.js"></script>
+      <script src="js-file/main.js"></script>
+      <!--end js files-->
+</body>
+</html>
