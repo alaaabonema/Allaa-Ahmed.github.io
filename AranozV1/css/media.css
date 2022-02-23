@@ -49,6 +49,13 @@
         margin: auto;
         margin-top: 35px;
     }
+    .banner-img img
+    {
+        width: 50%;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+    }
 }
 @media(max-width:767px)
 {
@@ -72,6 +79,13 @@
     .banner-text p
     {
         padding-left: 15px;
+    }
+    .banner-img img
+    {
+        width: 50%;
+        display: block;
+        margin: auto;
+        margin-top: 35px;
     }
 }
 /*end banner slider*/
