@@ -182,8 +182,8 @@ $(function()
 {
     $('.item-input .fa-minus').click(function()
     {
-        var inval=$(this).parent().find('input').val();
-        $(this).parent().find('input').val(--inval)
+        var minval=$(this).parent().find('input').val();
+        $(this).parent().find('input').val(--minval)
     });
 });
 /*end cart input*/
