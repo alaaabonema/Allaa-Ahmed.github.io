@@ -1,0 +1,141 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    overflow-x: hidden;
+}
+a:hover
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+/*end global rules*/
+/*start blog section*/
+.blogs 
+{
+    width: 100%;
+    overflow-x: hidden;
+    height: 340vh;
+}
+.blog-items
+{
+    padding-top: 50px;
+}
+.blog-items h3
+{
+    text-align: center;
+    color: #FE980F;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.blog-items h4
+{
+    line-height: 45px;
+    color: #777;
+}
+.blog-icons
+{
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+.icon-one span 
+{
+    background-color: #ddd;
+    padding: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.icon-one i
+{
+    padding: 5px;
+    color: #fff;
+    background-color: #FE980F; 
+    margin-right: 4px;
+}
+.stars
+{
+    position: absolute;
+    right: 10px;
+    color: gold;
+}
+.blog-img img
+{
+    margin-bottom: 20px;
+} 
+.blog-img p 
+{
+    font-size: 14px;
+    letter-spacing: .7px;
+    line-height: 25px;
+    padding-bottom: 15px;
+}
+.blog-img a
+{
+    color: #fff;
+    background-color: #FE980F;
+    padding: 6px 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+@media(max-width:991px)
+{
+    .blogs
+    {
+        height: 480vh;
+    }
+}
+@media(max-width:767px)
+{
+    .blogs
+    {
+        height: 400vh;
+    }
+    .blog-img img
+    {
+        width: 50%;
+        margin: auto;
+        display: block;
+        margin-bottom: 15px;
+    }
+    .blog-img p 
+    {
+        font-size: 12px;
+        text-align: center;
+    }
+    .blog-img a
+    {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    .blog-icons
+    {
+        flex-direction: column;
+    }
+    .icon-one 
+    {
+        margin-bottom: 10px;
+    }
+}
+@media(max-width:430px)
+{
+    .blogs
+    {
+        height: 452vh;
+    }
+}
+/*end blog section*/

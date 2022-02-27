@@ -1,0 +1,174 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    overflow-x: hidden;
+}
+a:hover
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+/*end global rules*/
+/*start index styles*/
+/*start head top*/
+@media(max-width:800px)
+{
+.head-top
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.head-top .head-text
+{
+    padding-left: 0px;
+}
+.head-top .head-icons
+{
+    padding-right: 0px;
+}
+}
+@media(max-width:400px)
+{
+    .head-top a
+    {
+        font-size: 12px;
+        padding: 2px;
+    }
+    .head-top i
+    {
+        font-size: 12px;
+    }
+}
+/*end head top*/
+/*start head-mid*/
+@media(max-width:991px)
+{
+    .head-middle
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:600px)
+{
+    .head-logo
+    {
+        margin-bottom: 5px;
+    }
+    .head-logo img
+    {
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .head-links a
+    {
+        padding: 5px;
+        font-size: 12px;
+        line-height: 40px;
+    }
+}
+/*end head mid*/
+/*start navbar*/
+@media(max-width:767px)
+{
+    .navbar-default .navbar-nav li
+    {
+        text-align: center;
+        margin-bottom: 1px;
+    }
+    .dropdown-menu li
+    {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .navbar-right .fa-search
+    {
+        right: 40%;
+    }
+}
+/*end navbar*/
+/*start main slider*/
+@media(max-width:991px)
+{
+    .slider-text
+    {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .slider-img img
+    {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+/*end main slider*/
+/*start shipping shop*/
+@media(max-width:991px)
+{
+    .shipping-img img
+    {
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+}
+@media(max-width:550px)
+{
+    .shipping-links
+    {
+        flex-wrap: wrap;
+    }
+    .shipping-links li
+{
+    margin-right: 7px;
+}
+.shipping-links a
+{
+    font-size: 10px;
+    text-transform: capitalize;
+    letter-spacing: .4px;
+    padding-left: 2px;
+    color: #ddd;
+    padding: 9px ;
+    line-height: 30px;
+}
+}
+/*end shipping shop*/
+@media(max-width:991px)
+{
+    .about-shopper
+    {
+        margin: 0;
+    }
+}
+@media(max-width:600px)
+{
+    .foot-images
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .foot-one
+    {
+        display: flex;
+    }
+}

@@ -1,0 +1,269 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    overflow-x: hidden;
+}
+a:hover
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+/*end global rules*/
+/*start cart section*/
+.cart
+{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.cart-head
+{
+    display: flex;
+    margin-bottom: 25px;
+}
+.cart-head span
+{
+    background-color: #FE980F;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 5px;
+    margin-right: 10px;
+    color: white;
+    text-align: center;
+}
+.cart-head p
+{
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 25px;
+}
+.table
+{
+    width: 100%;
+    overflow-x: auto;
+}
+.table thead
+{
+    background-color: #FE980F;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.item-img
+{
+    display: flex;
+}
+.item-img img
+{
+    margin-right: 15px;
+}
+.item-info span
+{
+    color: #777;
+    font-size: 15px;
+}
+.sallery
+{
+    font-size: 19px;
+    text-align: center;
+    padding-top: 45%;
+    font-weight: bold;
+}
+.item-input
+{
+    text-align: center;
+    padding-top: 40px;
+}
+.item-input i
+{
+    color: #FE980F;
+    background-color: #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.item-input input
+{
+    height: 30px;
+    border:1px solid #ddd;
+    outline: transparent;
+    text-align: center;
+    box-shadow: 3px 3px 3px #ddd;
+    font-weight: bold;
+    width: 25%;
+}
+.total
+{
+    text-align: center;
+    color: #FE980F;
+}
+.total b
+{
+    line-height: 100px;
+    font-size: 22px;
+}
+.total i
+{
+    position: relative;
+    margin-left: 20px;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 7px;
+    cursor: pointer;
+}
+@media(max-width:600px)
+{
+    .item-img
+    {
+        flex-direction: column;
+    }
+    .item-img img
+    {
+        width: 50%;
+    }
+    .item-info h3,
+    .item-info span
+    {
+        font-size: 11px;
+    }
+    .item-input
+    {
+        text-align: start;
+    }
+    .item-input i
+    {
+        margin: 3px;
+    }
+    .sallery
+    {
+        font-size: 15px;
+        text-align: start;
+    }
+}
+.information-head
+{
+    padding-top: 60px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-left: 5px;
+}
+.information-head h3
+{
+    text-transform: capitalize;
+    font-size: 24px;
+    color: black;
+}
+.information-head h4
+{
+    font-size: 16px;
+    color: #777;
+}
+.left-info,
+.right-info
+{
+    margin-top: 50px;
+    border: 1px solid #ddd;
+    padding-left: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+.info-options
+{
+    margin-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.info-select
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+.info-country
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.info-country select
+{
+    height: 25px;
+}
+.info-zip
+{
+    display: flex;
+    flex-direction: column;
+}
+.info-button
+{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.info-button a
+{
+    background-color: #FE980F;
+    color: #fff;
+    padding: 8px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-right: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .6s;
+}
+.info-button a:hover
+{
+    background-color: #fff;
+    color: #FE980F;
+}
+.right-det
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ddd;
+    align-items: center;
+    margin-bottom: 9px;
+    margin-right: 25px;
+}
+.right-det p
+{
+    padding-top: 8px;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+.right-det span
+{
+    padding-right: 10px;
+}
+@media(max-width:600px)
+{
+    .info-select
+    {
+        flex-direction: column;
+    }
+    .info-country
+    {
+        margin-bottom: 15px;
+    }
+    .info-zip
+    {
+        margin-right: 20px;
+    }
+}
+/*end cart*/
