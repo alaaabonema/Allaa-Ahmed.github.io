@@ -1,3 +1,4 @@
+
 /*start main slider*/
 $(document).ready(function()
 {
@@ -28,8 +29,8 @@ $(function()
 {
     $('.shipping-links a').click(function()
     {
-       $('.shipping-links a').removeClass('active');
-       $(this).addClass('active');
+    $('.shipping-links a').removeClass('active');
+    $(this).addClass('active');
     });
 });
 $(function()
