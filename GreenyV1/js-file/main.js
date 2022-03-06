@@ -330,6 +330,7 @@ $(function()
 });
 /*end fixed category menu*/
 /*plus&minus button*/
+/*
 $(function()
 {
     $('.action-plus').click(function()
@@ -341,6 +342,27 @@ $(function()
     {
         var dicrement=$('.action-input').val();
         $('.action-input').val(--dicrement);
+    });
+});
+*/
+$(function()
+{
+    $('.action-plus').click(function()
+    {
+        var increment=$(this).parent().find('.action-input').val();
+        $(this).parent().find('.action-input').val(++increment);
+    });
+    $('.action-minus').click(function()
+    {
+        var dicrement=$(this).parent().find('.action-input').val();
+        if($(this).parent().find('.action-input').val() <= 0)
+        {
+            $(this).parent().find('.action-input').val();
+        }
+        else
+        {
+            $(this).parent().find('.action-input').val(--dicrement);
+        }
     });
 });
 /*end plus&minus button*/
