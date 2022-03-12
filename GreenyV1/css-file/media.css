@@ -821,3 +821,52 @@
         display: none;
     }
 }
+/*end fixed category*/
+/*start home links for mob*/
+.home-links
+{
+    position: fixed;
+    z-index: 9999999999999999999999999999999999999999999999999999999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .9);
+    text-align: center;
+    display: none;
+}
+.home-links .fa-close
+{
+    position: absolute;
+    z-index: 999999999999999999999999999999999999999999999999999999999999;
+    top: 1%;
+    right: 5%;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 15px;
+    color: black;
+    font-size: 19px;
+    cursor: pointer;
+}
+.important-links
+{
+    padding-top: 12%;
+}
+.important-links li
+{
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.important-links a
+{
+    line-height: 55px;
+    color: black;
+    text-transform: capitalize;
+    letter-spacing: 1.3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*end home links for mob*/
