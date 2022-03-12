@@ -143,11 +143,23 @@ $(document).ready(function()
 /*start nich part*/
 $(function()
 {
-    $('.niche-part .nav-tabs a').click(function()
+    $('.niche-part .nav-tabs .order-top').click(function()
     {
         var partID=$(this).attr('href');
-        $('.top-order , .top-discount , .top-rateing').removeClass('active');
-        $('.top-order , .top-discount , .top-rateing').attr('id' , partID).addClass('active');
+        $('#top-discount , #top-rateing').removeClass('active');
+        $('#top-order').addClass('active');
+    }); 
+    $('.niche-part .nav-tabs .rating-top').click(function()
+    {
+        var partID=$(this).attr('href');
+        $('#top-discount , #top-order').removeClass('active');
+        $('#top-rateing').addClass('active');
+    }); 
+    $('.niche-part .nav-tabs .discount-top').click(function()
+    {
+        var partID=$(this).attr('href');
+        $('#top-order , .top-rateing').removeClass('active');
+        $('#top-discount').addClass('active');
     }); 
 });
 /*end nich part*/
@@ -577,6 +589,20 @@ $(function()
     });
 });
 /*end address card*/
+/*start home links for mobile*/
+$(function()
+{
+    $('.mobile-menu .home-mobile').click(function(e)
+    {
+        e.preventDefault();
+        $('.home-links').slideDown(800);
+    });
+    $('.home-links .fa-close').click(function()
+    {
+        $('.home-links').slideUp();
+    });
+});
+/*end home links for mobile*/
 
 
 
