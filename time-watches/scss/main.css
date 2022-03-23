@@ -1,0 +1,611 @@
+/*start navbar*/
+.navbar {
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  color: black;
+}
+
+.navbar-nav .nav-item a {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: black;
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-item a.active {
+  color: orangered;
+}
+
+.nav-icons a {
+  margin-right: 15px;
+  font-size: 18px;
+  color: #777;
+}
+
+.nav-icons a:hover {
+  color: blue;
+}
+
+/*end navbar*/
+/*start main slider*/
+.main-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slickslider {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100px;
+  padding-top: 80px;
+  background-color: #3b4a6b;
+  border-radius: 0px 0px 0px 250px;
+}
+
+.item-text {
+  padding-top: 100px;
+  padding-left: 90px;
+  padding-bottom: 50px;
+}
+
+.item-text h2 {
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+.item-text p {
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.item-text .btn-success {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 8px 15px;
+}
+
+.item-img {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.item-img img {
+  width: 90%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.slickslider .leftslick {
+  position: absolute;
+  z-index: 99;
+  right: 15px;
+  top: 40%;
+  background-color: #fff;
+  border-radius: 10px;
+  border-color: transparent;
+  color: orangered;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.slickslider .rightslick {
+  position: absolute;
+  z-index: 99;
+  left: 15px;
+  top: 40%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  border-color: transparent;
+  color: orangered;
+  cursor: pointer;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 15px;
+  color: orangered;
+}
+
+.slick-dots li button {
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+/*end mainslider*/
+/*start lastest watches*/
+.lastest-watches {
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.watches-card {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.watches-card:hover {
+  background-color: #777;
+  color: #fff;
+}
+
+.watches-card .new {
+  background-color: orange;
+  color: #fff;
+  text-transform: capitalize;
+  width: 90px;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.watch-img img {
+  width: 35%;
+  margin-left: 32.5%;
+  margin-top: 50px;
+}
+
+.watch-img .img-one {
+  width: 18%;
+  margin-left: 41%;
+}
+
+.watches-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 35px;
+}
+
+.watches-text p {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding-left: 5px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.watches-text span {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: black;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+
+.lastest-watches .btn-warning {
+  display: block;
+  margin: auto;
+  padding: 7px 24px;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+/*end lastest watches*/
+/*start about section*/
+.about {
+  width: 100%;
+  background-color: #3b4a6b;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about-img img {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.about-text {
+  padding-top: 110px;
+  padding-left: 60px;
+}
+
+.about-text h3 {
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  line-height: 50px;
+}
+
+.about-text p {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.about-text .btn-warning {
+  padding: 7px 44px;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  color: #fff;
+  margin-top: 35px;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.about-text .btn-warning:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+/*end about section*/
+/*start featueres*/
+.features {
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.feature-head {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.feature-head h2 {
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.feature-head p {
+  letter-spacing: 1px;
+  color: #777;
+  font-size: 17px;
+}
+
+.feature-card {
+  width: 100%;
+  margin-top: 25px;
+  background-color: #fff;
+  -webkit-box-shadow: 6px 6px 6px #ddd;
+          box-shadow: 6px 6px 6px #ddd;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.feature-card:hover {
+  background-color: #3b4a6b;
+  color: #fff;
+}
+
+.feature-img img {
+  width: 30%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.feature-card h3 {
+  font-weight: bold;
+  font-size: 19px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.feature-card p {
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+
+.feature-card a {
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  line-height: 35px;
+}
+
+.features .btn-warning {
+  padding: 7px 44px;
+  display: block;
+  margin: auto;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  color: #fff;
+  margin-top: 45px;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.features .btn-warning:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+/*end features*/
+/*start contact*/
+.contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+.contact-form h3 {
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  line-height: 50px;
+  padding-bottom: 80px;
+}
+
+.contact-form {
+  padding-bottom: 35px;
+}
+
+.contact-form form input,
+.contact-form textarea {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  border-radius: 10px;
+  outline: transparent;
+}
+
+.contact-form form input:hover,
+.contact-form textarea:hover,
+.contact-form form input:focus,
+.contact-form textarea:focus {
+  outline: 1px solid orangered;
+}
+
+.contact-form textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 25px;
+  padding-top: 25px;
+}
+
+.contact-form #form-btn {
+  width: 140px;
+  display: block;
+  margin: auto;
+  background-color: orangered;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.contact-img img {
+  width: 100%;
+}
+
+/*end contact*/
+/*start testimonials*/
+.testimonials {
+  width: 100%;
+  padding-top: 60px;
+  margin-bottom: 55px;
+}
+
+.testimonials .testimonials-head {
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1.3px;
+  padding-bottom: 50px;
+}
+
+.testimonials .testimonial-card {
+  width: 100%;
+  background-color: #3b4a6b;
+  padding-top: 50px;
+  border-radius: 10px;
+  margin-bottom: 80px;
+}
+
+.testimonials .testimonial-img img {
+  position: relative;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  width: 30%;
+  padding: 5px;
+  border: 3px dotted orangered;
+}
+
+.testimonials .testimonial-info {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.testimonials .testimonial-info h3 {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  letter-spacing: 1.2px;
+  line-height: 45px;
+}
+
+.testimonials .testimonial-info p {
+  letter-spacing: 1px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.testimonials .testimonial-info span {
+  color: orange;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.testimonials .testimonials-slider .leftslick {
+  position: absolute;
+  z-index: 9999;
+  bottom: 0px;
+  left: 52%;
+  padding: 8px 20px;
+  background-color: orangered;
+  color: #fff;
+  border: transparent;
+  outline: transparent;
+  border-radius: 5px;
+  margin-left: 25px;
+}
+
+.testimonials .testimonials-slider .rightslick {
+  position: absolute;
+  z-index: 9999;
+  bottom: 0px;
+  left: 40%;
+  padding: 8px 20px;
+  background-color: orangered;
+  color: #fff;
+  border: transparent;
+  outline: transparent;
+  border-radius: 5px;
+}
+
+/*end testimonials*/
+/*start footer*/
+footer {
+  width: 100%;
+  background-color: #3b4a6b;
+  padding-top: 60px;
+}
+
+footer .foot-about h3 {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+footer .foot-about p {
+  letter-spacing: 1px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+footer .foot-about a {
+  color: #fff;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 28px;
+}
+
+footer .foot-about a:hover {
+  color: orange;
+}
+
+footer .foot-reach h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 45px;
+}
+
+footer .foot-reach .reach-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .foot-reach .reach-links a {
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+footer .foot-reach .reach-links svg {
+  padding-right: 15px;
+}
+
+footer .foot-sub h3 {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  line-height: 45px;
+  font-weight: bold;
+}
+
+footer .foot-sub #sub-mail {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  outline: transparent;
+  border: #fff;
+  padding-left: 15px;
+  margin-bottom: 45px;
+}
+
+footer .foot-sub #foot-submit {
+  width: 100%;
+  height: 40px;
+  background-color: orange;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+  outline: transparent;
+  border: orange;
+  border-radius: 5px;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+footer .foot-sub #foot-submit:hover {
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
+}
+
+footer .copyright {
+  padding-top: 60px;
+  text-align: center;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+/*end footer*/
+/*start scroll to top*/
+.scroll-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+.scroll-to-top a {
+  padding: 8px 12px;
+  background-color: #777;
+  color: orange;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+/*end scroll to top*/
+/*# sourceMappingURL=main.css.map */
