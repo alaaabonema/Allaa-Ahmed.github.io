@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>single product</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="scss/product.css">
+    <link rel="stylesheet" href="scss/media.css">
+    <!--start js files-->
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <!--end js files-->
+</head>
+<body>
+     <!--start head top-->
+     <div class="head-top">
+        <div class="container">
+            <div class="row">
+            <div class="col-xs-12 col-md-12 col-lg-8">
+            <ul class="top-links">
+                <li><a href="#"><i class="fa-solid fa-user"></i>my account</a></li>
+                <li><a href="#"><i class="fa-solid fa-heart"></i>wishlist</a></li>
+                <li><a href="#"><i class="fa-solid fa-id-card"></i>my cart</a></li>
+                <li><a href="#"><i class="fa-solid fa-check-to-slot"></i>check out</a></li>
+                <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i>log in</a></li>
+            </ul>
+            </div>
+            <div class="col-xs-12 col-md-12 col-lg-4">
+                <div class="select-group">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      currency:usd
+                    </a>
+                  
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">dollar</a></li>
+                      <li><a class="dropdown-item" href="#">pound</a></li>
+                      <li><a class="dropdown-item" href="#">uero</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      language:en
+                    </a>
+                  
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">english</a></li>
+                      <li><a class="dropdown-item" href="#">french</a></li>
+                      <li><a class="dropdown-item" href="#">espanish</a></li>
+                    </ul>
+                  </div>
+                  </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--end head top-->
+    <!--start mid top-->
+    <div class="mid-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="mid-content">
+                        <div class="mid-logo">
+                            <img src="img/logo.png">
+                        </div>
+                        <div class="basket-shop">
+                            <p>cart-100$ </p>
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <div class="basket-num">
+                                <span>5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end mid top-->
+    <!--start navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html" data-scroll="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shop.html" data-scroll="#shop">shop page</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="product.html" data-scroll="#product">single product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-scroll="#cart">cart</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-scroll="#checkout">checkout</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-scroll="#category">category</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-scroll="#other">other</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-scroll="#contact">contact</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!--end navbar-->
+    <section class="shop">
+        <div class="shop-head">
+            <h2>shop</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!--start shop search-->
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="search-content">
+                    <h4>search products</h4>
+                    <input type="search" id="pro-search">
+                    <button class="btn btn-primary">search</button>
+                    </div>
+                    <div class="products-detalis">
+                        <h3>products</h3>
+                        <div class="products-card">
+                            <img src="img/product-thumb-1.jpg">
+                            <div class="card-link">
+                                <a href="#">sony smart mobile 2015</a>
+                                <span>700$<del>820$</del></span>
+                            </div>
+                        </div>
+                        <div class="products-card">
+                            <img src="img/product-thumb-1.jpg">
+                            <div class="card-link">
+                                <a href="#">sony smart mobile 2015</a>
+                                <span>700$<del>820$</del></span>
+                            </div>
+                        </div>
+                        <div class="products-card">
+                            <img src="img/product-thumb-1.jpg">
+                            <div class="card-link">
+                                <a href="#">sony smart mobile 2015</a>
+                                <span>700$<del>820$</del></span>
+                            </div>
+                        </div>
+                        <div class="products-card">
+                            <img src="img/product-thumb-1.jpg">
+                            <div class="card-link">
+                                <a href="#">sony smart mobile 2015</a>
+                                <span>700$<del>820$</del></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end shop search-->
+                <!--start shop links-->
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <ul class="import-links">
+                        <li><a href="#">home/</a></li>
+                        <li><a href="#">category name/</a></li>
+                        <li><a href="#">sony smart tv</a></li>
+                    </ul>
+                    <div class="gallery">
+                        <div class="main-img">
+                            <img src="img/product-2.jpg">
+                        </div>
+                        <div class="thumbnails">
+                            <img src="img/product-1.jpg">
+                            <img src="img/product-4.jpg">
+                            <img src="img/product-5.jpg">
+                        </div>
+                    </div>
+                </div>
+                <!--end shop links-->
+                <!--start sony info-->
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="sony-info">
+                        <h3>Sony Smart TV - 2015</h3>
+                        <span>$550<del>$650</del></span>
+                        <div class="sony-input">
+                            <input type="number" id="number">
+                            <button type="button" class="btn btn-info">add to cart</button>
+                            <p>category:<a href="#">summer</a>tags:<a href="#">awesome</a>,
+                                <a href="#">sales</a><a href="#">shoes</a>
+                            </p>
+                        </div>
+                        <div class="sony-prev">
+                            <div class="prev-button">
+                            <button type="button" class="btn btn-light">description</button>
+                            <button type="button" class="btn btn-primary">reviews</button>
+                            </div>
+                            <div class="description-product">
+                                <h3>product descrption</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique, diam in consequat iaculis, est purus iaculis mauris, imperdiet facilisis ante ligula at nulla. Quisque volutpat nulla risus, id maximus ex aliquet ut. Suspendisse potenti. Nulla varius lectus id turpis dignissim porta. Quisque magna arcu, blandit quis felis vehicula, feugiat gravida diam. Nullam nec turpis ligula. Aliquam quis blandit elit, ac sodales nisl. Aliquam eget dolor eget elit malesuada aliquet.
+                                    In varius lorem lorem, semper bibendum lectus lobortis ac.
+                                </p>
+                                <p>Mauris placerat vitae lorem gravida viverra. Mauris in fringilla ex. Nulla facilisi. Etiam scelerisque tincidunt quam facilisis lobortis. In malesuada pulvinar neque a consectetur. Nunc aliquam 
+                                    gravida purus, non malesuada sem accumsan in. Morbi vel sodales libero.
+                                </p>
+                            </div>
+                            <div class="prev-product">
+                                <h3>reviews</h3>
+                                <label for="prev-name">name</label>
+                                <input type="text" id="prev-name">
+                                <label for="prev-mail">email</label>
+                                <input type="email" id="prev-mail">
+                                <div class="rating">
+                                    <p>your rating</p>
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> 
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <label for="prev-message">your review</label>
+                                <textarea id="prev-message"></textarea>
+                                <input type="submit" id="prev-submit" value="submit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end sony info-->
+            </div>
+            <!--end row-->
+            <!--start row-->
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-3">
+                    <div class="recent-post">
+                        <h3>recent posts</h3>
+                        <uL class="posts">
+                        <li><a href="#">smart tv 2015</a></li>
+                        <li><a href="#">mobile tv 2015</a></li>
+                        <li><a href="#">smart tv 2015</a></li>
+                        <li><a href="#">smart tv 2015</a></li>
+                        </uL>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-9">
+                <div class="related-products">
+                    <h3>related products</h3>
+                <div class="container">
+                    <div class="related-slider">
+                    <!--start item -->
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="img/product-1.jpg" alt="product-1">
+                                    <div class="product-land">
+                                        <div class="card-add">
+                                            <a href="#" tabindex="0"><svg class="svg-inline--fa fa-basket-shopping" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="basket-shopping" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M171.7 191.1H404.3L322.7 35.07C316.6 23.31 321.2 8.821 332.9 2.706C344.7-3.409 359.2 1.167 365.3 12.93L458.4 191.1H544C561.7 191.1 576 206.3 576 223.1C576 241.7 561.7 255.1 544 255.1L492.1 463.5C484.1 492 459.4 512 430 512H145.1C116.6 512 91 492 83.88 463.5L32 255.1C14.33 255.1 0 241.7 0 223.1C0 206.3 14.33 191.1 32 191.1H117.6L210.7 12.93C216.8 1.167 231.3-3.409 243.1 2.706C254.8 8.821 259.4 23.31 253.3 35.07L171.7 191.1zM191.1 303.1C191.1 295.1 184.8 287.1 175.1 287.1C167.2 287.1 159.1 295.1 159.1 303.1V399.1C159.1 408.8 167.2 415.1 175.1 415.1C184.8 415.1 191.1 408.8 191.1 399.1V303.1zM271.1 303.1V399.1C271.1 408.8 279.2 415.1 287.1 415.1C296.8 415.1 304 408.8 304 399.1V303.1C304 295.1 296.8 287.1 287.1 287.1C279.2 287.1 271.1 295.1 271.1 303.1zM416 303.1C416 295.1 408.8 287.1 400 287.1C391.2 287.1 384 295.1 384 303.1V399.1C384 408.8 391.2 415.1 400 415.1C408.8 415.1 416 408.8 416 399.1V303.1z"></path></svg><!-- <i class="fa-solid fa-basket-shopping"></i> Font Awesome fontawesome.com -->add to cart</a>
+                                        </div>
+                                        <div class="card-details">
+                                            <a href="#" tabindex="0"><svg class="svg-inline--fa fa-link" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"></path></svg><!-- <i class="fa-solid fa-link"></i> Font Awesome fontawesome.com -->see detailes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <a href="#" tabindex="0">samasung galaxy s5-2015</a>
+                                    <span>700$ <del>100$</del></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end item-->
+                    <!--start item -->
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="img/product-2.jpg" alt="product-1">
+                                    <div class="product-land">
+                                        <div class="card-add">
+                                            <a href="#" tabindex="0"><svg class="svg-inline--fa fa-basket-shopping" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="basket-shopping" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M171.7 191.1H404.3L322.7 35.07C316.6 23.31 321.2 8.821 332.9 2.706C344.7-3.409 359.2 1.167 365.3 12.93L458.4 191.1H544C561.7 191.1 576 206.3 576 223.1C576 241.7 561.7 255.1 544 255.1L492.1 463.5C484.1 492 459.4 512 430 512H145.1C116.6 512 91 492 83.88 463.5L32 255.1C14.33 255.1 0 241.7 0 223.1C0 206.3 14.33 191.1 32 191.1H117.6L210.7 12.93C216.8 1.167 231.3-3.409 243.1 2.706C254.8 8.821 259.4 23.31 253.3 35.07L171.7 191.1zM191.1 303.1C191.1 295.1 184.8 287.1 175.1 287.1C167.2 287.1 159.1 295.1 159.1 303.1V399.1C159.1 408.8 167.2 415.1 175.1 415.1C184.8 415.1 191.1 408.8 191.1 399.1V303.1zM271.1 303.1V399.1C271.1 408.8 279.2 415.1 287.1 415.1C296.8 415.1 304 408.8 304 399.1V303.1C304 295.1 296.8 287.1 287.1 287.1C279.2 287.1 271.1 295.1 271.1 303.1zM416 303.1C416 295.1 408.8 287.1 400 287.1C391.2 287.1 384 295.1 384 303.1V399.1C384 408.8 391.2 415.1 400 415.1C408.8 415.1 416 408.8 416 399.1V303.1z"></path></svg><!-- <i class="fa-solid fa-basket-shopping"></i> Font Awesome fontawesome.com -->add to cart</a>
+                                        </div>
+                                        <div class="card-details">
+                                            <a href="#" tabindex="0"><svg class="svg-inline--fa fa-link" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"></path></svg><!-- <i class="fa-solid fa-link"></i> Font Awesome fontawesome.com -->see detailes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <a href="#" tabindex="0">samasung galaxy s5-2015</a>
+                                    <span>700$ <del>100$</del></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end item-->
+                    <!--start item -->
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="img/product-3.jpg" alt="product-1">
+                                    <div class="product-land">
+                                        <div class="card-add">
+                                            <a href="#" tabindex="0"><svg class="svg-inline--fa fa-basket-shopping" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="basket-shopping" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M171.7 191.1H404.3L322.7 35.07C316.6 23.31 321.2 8.821 332.9 2.706C344.7-3.409 359.2 1.167 365.3 12.93L458.4 191.1H544C561.7 191.1 576 206.3 576 223.1C576 241.7 561.7 255.1 544 255.1L492.1 463.5C484.1 492 459.4 512 430 512H145.1C116.6 512 91 492 83.88 463.5L32 255.1C14.33 255.1 0 241.7 0 223.1C0 206.3 14.33 191.1 32 191.1H117.6L210.7 12.93C216.8 1.167 231.3-3.409 243.1 2.706C254.8 8.821 259.4 23.31 253.3 35.07L171.7 191.1zM191.1 303.1C191.1 295.1 184.8 287.1 175.1 287.1C167.2 287.1 159.1 295.1 159.1 303.1V399.1C159.1 408.8 167.2 415.1 175.1 415.1C184.8 415.1 191.1 408.8 191.1 399.1V303.1zM271.1 303.1V399.1C271.1 408.8 279.2 415.1 287.1 415.1C296.8 415.1 304 408.8 304 399.1V303.1C304 295.1 296.8 287.1 287.1 287.1C279.2 287.1 271.1 295.1 271.1 303.1zM416 303.1C416 295.1 408.8 287.1 400 287.1C391.2 287.1 384 295.1 384 303.1V399.1C384 408.8 391.2 415.1 400 415.1C408.8 415.1 416 408.8 416 399.1V303.1z"></path></svg><!-- <i class="fa-solid fa-basket-shopping"></i> Font Awesome fontawesome.com -->add to cart</a>
+                                        </div>
+                                        <div class="card-details">
+                                            <a href="#" tabindex="0"><svg class="svg-inline--fa fa-link" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"></path></svg><!-- <i class="fa-solid fa-link"></i> Font Awesome fontawesome.com -->see detailes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <a href="#" tabindex="0">samasung galaxy s5-2015</a>
+                                    <span>700$ <del>100$</del></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end item-->
+                    <!--start item -->
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="img/product-4.jpg" alt="product-1">
+                                    <div class="product-land">
+                                        <div class="card-add">
+                                            <a href="#" tabindex="0"><svg class="svg-inline--fa fa-basket-shopping" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="basket-shopping" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M171.7 191.1H404.3L322.7 35.07C316.6 23.31 321.2 8.821 332.9 2.706C344.7-3.409 359.2 1.167 365.3 12.93L458.4 191.1H544C561.7 191.1 576 206.3 576 223.1C576 241.7 561.7 255.1 544 255.1L492.1 463.5C484.1 492 459.4 512 430 512H145.1C116.6 512 91 492 83.88 463.5L32 255.1C14.33 255.1 0 241.7 0 223.1C0 206.3 14.33 191.1 32 191.1H117.6L210.7 12.93C216.8 1.167 231.3-3.409 243.1 2.706C254.8 8.821 259.4 23.31 253.3 35.07L171.7 191.1zM191.1 303.1C191.1 295.1 184.8 287.1 175.1 287.1C167.2 287.1 159.1 295.1 159.1 303.1V399.1C159.1 408.8 167.2 415.1 175.1 415.1C184.8 415.1 191.1 408.8 191.1 399.1V303.1zM271.1 303.1V399.1C271.1 408.8 279.2 415.1 287.1 415.1C296.8 415.1 304 408.8 304 399.1V303.1C304 295.1 296.8 287.1 287.1 287.1C279.2 287.1 271.1 295.1 271.1 303.1zM416 303.1C416 295.1 408.8 287.1 400 287.1C391.2 287.1 384 295.1 384 303.1V399.1C384 408.8 391.2 415.1 400 415.1C408.8 415.1 416 408.8 416 399.1V303.1z"></path></svg><!-- <i class="fa-solid fa-basket-shopping"></i> Font Awesome fontawesome.com -->add to cart</a>
+                                        </div>
+                                        <div class="card-details">
+                                            <a href="#" tabindex="0"><svg class="svg-inline--fa fa-link" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"></path></svg><!-- <i class="fa-solid fa-link"></i> Font Awesome fontawesome.com -->see detailes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <a href="#" tabindex="0">samasung galaxy s5-2015</a>
+                                    <span>700$ <del>100$</del></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end item-->
+                    <!--start item -->
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <div class="item">
+                            <div class="product-card">
+                                <div class="product-img">
+                                    <img src="img/product-5.jpg" alt="product-1">
+                                    <div class="product-land">
+                                        <div class="card-add">
+                                            <a href="#" tabindex="0"><svg class="svg-inline--fa fa-basket-shopping" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="basket-shopping" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M171.7 191.1H404.3L322.7 35.07C316.6 23.31 321.2 8.821 332.9 2.706C344.7-3.409 359.2 1.167 365.3 12.93L458.4 191.1H544C561.7 191.1 576 206.3 576 223.1C576 241.7 561.7 255.1 544 255.1L492.1 463.5C484.1 492 459.4 512 430 512H145.1C116.6 512 91 492 83.88 463.5L32 255.1C14.33 255.1 0 241.7 0 223.1C0 206.3 14.33 191.1 32 191.1H117.6L210.7 12.93C216.8 1.167 231.3-3.409 243.1 2.706C254.8 8.821 259.4 23.31 253.3 35.07L171.7 191.1zM191.1 303.1C191.1 295.1 184.8 287.1 175.1 287.1C167.2 287.1 159.1 295.1 159.1 303.1V399.1C159.1 408.8 167.2 415.1 175.1 415.1C184.8 415.1 191.1 408.8 191.1 399.1V303.1zM271.1 303.1V399.1C271.1 408.8 279.2 415.1 287.1 415.1C296.8 415.1 304 408.8 304 399.1V303.1C304 295.1 296.8 287.1 287.1 287.1C279.2 287.1 271.1 295.1 271.1 303.1zM416 303.1C416 295.1 408.8 287.1 400 287.1C391.2 287.1 384 295.1 384 303.1V399.1C384 408.8 391.2 415.1 400 415.1C408.8 415.1 416 408.8 416 399.1V303.1z"></path></svg><!-- <i class="fa-solid fa-basket-shopping"></i> Font Awesome fontawesome.com -->add to cart</a>
+                                        </div>
+                                        <div class="card-details">
+                                            <a href="#" tabindex="0"><svg class="svg-inline--fa fa-link" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="link" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"></path></svg><!-- <i class="fa-solid fa-link"></i> Font Awesome fontawesome.com -->see detailes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <a href="#" tabindex="0">samasung galaxy s5-2015</a>
+                                    <span>700$ <del>100$</del></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end item-->
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+            <!--end row-->
+        </div>
+    </section>
+    <!--end section-->
+    <!--start footer-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="foot-socials">
+                        <h3><b>u</b>stora</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores 
+                            blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste
+                            , pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at
+                        </p>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa-brands fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube-square"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="navigation">
+                    <h3>user navigation</h3>
+                    <ul class="nav-links">
+                        <li><a href="#">my account</a></li>
+                        <li><a href="#">order history</a></li>
+                        <li><a href="#">wishlist</a></li>
+                        <li><a href="#">vendor contact</a></li>
+                        <li><a href="#">front page</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="category">
+                    <h3>category</h3>
+                    <ul class="category-links">
+                        <li><a href="#">mobile phone</a></li>
+                        <li><a href="#">home accessories</a></li>
+                        <li><a href="#">led tv</a></li>
+                        <li><a href="#">computer</a></li>
+                        <li><a href="#">gadets</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="newsellter">
+                        <h3>new sellter</h3>
+                        <p>Sign up to our newsletter and get exclusive deals
+                            you wont find anywhere else straight to your inbox!
+                        </p>
+                        <input type="email" id="sellter-mail" value="email">
+                        <button type="button" class="btn btn-success">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copy-right">
+        <div class="container">
+        <div class="copy-content">
+        <p>© 2015 uCommerce. All Rights Reserved.<a href="#">alaaabonema@gmail.com</a></p>
+        <div class="copy-carts">
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-cc-discover"></i>
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+        </div>
+        </div>
+        </div>
+    </div>
+    <!--end footer-->
+    <!--start js files-->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--end js files-->
+</body>
+</html>

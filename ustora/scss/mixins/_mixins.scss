@@ -1,0 +1,128 @@
+@mixin list-reset {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+@mixin link-style {
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #777;
+}
+@mixin centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin keyf($anim-name) {
+    @-webkit-keyframes#{$anim-name}
+    {
+        @content;
+    }
+    @keyframes#{$anim-name} {
+        @content;
+    }
+}
+/*start product card*/
+@mixin product-card {
+    .product-card
+    {
+        box-shadow: 3px 3px 3px #ddd;
+        padding: 15px;
+        transition: .8s;
+        width: 90%;
+        margin-right: 25px;
+        &:hover .product-land
+        {
+            display: block;
+        }
+        .product-img{
+            position: relative;
+        }
+        .product-img img{
+            width: 90%;
+            margin-left: 5%;
+        }
+        .product-land
+        {
+            position: absolute;
+            left: 5%;
+            top: 0;
+            width: 90%;
+            height: 100%;
+            background-color: rgba(0,0, 0, 0.7);
+            text-align: center;
+            transition: .8s;
+            display: none;
+            .card-add
+            {
+                padding-top: 40%;
+                a{
+                    background-color: #0dcaf0;
+                    padding: 10px 22px;
+                    color: #fff;
+                    text-transform: capitalize;
+                    letter-spacing: 1.2px;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    transition: .5s;
+                    &:hover
+                    {
+                        background-color: #212529;
+                        color: #0dcaf0;
+                    }
+                }
+                svg
+                {
+                    padding-right: 10px;
+                }
+            }
+            .card-details
+            {
+                margin-top: 30px;
+                a{
+                    background-color: #0dcaf0;
+                    padding: 10px 20px;
+                    color: #fff;
+                    text-transform: capitalize;
+                    letter-spacing: 1.2px;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    transition: .5s;
+                    &:hover
+                    {
+                        background-color: #212529;
+                        color: #0dcaf0;
+                    }
+                }
+                svg
+                {
+                    padding-right: 10px;
+                }
+            }
+        }
+        .product-info
+        {
+            text-align: center;
+            padding-top: 10px;
+            a{
+                color: #333;
+                padding-right: 35px;
+                letter-spacing: 1px;
+                display: block;
+            }
+            span{
+                color: #0d6efd;
+                font-weight: bold;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+            }
+            del{
+                color: black;
+                padding-left: 25px;
+            }
+        }
+    }
+}
+/*end products*/
+/*end product card*/
