@@ -1,0 +1,768 @@
+/*start global rules*/
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-primary-rgb: 13,110,253;
+  --bs-secondary-rgb: 108,117,125;
+  --bs-success-rgb: 25,135,84;
+  --bs-info-rgb: 13,202,240;
+  --bs-warning-rgb: 255,193,7;
+  --bs-danger-rgb: 220,53,69;
+  --bs-light-rgb: 248,249,250;
+  --bs-dark-rgb: 33,37,41;
+  --bs-white-rgb: 255,255,255;
+  --bs-black-rgb: 0,0,0;
+  --bs-body-color-rgb: 33,37,41;
+  --bs-body-bg-rgb: 255,255,255;
+  --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #212529;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'tawjal';
+  src: url(../../Tajawal/Tajawal-ExtraLight.ttf);
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/*end global rules*/
+/*start header*/
+header {
+  position: relative;
+  z-index: 11;
+  width: 100%;
+  height: 125vh;
+  background-size: cover;
+  background-image: url(../../images/intro-bg.jpg);
+}
+
+header .overlay {
+  position: absolute;
+  z-index: 111;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 125vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+header .my-nav {
+  position: fixed;
+  z-index: 999999999;
+  top: 25px;
+  left: 15%;
+}
+
+header .my-nav .nav-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #000000;
+  width: 210px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header .my-nav .nav-brand svg {
+  color: #dc3545;
+  font-size: 30px;
+  margin: 10px 10px 0px;
+  cursor: pointer;
+}
+
+header .my-nav .nav-brand h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 45px;
+  padding-right: 10px;
+}
+
+header .my-nav .nav-links {
+  position: fixed;
+  top: 78px;
+  width: 210px;
+  background-color: #000000;
+  list-style: none;
+  display: none;
+  border-radius: 5px;
+}
+
+header .my-nav .nav-links li {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+header .my-nav .nav-links li.active {
+  color: #dc3545;
+  padding-left: 15px;
+}
+
+header .my-nav .nav-links a {
+  padding-bottom: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 35px;
+  letter-spacing: 1.4px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+header .my-nav .nav-links a.active {
+  color: #dc3545;
+  padding-left: 15px;
+}
+
+header .my-nav .nav-links a:hover {
+  color: #dc3545;
+  padding-left: 15px;
+}
+
+header .land-text {
+  position: relative;
+  z-index: 888;
+  text-align: center;
+  padding-top: 20%;
+}
+
+header .land-text h3 {
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  color: #dc3545;
+  font-size: 38px;
+  font-weight: bold;
+  padding-bottom: 25px;
+}
+
+header .land-text h2 {
+  text-transform: capitalize;
+  letter-spacing: 2.5px;
+  font-weight: bold;
+  font-size: 48px;
+  padding-bottom: 25px;
+}
+
+header .land-text p {
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding-bottom: 35px;
+}
+
+header .land-text p::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 25px;
+  background-color: #ddd;
+  margin-left: 25px;
+  margin-top: 2px;
+}
+
+header .land-text p::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 25px;
+  background-color: #ddd;
+  margin-top: 2px;
+  -webkit-transform: translateX(-25px);
+          transform: translateX(-25px);
+}
+
+header .land-text a {
+  border: 3px solid #ddd;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1.4px;
+  text-transform: capitalize;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+header .land-text a:hover {
+  border-color: #dc3545;
+}
+
+header .social-icons {
+  position: relative;
+  z-index: 2222;
+  text-align: center;
+  padding-top: 75px;
+}
+
+header .social-icons svg {
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: #fff;
+  margin-right: 25px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+header .social-icons svg:hover {
+  color: #dc3545;
+}
+
+/*end header*/
+/*start about*/
+.about {
+  width: 100%;
+  overflow-x: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about .about-head {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.about .about-head h3 {
+  color: #dc3545;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 45px;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: 'tawjal';
+}
+
+.about .about-head h2 {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'tawjal';
+}
+
+.about .my-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .my-info img {
+  width: 30%;
+  margin-left: 15%;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+}
+
+.about .my-info p {
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10%;
+  padding-left: 50px;
+  line-height: 45px;
+}
+
+.about .profile-info {
+  padding-top: 50px;
+}
+
+.about .profile-info h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: 'tawjal';
+  line-height: 40px;
+  color: #d63384;
+}
+
+.about .profile-info p {
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 35px;
+}
+
+.about .profile-info .profile-name, .about .profile-info .profile-date, .about .profile-info .profile-email, .about .profile-info .profile-web, .about .profile-info .profile-job {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.about .profile-info .profile-name span, .about .profile-info .profile-date span, .about .profile-info .profile-email span, .about .profile-info .profile-web span, .about .profile-info .profile-job span {
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.about .profile-info .profile-name p, .about .profile-info .profile-date p, .about .profile-info .profile-email p, .about .profile-info .profile-web p, .about .profile-info .profile-job p {
+  color: #777;
+  letter-spacing: 1px;
+}
+
+.about .profile-info .profile-web a {
+  color: #777;
+  text-decoration: none;
+}
+
+.about .profile-skills {
+  padding-top: 50px;
+}
+
+.about .profile-skills h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: 'tawjal';
+  line-height: 40px;
+  color: #d63384;
+}
+
+.about .profile-skills p {
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.about .skill-progress {
+  width: 100%;
+  position: relative;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.about .skill-progress span {
+  position: absolute;
+  height: 100%;
+  background-color: #dc3545;
+  width: 0;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  padding-top: 5px;
+}
+
+.about label {
+  text-transform: capitalize;
+  line-height: 35px;
+  letter-spacing: 1.8px;
+  font-weight: bold;
+}
+
+.about .skill-links {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.about .skill-links a {
+  border: 1px solid #ddd;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  text-transform: capitalize;
+  padding: 12px 28px;
+  color: #777;
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.about .skill-links a:first-child:hover {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.about .skill-links a:last-child {
+  background-color: #777;
+  color: #fff;
+  padding: 12px 22px;
+}
+
+.about .skill-links a:last-child:hover {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+/*end about*/
+/*start resume section*/
+.resume {
+  background-color: #ddd;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.resume h2 {
+  text-transform: capitalize;
+}
+
+.resume .resume-head {
+  text-align: center;
+}
+
+.resume .resume-head h4 {
+  letter-spacing: 1px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #dc3545;
+}
+
+.resume .resume-head h3 {
+  text-transform: capitalize;
+  letter-spacing: 1.4px;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 45px;
+}
+
+.resume .resume-head p {
+  color: #777;
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.resume h2 {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  color: #dc3545;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.resume .Work-experience .work-name {
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+.resume .Work-experience .work-name h5 {
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  line-height: 45px;
+}
+
+.resume .Work-experience .work-name span {
+  color: #777;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.resume .Work-experience .work-line {
+  position: relative;
+  text-align: center;
+}
+
+.resume .Work-experience .work-line a {
+  color: #000000;
+  font-size: 28px;
+  position: relative;
+}
+
+.resume .Work-experience .work-line a::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 190px;
+  background-color: #000000;
+  top: 40px;
+  left: 15px;
+}
+
+.resume .Work-experience .work-info {
+  padding-bottom: 150px;
+}
+
+.resume .Work-experience .work-info h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  line-height: 35px;
+}
+
+.resume .Work-experience .work-info p {
+  color: #777;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+/*end resume section*/
+/*start portofolio section*/
+.portofolio {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.portofolio .port-head {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.portofolio .port-head h5 {
+  letter-spacing: 1px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #dc3545;
+}
+
+.portofolio .port-head h3 {
+  text-transform: capitalize;
+  letter-spacing: 1.4px;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 45px;
+}
+
+.portofolio .port-head p {
+  color: #777;
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.portofolio .temp-img {
+  position: relative;
+}
+
+.portofolio .temp-img img {
+  width: 100%;
+  display: block;
+  margin: auto;
+  margin-bottom: 45px;
+}
+
+.portofolio .temp-img .img-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding-top: 49%;
+  display: none;
+}
+
+.portofolio .temp-img .img-overlay a {
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.portofolio .temp-img:hover .img-overlay {
+  display: block;
+}
+
+/*end portofolio section*/
+/*start services section*/
+.services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #151515;
+}
+
+.services .serv-head {
+  text-align: center;
+}
+
+.services .serv-head h5 {
+  letter-spacing: 1px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #dc3545;
+}
+
+.services .serv-head h3 {
+  text-transform: capitalize;
+  letter-spacing: 1.4px;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 45px;
+}
+
+.services .serv-head p {
+  color: #777;
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.services .serv-slider {
+  padding-top: 70px;
+}
+
+.services .serv-slider .slick-slider .item {
+  width: 90%;
+  height: 100%;
+  background-color: #dc3545;
+  text-align: center;
+  padding: 25px;
+  border-radius: 10px;
+  margin: 25px;
+}
+
+.services .serv-slider .slick-slider .item .item-icone {
+  padding-bottom: 25px;
+}
+
+.services .serv-slider .slick-slider .item .item-icone svg {
+  font-size: 40px;
+}
+
+.services .serv-slider .slick-slider .item h4 {
+  text-transform: capitalize;
+  letter-spacing: 1.2px;
+}
+
+.services .serv-slider .slick-slider .item p {
+  color: #ddd;
+  letter-spacing: 1px;
+  font-size: 15px;
+  line-height: 30px;
+  padding-top: 30px;
+}
+
+.services .serv-slider .slick-slider .slick-dots li button::before {
+  color: #dc3545;
+  background-color: #dc3545;
+  border-radius: 50%;
+}
+
+/*end services section*/
+/*start contact*/
+.contact {
+  background-color: #ddd;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 60px;
+}
+
+.contact .contact-head h5 {
+  letter-spacing: 1px;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #dc3545;
+}
+
+.contact .contact-head h3 {
+  text-transform: capitalize;
+  letter-spacing: 1.4px;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 45px;
+}
+
+.contact .contact-head p {
+  color: #777;
+  letter-spacing: 1px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.contact form {
+  margin-top: 75px;
+}
+
+.contact form input, .contact form #message {
+  width: 100%;
+  background-color: #ddd;
+  border: transparent;
+  outline: transparent;
+  border-bottom: 1px solid #ccc;
+  padding-left: 5px;
+  height: 40px;
+  margin-bottom: 30px;
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+}
+
+.contact form input:focus, .contact form input:hover, .contact form #message:focus, .contact form #message:hover {
+  border-color: #dc3545;
+}
+
+.contact form #message {
+  height: 120px;
+}
+
+.contact form #log {
+  background-color: #dc3545;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-weight: bold;
+  border: 1px solid #dc3545;
+  border-radius: 5px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.contact form #log:hover {
+  background-color: #d63384;
+  border-color: #d63384;
+}
+
+/*end contact*/
+/*# sourceMappingURL=main.css.map */

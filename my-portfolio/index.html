@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my-portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/scss/mixins.css">
+    <link rel="stylesheet" href="css/scss/main.css">
+    <link rel="stylesheet" href="css/scss/media.css">
+    <!--start js files-->
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--end js files-->
+</head>
+<body>
+    <!--start header-->
+    <header class="block home" id="home-page">
+        <div class="overlay"></div>
+        <div class="container">
+        <div class="my-nav text-light">
+            <div class="nav-brand">
+                <i class="fa-solid fa-bars"></i>
+                <h3>kards</h3>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" data-scroll="home-page" class="active">home</a</li>
+                <li><a href="#" data-scroll="about-section">about</a></li>
+                <li><a href="#" data-scroll="resume-section">resume</a></li>
+                <li><a href="#" data-scroll="portfolio-section">portfolio</a></li>
+                <li><a href="#" data-scroll="services-section">services</a></li>
+                <li><a href="#" data-scroll="contact-section">contact</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12">
+            <div class="land-text text-light" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <h3>hello,world.</h3>
+                <h2>i'm alaa ahmed elsayed</h2>
+                <p>front end developer</p>
+                <a href="#" data-scroll="about-section">more about me <i class="fa-solid fa-angle-down"></i></a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-behance"></i></a>
+            </div>
+        </div>
+        </div>
+    </header>
+    <!--end header-->
+    <!--start about section-->
+    <section class="about block" id="about-section" data-aos="fade-left"data-aos-offset="300"data-aos-easing="ease-in-sine">
+        <div class="container">
+            <div class="about-head">
+                <h3>about</h3>
+                <h2>let introduce myself.</h2>
+            </div>
+            <div class="col-lg-12">
+            <div class="my-info">
+                <img src="images/IMG_20211115_182457.jpg">
+                <p>alaa ahmed frontend developer graduated from faculty of science from 2018</p>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    <div class="profile-info" data-aos="fade-right"  data-aos-easing="linear" data-aos-duration="1500">
+                        <h3>profile</h3>
+                        <p>this my information to make it easy to find me</p>
+                        <div class="profile-name">
+                            <span>full name:</span>
+                            <p>alaa ahmed elsayed</p>
+                        </div>
+                        <div class="profile-date">
+                            <span>birth date:</span>
+                            <p>6,may,1996</p>
+                        </div>
+                        <div class="profile-job">
+                            <span>job:</span>
+                            <p>frontend developer</p>
+                        </div>
+                        <div class="profile-email">
+                            <span>email:</span>
+                            <p>alaaabonema@gmail.com</p>
+                        </div>
+                        <div class="profile-web">
+                            <span>my website:</span>
+                            <p><a href="https://github.com/alaaabonema/Allaa-Ahmed.github.io">alaaabonema.github</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6" data-aos="fade-left"  data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                    <div class="profile-skills" data-aos="fade-left"  data-aos-easing="linear" data-aos-duration="1500">
+                        <h3>skills</h3>
+                        <p>that's my skills i work hard to improve it to reach my dream and help beginners</p>
+                    </div>
+                    <label for="skill-progress">html5</label>
+                    <div class="skill-progress">
+                        <span data-progress="90%"></span>
+                    </div>
+                    <label for="skill-progress">css</label>
+                    <div class="skill-progress">
+                        <span data-progress="85%"></span>
+                    </div>
+                    <label for="skill-progress">javascript</label>
+                    <div class="skill-progress">
+                        <span data-progress="60%"></span>
+                    </div>
+                    <label for="skill-progress">jquery</label>
+                    <div class="skill-progress">
+                        <span data-progress="75%"></span>
+                    </div>
+                    <label for="skill-progress">bootstrap</label>
+                    <div class="skill-progress">
+                        <span data-progress="85%"></span>
+                    </div>
+                    <label for="skill-progress">sass</label>
+                    <div class="skill-progress">
+                        <span data-progress="70%"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-links">
+                <a href="#" data-scroll="contact">hire me</a>
+                <a href="#">download cv</a>
+            </div>
+        </div>
+    </section>
+    <!--end about section-->
+    <!--start resume section-->
+    <section class="resume block" id="resume-section" data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine">
+        <div class="container">
+            <div class="resume-head" >
+                <h4>resume</h4>
+                <h3>more of my creadentials</h3>
+                <p>my undergraduate degree and My experience is in the field of Front End</p>
+            </div>
+            <h2>Work Experience</h2>
+            <!--start work experince-->
+            <div class="Work-experience">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="work-name">
+                        <h5>ui developer</h5>
+                        <span>July 2018 - Present</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="work-line">
+                <a href="#"><i class="fa-solid fa-graduation-cap"></i></a>
+                </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="work-info">
+                <h3>egalez group</h3>
+                <p>i worked for egalezgroup since march 2019</p>
+                </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="work-name">
+                        <h5>frontend developer</h5>
+                        <span>July 2020 - march 2022</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="work-line">
+                        <a href="#"><i class="fa-solid fa-graduation-cap"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                <div class="work-info">
+                <h3>egalez group</h3>
+                <p>i worked for egalezgroup since July 2020 </p>
+                </div>
+                </div>
+                </div>
+            </div>
+            <!--end work experince-->
+            <!--start work experince-->
+            <h2>education</h2>
+            <div class="Work-experience">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div class="work-name">
+                            <h5>faculty of science</h5>
+                            <span>July 2014 - augest 2018</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="work-line">
+                    <a href="#"><i class="fa-solid fa-graduation-cap"></i></a>
+                    </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="work-info">
+                    <h3>mathmeticas&computer science</h3>
+                    <p>from 2014 to 2018</p>
+                    </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div class="work-name">
+                            <h5>mailterey service</h5>
+                            <span>april 2019 - oct 2021</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <div class="work-line">
+                            <a href="#"><i class="fa-solid fa-graduation-cap"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="work-info">
+                    <h3>military</h3>
+                    <p>i finished military service at oct 2021 </p>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+                <!--end work experince-->
+        </div>
+    </section>
+    <!--end resume section-->
+    <!--start portoflio section-->
+    <section class="portofolio block" id="portfolio-section" data-aos="fade-down" data-aos-duration="3000">
+        <div class="container">
+            <div class="port-head">
+                <h5>portfolio</h5>
+                <h3>check out some of my workes.</h3>
+                <p>some of ecommerce work i finished it</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="temp-img">
+                        <img src="images/portfolio/lighthouse.jpg">
+                        <div class="img-overlay">
+                            <a href="https://alaaabonema.github.io/Allaa-Ahmed.github.io/Eshopper/index.html" target="_blank">go to my work</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="temp-img">
+                        <img src="images/portfolio/liberty.jpg">
+                        <div class="img-overlay">
+                            <a href="https://alaaabonema.github.io/Allaa-Ahmed.github.io/AranozV1/index.html" target="_blank">go to my work</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="temp-img">
+                        <img src="images/portfolio/clouds.jpg">
+                        <div class="img-overlay">
+                            <a href="https://alaaabonema.github.io/Allaa-Ahmed.github.io/seo-dreams/index.html" target="_blank">go to my work</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="temp-img">
+                        <img src="images/portfolio/beetle.jpg">
+                        <div class="img-overlay">
+                            <a href="https://alaaabonema.github.io/Allaa-Ahmed.github.io/ustora/index.html" target="_blank">go to my work</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="temp-img">
+                        <img src="images/portfolio/salad.jpg">
+                        <div class="img-overlay">
+                            <a href="https://alaaabonema.github.io/Allaa-Ahmed.github.io/GreenyV1/index.html" target="_blank">go to my work</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="temp-img">
+                        <img src="images/portfolio/shutterbug.jpg">
+                        <div class="img-overlay">
+                            <a href="https://alaaabonema.github.io/Allaa-Ahmed.github.io/time-watches/index.html" target="_blank">go to my work</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end portoflio section-->
+    <!--start services section-->
+    <section class="services block text-light" id="services-section" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="4500">
+        <div class="container">
+            <div class="serv-head"  data-aos="fade-left"data-aos-anchor="#example-anchor"data-aos-offset="500"data-aos-duration="1000">
+                <h5>services</h5>
+                <h3>what can i do for you?</h3>
+                <p>Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua
+                    incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.
+                </p>
+            </div>
+            <div class="serv-slider">
+                <div class="container">
+                    <div class="slick-slider">
+                        <!--start item one-->
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                        <div class="item">
+                            <div class="item-content">
+                                <div class="item-icone"><i class="fa-solid fa-earth-europe"></i></div>
+                                <h4>web design</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quidem est expedita eveniet dolores veritatis 
+                                    voluptatibus, libero necessitatibus omnis consectetur?
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                        <!--end item one-->
+                        <!--start item one-->
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="item">
+                                <div class="item-content">
+                                    <div class="item-icone"><i class="fa-solid fa-laptop-code"></i></div>
+                                    <h4>web development</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quidem est expedita eveniet dolores veritatis 
+                                        voluptatibus, libero necessitatibus omnis consectetur?
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                            <!--end item one-->
+                            <!--start item one-->
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="item">
+                                <div class="item-content">
+                                    <div class="item-icone"><i class="fa-solid fa-brush"></i></div>
+                                    <h4>branding</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quidem est expedita eveniet dolores veritatis 
+                                        voluptatibus, libero necessitatibus omnis consectetur?
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                            <!--end item one-->
+                            <!--start item one-->
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="item">
+                                <div class="item-content">
+                                    <div class="item-icone"><i class="fa-solid fa-pen-fancy"></i></div>
+                                    <h4>ui/ux</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quidem est expedita eveniet dolores veritatis 
+                                        voluptatibus, libero necessitatibus omnis consectetur?
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                            <!--end item one-->
+                            <!--start item one-->
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="item">
+                                <div class="item-content">
+                                    <div class="item-icone"><i class="fa-solid fa-images"></i></div>
+                                    <h4>graghic design</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quidem est expedita eveniet dolores veritatis 
+                                        voluptatibus, libero necessitatibus omnis consectetur?
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                            <!--end item one-->
+                            <!--start item one-->
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="item">
+                                <div class="item-content">
+                                    <div class="item-icone"><i class="fa-solid fa-comments"></i></div>
+                                    <h4>consultancy</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quidem est expedita eveniet dolores veritatis 
+                                        voluptatibus, libero necessitatibus omnis consectetur?
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                            <!--end item one-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end services section-->
+    <!--start contact section-->
+    <section class="contact block" id="contact-section">
+        <div class="container">
+            <div class="contact-form">
+                <div class="contact-head">
+                    <h5>contact me</h5>
+                    <h3>i'd love to hear from you</h3>
+                    <p>Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua
+                        incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.
+                    </p>
+                    <form method="get">
+                        <input type="text" placeholder="name" id="name">
+                        <input type="email" placeholder="email" id="email">
+                        <input type="text" placeholder="subject" id="subject">
+                        <textarea placeholder="message" id="message"></textarea>
+                        <input type="submit" value="submit" id="log">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end contact section-->
+    <!--start aos -->
+    <script>
+        AOS.init();
+    </script>
+    <!--end aos-->
+    <!--start js files-->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <!--end js files-->
+</body>
+</html>

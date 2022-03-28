@@ -1,0 +1,12 @@
+@mixin row-list {
+    list-style: none;
+    display: flex;
+}
+@mixin link-style {
+    text-decoration: none;
+}
+@mixin fixed-postion {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
