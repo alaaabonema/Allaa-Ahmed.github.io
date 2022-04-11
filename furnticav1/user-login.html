@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>furnitica</title>
+    <!--css files-->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/all.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/jquery-ui.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/slick-theme.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/slick.css">
+    <link rel="stylesheet" href="libs/nivo-slider/css/animate.css">
+    <link rel="stylesheet" href="libs/nivo-slider/css/nivo-slider.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--css files-->
+    <!--my scss files-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!--end my scss files-->
+    <!--start js files-->
+    <script src="libs/bootstrap/js/jquery-ui.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="libs/bootstrap/js/html5shiv.min.js"></script>
+    <script src="libs/bootstrap/js/respond.min.js"></script>
+    <!--end js files-->
+</head>
+
+<body>
+    <!--start navbar-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/home/logo.png"></a>
+            <a href="#" class="menu-button"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">home 1</a></li>
+                            <li><a class="dropdown-item" href="#">home2</a></li>
+                            <li><a class="dropdown-item" href="#">home3</a></li>
+                            <li><a class="dropdown-item" href="#">home4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">blog</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">blog list(sidebar-left)</a></li>
+                            <li><a class="dropdown-item" href="#">blog list(sidebar-left)2</a></li>
+                            <li><a class="dropdown-item" href="#">blog list(sidebar-right)</a></li>
+                            <li><a class="dropdown-item" href="#">blog list(no-sidebar)</a></li>
+                            <li><a class="dropdown-item" href="#">blog grid(no-sidebar)</a></li>
+                            <li><a class="dropdown-item" href="#">blog detailes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                page
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">product grid(sidebar-left)</a></li>
+                            <li><a class="dropdown-item" href="#">product grid(sidebar-right)</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">product list(sidebar-left)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">contact us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <ul class="navbar-nav account me-auto ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link account dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-regular fa-user"></i>account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear"></i>my account</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-to-bracket"></i>signin</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear"></i>register account</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-check"></i>checkout</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-heart"></i>my wishlist</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="eur">
+                                <span>eur</span>
+                                <span>gbp</span>
+                            </li>
+                            <li class="lg-country">
+                                <img src="img/home/lg1.jpg">
+                                <img src="img/home/lg2.jpg">
+                                <img src="img/home/lg3.jpg">
+                                <img src="img/home/lg4.jpg">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--end navbar-->
+    <!--start form login-->
+    <div class="container">
+    <div class="col-lg-12">
+        <div class="form">
+            <h3>login</h3>
+            <form method="get">
+            <input type="email" placeholder="enter your email" id="log-mail" required>
+            <input type="password" placeholder="your password" id="log-pass" required>
+            <a href="user-reset-password.html">forget password?</a>
+            <input type="submit" value="login" id="log-sub">
+            </form>
+        </div>
+    </div>
+    </div>
+    <!--end form login-->
+    <!--start footer-->
+    <footer class="footer">
+        <div class="container">
+         <div class="row">
+            <!--start content of footer-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="foot-left">
+                    <img src="img/home/logo.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    </p>
+                    <ul class="left-links">
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">reasons to shop</a></li>
+                        <li><a href="#">What our customers say</a></li>
+                        <li><a href="#">Meet the teaml</a></li>
+                        <li><a href="#">Contact our buyers</a></li>
+                    </ul>
+                    <img src="img/home/payment-footer.png">
+                </div>
+            </div>
+            <!--start content of footer-->
+            <!--start content of footer-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="foot-mid">
+                  <h3>contact us</h3>
+                  <div class="foot-address">
+                      <span><i class="fa-solid fa-house-chimney-window"></i>address:</span>
+                      <p>123 Suspendis matti, Visaosang Building VST District NY Accums, North American</p>
+                  </div>  
+                  <div class="foot-email">
+                    <span><i class="fa-solid fa-envelope"></i>email:</span>
+                    <p>alaaabonema@gmail.com</p>
+                </div>  
+                <div class="foot-phone">
+                    <span><i class="fa-solid fa-phone"></i>phone number:</span>
+                    <p>+02 010 25 299 435</p>
+                </div> 
+                <div class="foot-open">
+                    <span><i class="fa-regular fa-clock"></i>openning hours:</span>
+                    <p>monday-sunday 9.00am-7.00pm<br>(expect holidays)</p>
+                </div>   
+                </div>
+            </div>
+            <!--start content of footer-->
+            <!--start content of footer-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="foot-right">
+                  <h3>new sellter</h3>
+                  <p>Sign up to our newsletter to get the latest articles, lookbooks voucher
+                       codes direct to your inbox
+                </p>
+                <div class="foot-input">
+                    <input type="email" placeholder="enter your email">
+                    <button type="button" class="btn btn-secondary">subscribe</button>
+                </div>
+                <h5>follow us on</h5>
+                <div class="foot-socilas">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-gofore"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <h6>payment accept</h6>
+                <img src="img/home/payment.png">
+                </div>
+            </div>
+            <!--start content of footer-->
+         </div>
+        </div>
+    </footer>
+    <!-- end  footer-->
+    <!--start scroll to top-->
+    <div class="scroll-top">
+        <a href="#"><i class="fa-solid fa-angles-up"></i></a>
+    </div>
+    <!--start scroll to top-->
+    <!--start js files-->
+    <script src="libs/bootstrap/js/jquery-3.6.0.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/bootstrap/js/all.min.js"></script>
+    <script src="libs/bootstrap/js/slick.min.js"></script>
+    <script src="libs/bootstrap/js/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+    <!--end js files-->
+    <!--aos animation-->
+    <script>
+        AOS.init();
+    </script>
+    <!--aos animation-->
+</body>
+
+</html>

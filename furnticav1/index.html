@@ -1,0 +1,2201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>furnitica</title>
+    <!--css files-->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/all.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/jquery-ui.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/slick-theme.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/slick.css">
+    <link rel="stylesheet" href="libs/nivo-slider/css/animate.css">
+    <link rel="stylesheet" href="libs/nivo-slider/css/nivo-slider.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--css files-->
+    <!--my scss files-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!--end my scss files-->
+    <!--start js files-->
+    <script src="libs/bootstrap/js/jquery-ui.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="libs/bootstrap/js/html5shiv.min.js"></script>
+    <script src="libs/bootstrap/js/respond.min.js"></script>
+    <!--end js files-->
+</head>
+
+<body>
+    <!--start navbar-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/home/logo.png"></a>
+            <a href="#" class="menu-button"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">home 1</a></li>
+                            <li><a class="dropdown-item" href="#">home2</a></li>
+                            <li><a class="dropdown-item" href="#">home3</a></li>
+                            <li><a class="dropdown-item" href="#">home4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">blog</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">blog list(sidebar-left)</a></li>
+                            <li><a class="dropdown-item" href="#">blog list(sidebar-left)2</a></li>
+                            <li><a class="dropdown-item" href="#">blog list(sidebar-right)</a></li>
+                            <li><a class="dropdown-item" href="#">blog list(no-sidebar)</a></li>
+                            <li><a class="dropdown-item" href="#">blog grid(no-sidebar)</a></li>
+                            <li><a class="dropdown-item" href="#">blog detailes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                page
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">product grid(sidebar-left)</a></li>
+                            <li><a class="dropdown-item" href="#">product grid(sidebar-right)</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">product list(sidebar-left)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">contact us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <ul class="navbar-nav account me-auto ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link account dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-regular fa-user"></i>account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear"></i>my account</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-to-bracket"></i>signin</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gear"></i>register account</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-check"></i>checkout</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-heart"></i>my wishlist</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="eur">
+                                <span>eur</span>
+                                <span>gbp</span>
+                            </li>
+                            <li class="lg-country">
+                                <img src="img/home/lg1.jpg">
+                                <img src="img/home/lg2.jpg">
+                                <img src="img/home/lg3.jpg">
+                                <img src="img/home/lg4.jpg">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--end navbar-->
+    <!--start home slider-->
+    <div class="home">
+        <div class="container-fluid">
+            <div class="home-slider">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="img/home/home1-banner1.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <img src="img/home/home1-banner2.jpg">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-img">
+                        <img src="img/home/home1-banner3.jpg">
+                    </div>
+                </div>
+            </div>
+            <!--start home list-->
+            <div class="home-menu">
+                <ul class="home-list">
+                    <li><img src="img/home/table-lamp.png">side table</li>
+                    <li><img src="img/home/fireplace.png">fire place</li>
+                    <li><img src="img/home/table-lamp.png">table lamp</li>
+                    <li><img src="img/home/ottoman.png">ottaman</li>
+                    <li><img src="img/home/armchair.png">arm chair</li>
+                    <li><img src="img/home/cushion.png">cushion</li>
+                    <li><img src="img/home/coffee_table.png">coffe table</li>
+                    <li><img src="img/home/shelf.png">shelf</li>
+                    <li><img src="img/home/sofa.png">sofa</li>
+                    <li><img src="img/home/dressing.png">dressing table</li>
+                    <li><img src="img/home/windown.png">window curtain</li>
+                    <li><img src="img/home/chandelier.png">chandelier</li>
+                    <li class="more"><i class="fa fa-plus"></i>show more
+                        <ul class="list-toggle">
+                            <li><img src="img/home/ceiling_fan.png">ceiling fan</li>
+                            <li><img src="img/home/wardrobe.png">wardrobe</li>
+                            <li><img src="img/home/floor_lamp.png">floor_lamp</li>
+                            <li><img src="img/home/vase-flower.png">vase-flower</li>
+                            <li><img src="img/home/bed.png">bed</li>
+                            <li><img src="img/home/bed.png">bed girl</li>
+                            <li><img src="img/home/bed.png">bed boy</li>
+                            <li class="less"><i class="fa fa-minus"></i>show less</li>
+                        </ul>
+                    </li>
+            </div>
+            <!--end home list-->
+        </div>
+    </div>
+    <!--end home slider-->
+    <!--start delivery home-->
+    <div class="delivery-home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="delivery-box">
+                        <img src="img/home/home1-policy.png">
+                        <div class="box-text">
+                            <h5>FREE DELIVERY FROM $ 250</h5>
+                            <p>Lorem ipsum dolor amet consectetur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="delivery-box">
+                        <img src="img/home/home1-policy2.png">
+                        <div class="box-text">
+                            <h5>FREE INSTALLATION</h5>
+                            <p>Lorem ipsum dolor amet consectetur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="delivery-box">
+                        <img src="img/home/home1-policy3.png">
+                        <div class="box-text">
+                            <h5>MONEY BACK GUARANTEED</h5>
+                            <p>Lorem ipsum dolor amet consectetur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end delivery home-->
+    <!--start new arrival section-->
+    <section class="new-arrival">
+        <div class="container">
+            <div class="row">
+                <!--start living room list-->
+                <div class="col-md-12 col-lg-3">
+                <div class="living-room">
+                    <h3>living room</h3>
+                    <ul class="live-room">
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">side table</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">free place</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">floor lamp</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">ottoman</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">armchair</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">cushion</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">dressing table</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">wall clock</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">beside table</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">picture</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">window</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">view all</a></li>
+                    </ul>
+                </div>
+                </div>
+                <!--end living room list-->
+                <!--start new arrival slider-->
+                <div class="col-md-12 col-lg-9">
+                    <ul class="arrival-links">
+                        <li><a href="#" class="link-one active">new arrivals</a></li>
+                        <li><a href="#" class="link-two">best sellers</a></li>
+                        <li><a href="#" class="link-three">special products</a></li>
+                    </ul>
+                    <div class="arrival-slider">
+                        <!--start slider one-->
+                        <div class="container">
+                        <div class="slider-one">
+                                <!--start item-->
+                                <div class=" col-sm-12 col-md-6 col-lg-3">
+                                    <div class="item">
+                                     <div class="arrival-card">
+                                         <div class="arrival-img">
+                                             <img src="img/product/3.jpg" class="show-img">
+                                             <img src="img/product/9.jpg" class="hide-img">
+                                         </div>
+                                         <div class="arrival-text">
+                                             <h5>douplex chair</h5>
+                                             <div class="arrival-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star-half-stroke"></i>
+                                                <span>$25<del>$45</del></span>
+                                             </div>
+                                             <div class="arrival-icons">
+                                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                    </div>
+                                </div>
+                                <!--end item-->
+                                <!--start item-->
+                                <div class=" col-sm-12 col-md-6 col-lg-3">
+                                    <div class="item">
+                                     <div class="arrival-card">
+                                         <div class="arrival-img">
+                                             <img src="img/product/14.jpg" class="show-img">
+                                             <img src="img/product/6.jpg" class="hide-img">
+                                         </div>
+                                         <div class="arrival-text">
+                                             <h5>douplex chair</h5>
+                                             <div class="arrival-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star-half-stroke"></i>
+                                                <span>$25<del>$45</del></span>
+                                             </div>
+                                             <div class="arrival-icons">
+                                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                    </div>
+                                </div>
+                                <!--end item-->
+                                <!--start item-->
+                                <div class=" col-sm-12 col-md-6 col-lg-3">
+                                    <div class="item">
+                                     <div class="arrival-card">
+                                         <div class="arrival-img">
+                                             <img src="img/product/18.jpg" class="show-img">
+                                             <img src="img/product/26.jpg" class="hide-img">
+                                         </div>
+                                         <div class="arrival-text">
+                                             <h5>douplex chair</h5>
+                                             <div class="arrival-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star-half-stroke"></i>
+                                                <span>$25<del>$45</del></span>
+                                             </div>
+                                             <div class="arrival-icons">
+                                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                    </div>
+                                </div>
+                                <!--end item-->
+                                <!--start item-->
+                                <div class=" col-sm-12 col-md-6 col-lg-3">
+                                    <div class="item">
+                                     <div class="arrival-card">
+                                         <div class="arrival-img">
+                                             <img src="img/product/4.jpg" class="show-img">
+                                             <img src="img/product/6.jpg" class="hide-img">
+                                         </div>
+                                         <div class="arrival-text">
+                                             <h5>douplex chair</h5>
+                                             <div class="arrival-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star-half-stroke"></i>
+                                                <span>$25<del>$45</del></span>
+                                             </div>
+                                             <div class="arrival-icons">
+                                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                    </div>
+                                </div>
+                                <!--end item-->
+                                <!--start item-->
+                                <div class=" col-sm-12 col-md-6 col-lg-3">
+                                    <div class="item">
+                                     <div class="arrival-card">
+                                         <div class="arrival-img">
+                                             <img src="img/product/17.jpg" class="show-img">
+                                             <img src="img/product/2.jpg" class="hide-img">
+                                         </div>
+                                         <div class="arrival-text">
+                                             <h5>douplex chair</h5>
+                                             <div class="arrival-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star-half-stroke"></i>
+                                                <span>$25<del>$45</del></span>
+                                             </div>
+                                             <div class="arrival-icons">
+                                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                    </div>
+                                </div>
+                                <!--end item-->
+                                        <!--start item-->
+                                        <div class=" col-sm-12 col-md-6 col-lg-3">
+                                            <div class="item">
+                                             <div class="arrival-card">
+                                                 <div class="arrival-img">
+                                                     <img src="img/product/12.jpg" class="show-img">
+                                                     <img src="img/product/2.jpg" class="hide-img">
+                                                 </div>
+                                                 <div class="arrival-text">
+                                                     <h5>coton chair</h5>
+                                                     <div class="arrival-rate">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                                        <span>$25<del>$45</del></span>
+                                                     </div>
+                                                     <div class="arrival-icons">
+                                                         <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                         <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                         <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                            </div>
+                                        </div>
+                                        <!--end item-->
+                            </div>
+                        </div>
+                        <!--end slider one-->
+                        <!--start slider two-->
+                        <div class="container">
+                            <div class="slider-two">
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/28.jpg" class="show-img">
+                                                 <img src="img/product/3.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/1.jpg" class="show-img">
+                                                 <img src="img/product/31.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/15.jpg" class="show-img">
+                                                 <img src="img/product/26.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/11.jpg" class="show-img">
+                                                 <img src="img/product/32.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/24.jpg" class="show-img">
+                                                 <img src="img/product/20.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                        <!--start item-->
+                                            <div class=" col-sm-12 col-md-6 col-lg-3">
+                                                <div class="item">
+                                                 <div class="arrival-card">
+                                                     <div class="arrival-img">
+                                                         <img src="img/product/27.jpg" class="show-img">
+                                                         <img src="img/product/29.jpg" class="hide-img">
+                                                     </div>
+                                                     <div class="arrival-text">
+                                                         <h5>coton chair</h5>
+                                                         <div class="arrival-rate">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                                            <span>$25<del>$45</del></span>
+                                                         </div>
+                                                         <div class="arrival-icons">
+                                                             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                             <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                             <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                </div>
+                                            </div>
+                                        <!--end item-->
+                                </div>
+                            </div>
+                            <!--end slider two-->
+                            <!--start slider two-->
+                        <div class="container">
+                            <div class="slider-three">
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/20.jpg" class="show-img">
+                                                 <img src="img/product/12.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/30.jpg" class="show-img">
+                                                 <img src="img/product/15.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/13.jpg" class="show-img">
+                                                 <img src="img/product/16.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/32.jpg" class="show-img">
+                                                 <img src="img/product/11.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/25.jpg" class="show-img">
+                                                 <img src="img/product/26.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                        <!--start item-->
+                                            <div class=" col-sm-12 col-md-6 col-lg-3">
+                                                <div class="item">
+                                                 <div class="arrival-card">
+                                                     <div class="arrival-img">
+                                                         <img src="img/product/13.jpg" class="show-img">
+                                                         <img src="img/product/16.jpg" class="hide-img">
+                                                     </div>
+                                                     <div class="arrival-text">
+                                                         <h5>coton chair</h5>
+                                                         <div class="arrival-rate">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                                            <span>$25<del>$45</del></span>
+                                                         </div>
+                                                         <div class="arrival-icons">
+                                                             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                             <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                             <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                </div>
+                                            </div>
+                                        <!--end item-->
+                                </div>
+                            </div>
+                            <!--end slider three-->
+                    </div>
+                </div>
+                <!--end new arrival slider-->
+            </div>
+        </div>
+    </section>
+    <!--end new arrival section-->
+    <!--start arrival banner-->
+    <div class="arrival-banner">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="banner-img">
+                    <img src="img/home/effect1.jpg">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="banner-img">
+                    <img src="img/home/effect2.jpg">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--end arrival banner-->
+    <!--best seller section-->
+    <section class="bestseller">
+        <div class="container">
+            <!--start best content-->
+            <div class="best-content">
+            <div class="row">
+                <!--start best seller text-->
+                <div class="col-md-12 col-lg-3">
+                    <div class="best-text">
+                    <p>BEST SELLERS PRODUCTS</p>
+                    <h3>best sellers</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                        eiusmod tempor incididunt ut labore dolore magna aliqua.
+                    </p>
+                    <a href="#">view all product</a>
+                    </div>
+                </div>
+                <!--end best seller text-->
+                <!--start best seller slider-->
+                <!--start new arrival slider-->
+                <div class="col-md-12 col-lg-9">
+                    <div class="arrival-slider">
+                        <!--start slider one-->
+                        <div class="container">
+                        <div class="best-slider">
+                                <!--start item-->
+                                <div class=" col-sm-12 col-md-6 col-lg-3">
+                                    <div class="item">
+                                     <div class="arrival-card">
+                                         <div class="arrival-img">
+                                             <img src="img/product/3.jpg" class="show-img">
+                                             <img src="img/product/9.jpg" class="hide-img">
+                                         </div>
+                                         <div class="arrival-text">
+                                             <h5>douplex chair</h5>
+                                             <div class="arrival-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star-half-stroke"></i>
+                                                <span>$25<del>$45</del></span>
+                                             </div>
+                                             <div class="arrival-icons">
+                                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                    </div>
+                                </div>
+                                <!--end item-->
+                                <!--start item-->
+                                <div class=" col-sm-12 col-md-6 col-lg-3">
+                                    <div class="item">
+                                     <div class="arrival-card">
+                                         <div class="arrival-img">
+                                             <img src="img/product/14.jpg" class="show-img">
+                                             <img src="img/product/6.jpg" class="hide-img">
+                                         </div>
+                                         <div class="arrival-text">
+                                             <h5>douplex chair</h5>
+                                             <div class="arrival-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star-half-stroke"></i>
+                                                <span>$25<del>$45</del></span>
+                                             </div>
+                                             <div class="arrival-icons">
+                                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                    </div>
+                                </div>
+                                <!--end item-->
+                                <!--start item-->
+                                <div class=" col-sm-12 col-md-6 col-lg-3">
+                                    <div class="item">
+                                     <div class="arrival-card">
+                                         <div class="arrival-img">
+                                             <img src="img/product/18.jpg" class="show-img">
+                                             <img src="img/product/26.jpg" class="hide-img">
+                                         </div>
+                                         <div class="arrival-text">
+                                             <h5>douplex chair</h5>
+                                             <div class="arrival-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star-half-stroke"></i>
+                                                <span>$25<del>$45</del></span>
+                                             </div>
+                                             <div class="arrival-icons">
+                                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                    </div>
+                                </div>
+                                <!--end item-->
+                                <!--start item-->
+                                <div class=" col-sm-12 col-md-6 col-lg-3">
+                                    <div class="item">
+                                     <div class="arrival-card">
+                                         <div class="arrival-img">
+                                             <img src="img/product/4.jpg" class="show-img">
+                                             <img src="img/product/6.jpg" class="hide-img">
+                                         </div>
+                                         <div class="arrival-text">
+                                             <h5>douplex chair</h5>
+                                             <div class="arrival-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star-half-stroke"></i>
+                                                <span>$25<del>$45</del></span>
+                                             </div>
+                                             <div class="arrival-icons">
+                                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                    </div>
+                                </div>
+                                <!--end item-->
+                                <!--start item-->
+                                <div class=" col-sm-12 col-md-6 col-lg-3">
+                                    <div class="item">
+                                     <div class="arrival-card">
+                                         <div class="arrival-img">
+                                             <img src="img/product/17.jpg" class="show-img">
+                                             <img src="img/product/2.jpg" class="hide-img">
+                                         </div>
+                                         <div class="arrival-text">
+                                             <h5>douplex chair</h5>
+                                             <div class="arrival-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star-half-stroke"></i>
+                                                <span>$25<del>$45</del></span>
+                                             </div>
+                                             <div class="arrival-icons">
+                                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                    </div>
+                                </div>
+                                <!--end item-->
+                                        <!--start item-->
+                                        <div class=" col-sm-12 col-md-6 col-lg-3">
+                                            <div class="item">
+                                             <div class="arrival-card">
+                                                 <div class="arrival-img">
+                                                     <img src="img/product/12.jpg" class="show-img">
+                                                     <img src="img/product/2.jpg" class="hide-img">
+                                                 </div>
+                                                 <div class="arrival-text">
+                                                     <h5>coton chair</h5>
+                                                     <div class="arrival-rate">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                                        <span>$25<del>$45</del></span>
+                                                     </div>
+                                                     <div class="arrival-icons">
+                                                         <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                         <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                         <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                            </div>
+                                        </div>
+                                        <!--end item-->
+                            </div>
+                        </div>
+                        <!--end slider one-->
+                        <!--start slider two-->
+                        <div class="container">
+                            <div class="best-slider">
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/28.jpg" class="show-img">
+                                                 <img src="img/product/3.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/1.jpg" class="show-img">
+                                                 <img src="img/product/31.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/15.jpg" class="show-img">
+                                                 <img src="img/product/26.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/11.jpg" class="show-img">
+                                                 <img src="img/product/32.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/24.jpg" class="show-img">
+                                                 <img src="img/product/20.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                        <!--start item-->
+                                            <div class=" col-sm-12 col-md-6 col-lg-3">
+                                                <div class="item">
+                                                 <div class="arrival-card">
+                                                     <div class="arrival-img">
+                                                         <img src="img/product/27.jpg" class="show-img">
+                                                         <img src="img/product/29.jpg" class="hide-img">
+                                                     </div>
+                                                     <div class="arrival-text">
+                                                         <h5>coton chair</h5>
+                                                         <div class="arrival-rate">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                                            <span>$25<del>$45</del></span>
+                                                         </div>
+                                                         <div class="arrival-icons">
+                                                             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                             <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                             <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                </div>
+                                            </div>
+                                        <!--end item-->
+                                </div>
+                            </div>
+                            <!--end slider two-->
+                            </div>
+                            </div>
+                <!--end best seller slider-->
+            </div>
+            </div>
+            <!--end best content-->
+        </div>
+    </section>
+    <!--end best seller section-->
+    <!--start new arrival section-->
+    <section class="new-kitchen">
+        <div class="container">
+            <div class="row">
+                <!--start living room list-->
+                <div class="col-md-12 col-lg-3">
+                <div class="living-room">
+                    <h3>kitchen</h3>
+                    <ul class="live-room">
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">kitchen chears</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">colander</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">mixin polwes</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">gater</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">vegtable peller</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">rolling pen</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">backing sheet</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">wall clock</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">oven mitnes</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">salda dishes</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">window</a></li>
+                        <li><i class="fa-solid fa-arrow-right-long"></i><a href="#">view all</a></li>
+                    </ul>
+                </div>
+                </div>
+                <!--end living room list-->
+                <!--start new arrival slider-->
+                <div class="col-md-12 col-lg-9">
+                    <ul class="kitchen-links">
+                        <li><a href="#" class="link-one active">new arrivals</a></li>
+                        <li><a href="#" class="link-two">best sellers</a></li>
+                        <li><a href="#" class="link-three">special products</a></li>
+                    </ul>
+                    <div class="arrival-slider">
+                        <!--start slider one-->
+                        <div class="container">
+                        <div class="slider-one">
+                                <!--start item-->
+                                <div class=" col-sm-12 col-md-6 col-lg-3">
+                                    <div class="item">
+                                     <div class="arrival-card">
+                                         <div class="arrival-img">
+                                             <img src="img/product/3.jpg" class="show-img">
+                                             <img src="img/product/9.jpg" class="hide-img">
+                                         </div>
+                                         <div class="arrival-text">
+                                             <h5>douplex chair</h5>
+                                             <div class="arrival-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star-half-stroke"></i>
+                                                <span>$25<del>$45</del></span>
+                                             </div>
+                                             <div class="arrival-icons">
+                                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                    </div>
+                                </div>
+                                <!--end item-->
+                                <!--start item-->
+                                <div class=" col-sm-12 col-md-6 col-lg-3">
+                                    <div class="item">
+                                     <div class="arrival-card">
+                                         <div class="arrival-img">
+                                             <img src="img/product/27.jpg" class="show-img">
+                                             <img src="img/product/29.jpg" class="hide-img">
+                                         </div>
+                                         <div class="arrival-text">
+                                             <h5>douplex chair</h5>
+                                             <div class="arrival-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star-half-stroke"></i>
+                                                <span>$25<del>$45</del></span>
+                                             </div>
+                                             <div class="arrival-icons">
+                                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                    </div>
+                                </div>
+                                <!--end item-->
+                                <!--start item-->
+                                <div class=" col-sm-12 col-md-6 col-lg-3">
+                                    <div class="item">
+                                     <div class="arrival-card">
+                                         <div class="arrival-img">
+                                             <img src="img/product/18.jpg" class="show-img">
+                                             <img src="img/product/26.jpg" class="hide-img">
+                                         </div>
+                                         <div class="arrival-text">
+                                             <h5>douplex chair</h5>
+                                             <div class="arrival-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star-half-stroke"></i>
+                                                <span>$25<del>$45</del></span>
+                                             </div>
+                                             <div class="arrival-icons">
+                                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                    </div>
+                                </div>
+                                <!--end item-->
+                                <!--start item-->
+                                <div class=" col-sm-12 col-md-6 col-lg-3">
+                                    <div class="item">
+                                     <div class="arrival-card">
+                                         <div class="arrival-img">
+                                             <img src="img/product/5.jpg" class="show-img">
+                                             <img src="img/product/4.jpg" class="hide-img">
+                                         </div>
+                                         <div class="arrival-text">
+                                             <h5>douplex chair</h5>
+                                             <div class="arrival-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star-half-stroke"></i>
+                                                <span>$25<del>$45</del></span>
+                                             </div>
+                                             <div class="arrival-icons">
+                                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                    </div>
+                                </div>
+                                <!--end item-->
+                                <!--start item-->
+                                <div class=" col-sm-12 col-md-6 col-lg-3">
+                                    <div class="item">
+                                     <div class="arrival-card">
+                                         <div class="arrival-img">
+                                             <img src="img/product/23.jpg" class="show-img">
+                                             <img src="img/product/24.jpg" class="hide-img">
+                                         </div>
+                                         <div class="arrival-text">
+                                             <h5>douplex chair</h5>
+                                             <div class="arrival-rate">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star-half-stroke"></i>
+                                                <span>$25<del>$45</del></span>
+                                             </div>
+                                             <div class="arrival-icons">
+                                                 <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                 <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                    </div>
+                                </div>
+                                <!--end item-->
+                                        <!--start item-->
+                                        <div class=" col-sm-12 col-md-6 col-lg-3">
+                                            <div class="item">
+                                             <div class="arrival-card">
+                                                 <div class="arrival-img">
+                                                     <img src="img/product/12.jpg" class="show-img">
+                                                     <img src="img/product/2.jpg" class="hide-img">
+                                                 </div>
+                                                 <div class="arrival-text">
+                                                     <h5>coton chair</h5>
+                                                     <div class="arrival-rate">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                                        <span>$25<del>$45</del></span>
+                                                     </div>
+                                                     <div class="arrival-icons">
+                                                         <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                         <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                         <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                            </div>
+                                        </div>
+                                        <!--end item-->
+                            </div>
+                        </div>
+                        <!--end slider one-->
+                        <!--start slider two-->
+                        <div class="container">
+                            <div class="slider-two">
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/28.jpg" class="show-img">
+                                                 <img src="img/product/3.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/1.jpg" class="show-img">
+                                                 <img src="img/product/31.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/15.jpg" class="show-img">
+                                                 <img src="img/product/26.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/11.jpg" class="show-img">
+                                                 <img src="img/product/32.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/24.jpg" class="show-img">
+                                                 <img src="img/product/20.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                        <!--start item-->
+                                            <div class=" col-sm-12 col-md-6 col-lg-3">
+                                                <div class="item">
+                                                 <div class="arrival-card">
+                                                     <div class="arrival-img">
+                                                         <img src="img/product/27.jpg" class="show-img">
+                                                         <img src="img/product/29.jpg" class="hide-img">
+                                                     </div>
+                                                     <div class="arrival-text">
+                                                         <h5>coton chair</h5>
+                                                         <div class="arrival-rate">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                                            <span>$25<del>$45</del></span>
+                                                         </div>
+                                                         <div class="arrival-icons">
+                                                             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                             <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                             <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                </div>
+                                            </div>
+                                        <!--end item-->
+                                </div>
+                            </div>
+                            <!--end slider two-->
+                            <!--start slider two-->
+                        <div class="container">
+                            <div class="slider-three">
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/20.jpg" class="show-img">
+                                                 <img src="img/product/12.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/30.jpg" class="show-img">
+                                                 <img src="img/product/15.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/13.jpg" class="show-img">
+                                                 <img src="img/product/16.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/32.jpg" class="show-img">
+                                                 <img src="img/product/11.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                    <!--start item-->
+                                    <div class=" col-sm-12 col-md-6 col-lg-3">
+                                        <div class="item">
+                                         <div class="arrival-card">
+                                             <div class="arrival-img">
+                                                 <img src="img/product/25.jpg" class="show-img">
+                                                 <img src="img/product/26.jpg" class="hide-img">
+                                             </div>
+                                             <div class="arrival-text">
+                                                 <h5>douplex chair</h5>
+                                                 <div class="arrival-rate">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star-half-stroke"></i>
+                                                    <span>$25<del>$45</del></span>
+                                                 </div>
+                                                 <div class="arrival-icons">
+                                                     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                     <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                        </div>
+                                    </div>
+                                    <!--end item-->
+                                        <!--start item-->
+                                            <div class=" col-sm-12 col-md-6 col-lg-3">
+                                                <div class="item">
+                                                 <div class="arrival-card">
+                                                     <div class="arrival-img">
+                                                         <img src="img/product/13.jpg" class="show-img">
+                                                         <img src="img/product/16.jpg" class="hide-img">
+                                                     </div>
+                                                     <div class="arrival-text">
+                                                         <h5>coton chair</h5>
+                                                         <div class="arrival-rate">
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-solid fa-star"></i>
+                                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                                            <span>$25<del>$45</del></span>
+                                                         </div>
+                                                         <div class="arrival-icons">
+                                                             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                                             <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                                             <a href="#"><i class="fa-solid fa-eye"></i></a>
+                                                         </div>
+                                                     </div>
+                                                 </div>
+                                                </div>
+                                            </div>
+                                        <!--end item-->
+                                </div>
+                            </div>
+                            <!--end slider three-->
+                    </div>
+                </div>
+                <!--end new arrival slider-->
+            </div>
+        </div>
+    </section>
+    <!--end kitchen section-->
+    <!--start arrival banner-->
+    <div class="arrival-banner">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="banner-img">
+                    <img src="img/home/effect3.jpg">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="banner-img">
+                    <img src="img/home/effect4.jpg">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--end arrival banner-->
+    <!--start testimonials slider-->
+    <div class="testimonials">
+        <div class="container">
+            <div class="testimonials-slider">
+                    <!--start item-->
+                        <div class="item">
+                            <div class="test-text">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, possimus tempore 
+                                doloremque quidem similique fuga maiores a voluptates maxime nemo?
+                                , dolor sit amet consectetur adipisicing elit. Minima
+                            </p>
+                            <h6>ali kortam</h6>
+                            <span>web developer</span>
+                            </div>
+                        </div>
+                    <!--end item-->
+                    <!--start item-->
+                        <div class="item">
+                            <div class="test-text">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, possimus tempore 
+                                doloremque quidem similique fuga maiores a voluptates maxime nemo?
+                                , dolor sit amet consectetur adipisicing elit. Minima
+                            </p>
+                            <h6>ali kortam</h6>
+                            <span>web developer</span>
+                            </div>
+                        </div>
+                    <!--end item-->
+                    <!--start item-->
+                        <div class="item">
+                            <div class="test-text">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, possimus tempore 
+                                doloremque quidem similique fuga maiores a voluptates maxime nemo?
+                                , dolor sit amet consectetur adipisicing elit. Minima
+                            </p>
+                            <h6>ali kortam</h6>
+                            <span>web developer</span>
+                            </div>
+                        </div>
+                    <!--end item-->
+                    <!--start item-->
+                        <div class="item">
+                            <div class="test-text">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, possimus tempore 
+                                doloremque quidem similique fuga maiores a voluptates
+                                , dolor sit amet consectetur adipisicing elit. Minima maxime nemo?
+                            </p>
+                            <h6>ali kortam</h6>
+                            <span>web developer</span>
+                            </div>
+                        </div>
+                    <!--end item-->
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!--end testimonials slider-->
+    <!--start look shop section-->
+    <section class="look-shop">
+        <div class="container-fluied">
+            <div class="row">
+                <!--start image one-->
+                <div class="col-md-12 col-lg-6">
+                    <div class="look-img">
+                        <img src="img/home/home1-tolltip1.jpg">
+                        <div class="look-button">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="look-card">
+                            <img src="img/home/icon-tolltip1.jpg">
+                            <div class="look-text">
+                                <h3>black nagava</h3>
+                                <div class="look-rate">
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>$95.00</span>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                        <div class="lookbut-two">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="lookcard-two">
+                            <img src="img/home/icon-tolltip2.jpg">
+                            <div class="look-text">
+                                <h3>black nagava</h3>
+                                <div class="look-rate">
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>$95.00</span>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end img-->
+                <!--start img2-->
+                <div class="col-lg-6">
+                    <div class="look-img">
+                        <img src="img/home/home1-tolltip2.jpg">
+                        <div class="lookbut-three">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="lookcard-three">
+                            <img src="img/product/7.jpg">
+                            <div class="look-text">
+                                <h3>black nagava</h3>
+                                <div class="look-rate">
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>$95.00</span>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                        <div class="lookbut-four">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="lookcard-four">
+                            <img src="img/product/34.jpg">
+                            <div class="look-text">
+                                <h3>black nagava</h3>
+                                <div class="look-rate">
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>$95.00</span>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                        <div class="lookbut-five">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="lookcard-five">
+                            <img src="img/home/icon-tolltip5.jpg">
+                            <div class="look-text">
+                                <h3>black nagava</h3>
+                                <div class="look-rate">
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>$95.00</span>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end img-->
+                <!--start img 3-->
+                <div class="col-lg-6">
+                    <div class="look-img">
+                        <img src="img/home/home1-tolltip3.jpg">
+                        <div class="lookbut-th">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="lookcard-th">
+                            <img src="img/product/7.jpg">
+                            <div class="look-text">
+                                <h3>black nagava</h3>
+                                <div class="look-rate">
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>$95.00</span>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                        <div class="lookbut-fo">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="lookcard-fo">
+                            <img src="img/home/icon-tolltip6.jpg">
+                            <div class="look-text">
+                                <h3>black nagava</h3>
+                                <div class="look-rate">
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>$95.00</span>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                        <div class="lookbut-fi">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="lookcard-fi">
+                            <img src="img/home/icon-tolltip2.jpg">
+                            <div class="look-text">
+                                <h3>black nagava</h3>
+                                <div class="look-rate">
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>$95.00</span>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end img 3-->
+                <!--start img 4-->
+                <div class="col-lg-6">
+                    <div class="look-img">
+                        <img src="img/home/home1-tolltip4.jpg">
+                        <div class="lookbut-thr">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="lookcard-thr">
+                            <img src="img/home/icon-tolltip8.jpg">
+                            <div class="look-text">
+                                <h3>black nagava</h3>
+                                <div class="look-rate">
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>$95.00</span>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                        <div class="lookbut-fou">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="lookcard-fou">
+                            <img src="img/home/icon-tolltip10.jpg">
+                            <div class="look-text">
+                                <h3>black nagava</h3>
+                                <div class="look-rate">
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>$95.00</span>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                        <div class="lookbut-fiv">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="lookcard-fiv">
+                            <img src="img/home/icon-tolltip9.jpg">
+                            <div class="look-text">
+                                <h3>black nagava</h3>
+                                <div class="look-rate">
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>$95.00</span>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end img 4-->
+            </div>
+            <!--start  circle in middle -->
+            <div class="shop-circle">
+                <small>SHOP THE LOOKBOOK</small>
+                <h3>shop the look</h3>
+                <p>OUR LOOKBOOK 2020
+                    HAND-PICKED ARRIVALS FROM
+                    THE BEST DESIGNER</p>
+            </div>
+            <!--end  circle in middle -->
+        </div>
+    </section>
+    <!--end look shop section-->
+    <!--start recent post-->
+    <div class="recent-post">
+        <div class="container">
+            <div class="row">
+                <!--start card one-->
+                <div class="col-md-12 col-lg-4">
+                    <div class="post-card">
+                        <div class="recent-img">
+                            <img src="img/home/home1-post1.jpg">
+                        </div>
+                        <div class="post-date">
+                            <span><i class="fa-regular fa-comment"></i>0 comment</span>
+                            <span><i class="fa-regular fa-calendar-days"></i>may 6 1996</span>
+                        </div>
+                        <a href="#">Lorem Ipsum Dolor Sit Amet</a>
+                        <p>Lorem ipsum dolor sit amet, consecte adipis cing elit,
+                             sed do eiusmod tempor incididunt ut labore et dolore magna
+                        </p>
+                    </div>
+                </div>
+                <!--end card one-->
+                <!--start card one-->
+                <div class="col-md-12 col-lg-4">
+                    <div class="post-card">
+                        <div class="recent-img">
+                            <img src="img/home/home1-post2.jpg">
+                        </div>
+                        <div class="post-date">
+                            <span><i class="fa-regular fa-comment"></i>0 comment</span>
+                            <span><i class="fa-regular fa-calendar-days"></i>may 6 1996</span>
+                        </div>
+                        <a href="#">Lorem Ipsum Dolor Sit Amet</a>
+                        <p>Lorem ipsum dolor sit amet, consecte adipis cing elit,
+                             sed do eiusmod tempor incididunt ut labore et dolore magna
+                        </p>
+                    </div>
+                </div>
+                <!--end card one-->
+                <!--start card one-->
+                <div class="col-md-12 col-lg-4">
+                    <div class="post-card">
+                        <div class="recent-img">
+                            <img src="img/home/home1-post3.jpg">
+                        </div>
+                        <div class="post-date">
+                            <span><i class="fa-regular fa-comment"></i>0 comment</span>
+                            <span><i class="fa-regular fa-calendar-days"></i>may 6 1996</span>
+                        </div>
+                        <a href="#">Lorem Ipsum Dolor Sit Amet</a>
+                        <p>Lorem ipsum dolor sit amet, consecte adipis cing elit,
+                             sed do eiusmod tempor incididunt ut labore et dolore magna
+                        </p>
+                    </div>
+                </div>
+                <!--end card one-->
+            </div>
+        </div>
+    </div>
+    <!--end recent post-->
+    <!--start brand logo-->
+    <div class="brand">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-md-2 col-lg-2">
+                <img src="img/home/icon-logo1.jpg">
+            </div>
+            <div class="col-sm-4 col-md-2 col-lg-2">
+                <img src="img/home/icon-logo2.jpg">
+            </div>
+            <div class="col-sm-4 col-md-2 col-lg-2">
+                <img src="img/home/icon-logo3.jpg">
+            </div>
+            <div class="col-sm-4 col-md-2 col-lg-2">
+                <img src="img/home/icon-logo4.jpg">
+            </div>
+            <div class="col-sm-4 col-md-2 col-lg-2">
+                <img src="img/home/icon-logo5.jpg">
+            </div>
+            <div class="col-sm-4 col-md-2 col-lg-2">
+                <img src="img/home/icon-logo6.jpg">
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--end brand logo-->
+    <!--start footer-->
+    <footer class="footer">
+        <div class="container">
+         <div class="row">
+            <!--start content of footer-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="foot-left">
+                    <img src="img/home/logo.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    </p>
+                    <ul class="left-links">
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">reasons to shop</a></li>
+                        <li><a href="#">What our customers say</a></li>
+                        <li><a href="#">Meet the teaml</a></li>
+                        <li><a href="#">Contact our buyers</a></li>
+                    </ul>
+                    <img src="img/home/payment-footer.png">
+                </div>
+            </div>
+            <!--start content of footer-->
+            <!--start content of footer-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="foot-mid">
+                  <h3>contact us</h3>
+                  <div class="foot-address">
+                      <span><i class="fa-solid fa-house-chimney-window"></i>address:</span>
+                      <p>123 Suspendis matti, Visaosang Building VST District NY Accums, North American</p>
+                  </div>  
+                  <div class="foot-email">
+                    <span><i class="fa-solid fa-envelope"></i>email:</span>
+                    <p>alaaabonema@gmail.com</p>
+                </div>  
+                <div class="foot-phone">
+                    <span><i class="fa-solid fa-phone"></i>phone number:</span>
+                    <p>+02 010 25 299 435</p>
+                </div> 
+                <div class="foot-open">
+                    <span><i class="fa-regular fa-clock"></i>openning hours:</span>
+                    <p>monday-sunday 9.00am-7.00pm<br>(expect holidays)</p>
+                </div>   
+                </div>
+            </div>
+            <!--start content of footer-->
+            <!--start content of footer-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="foot-right">
+                  <h3>new sellter</h3>
+                  <p>Sign up to our newsletter to get the latest articles, lookbooks voucher
+                       codes direct to your inbox
+                </p>
+                <div class="foot-input">
+                    <input type="email" placeholder="enter your email">
+                    <button type="button" class="btn btn-secondary">subscribe</button>
+                </div>
+                <h5>follow us on</h5>
+                <div class="foot-socilas">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-gofore"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <h6>payment accept</h6>
+                <img src="img/home/payment.png">
+                </div>
+            </div>
+            <!--start content of footer-->
+         </div>
+        </div>
+    </footer>
+    <!-- end  footer-->
+    <!--start scroll to top-->
+    <div class="scroll-top">
+        <a href="#"><i class="fa-solid fa-angles-up"></i></a>
+    </div>
+    <!--start scroll to top-->
+    <!--start js files-->
+    <script src="libs/bootstrap/js/jquery-3.6.0.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/bootstrap/js/all.min.js"></script>
+    <script src="libs/bootstrap/js/slick.min.js"></script>
+    <script src="libs/bootstrap/js/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+    <!--end js files-->
+    <!--aos animation-->
+    <script>
+        AOS.init();
+    </script>
+    <!--aos animation-->
+</body>
+
+</html>

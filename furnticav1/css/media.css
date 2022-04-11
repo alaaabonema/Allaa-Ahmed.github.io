@@ -1,0 +1,267 @@
+            /*start glopal rules*/
+            
+             :root {
+                --blue: #007bff;
+                --indigo: #6610f2;
+                --purple: #6f42c1;
+                --pink: #e83e8c;
+                --red: #dc3545;
+                --orange: #fd7e14;
+                --yellow: #ffc107;
+                --green: #28a745;
+                --teal: #20c997;
+                --cyan: #17a2b8;
+                --white: #fff;
+                --gray: #6c757d;
+                --gray-dark: #343a40;
+                --primary: #007bff;
+                --secondary: #6c757d;
+                --success: #28a745;
+                --info: #17a2b8;
+                --warning: #ffc107;
+                --danger: #dc3545;
+                --light: #f8f9fa;
+                --dark: #343a40;
+                --breakpoint-xs: 0;
+                --breakpoint-sm: 576px;
+                --breakpoint-md: 768px;
+                --breakpoint-lg: 992px;
+                --breakpoint-xl: 1200px;
+                --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            }
+            
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+            }
+            
+            html {
+                scroll-behavior: smooth;
+            }
+            
+            body {
+                width: 100%;
+            }
+            
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+                letter-spacing: 1px;
+                font-weight: bold;
+            }
+            
+            ul {
+                list-style: none;
+            }
+            /*end glopal rules*/
+            /*start navbar*/
+            
+            @media(max-width:991px) {
+                .navbar {
+                    text-align: center;
+                    background-color: #fff;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+                .navbar-brand
+                {
+                    color: #fff;
+                }
+                .nav-link {
+                    color: #777;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    position: relative;
+                    margin-top: 1px;
+                }
+                .navbar-nav .dropdown-menu {
+                    transform: translateY(-5px);
+                    text-align: center;
+                }
+                .navbar-toggler
+                {
+                    background-color: #fff;
+                    color: #fff;
+                }
+                .menu-button
+                {
+                    position: absolute;
+                    top: 25px;
+                    left: 50%;
+                    display: block;
+                }
+            }
+            /*end navbar*/
+            /*start home menu*/
+            @media(max-width:991px) {
+                .home-menu
+                {
+                    position: absolute;
+                    z-index: 99999;
+                    width: 100%;
+                    height: 100vh;
+                    text-align: center;
+                    top: 60px;
+                    left: 0px;
+                    background-color: #fff;
+                    padding-top: 8px;
+                    padding-bottom: 2px;
+                    border-radius: 5px;
+                    box-shadow: 2px 2px 2px #fff;
+                    display: none;
+                }
+                .list-toggle
+                {
+                    position: absolute;
+                    z-index: 99999;
+                    width: 100%;
+                    height: 350px;
+                    left: 0;
+                    background-color: #fff;
+                    display: none;
+                } 
+            }
+            /*end home menu*/
+            /*start delivery home*/
+            @media(max-width:991px)
+            {
+            .delivery-home
+            {
+                padding-top: 50px;
+                padding-bottom: 50px; 
+                text-align: center;
+            }
+            .delivery-box img
+            {
+                display: block;
+                margin: auto;
+            }
+            .delivery-box
+            {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 25px;
+            } 
+            }
+            /*end delivery home*/
+            /*start new arrival*/
+            @media(max-width:991px)
+            {
+                .new-arrival
+                {
+                    height: 215vh;
+                }
+                .arrival-img img
+                {
+                    width: 70%;
+                    margin-left: 15%;
+                }
+            }
+            @media(max-width:600px)
+            {
+                .new-arrival
+                {
+                    height: 215vh;
+                }
+                .arrival-img img
+                {
+                    width: 60%;
+                    margin-left: 20%;
+                }
+            }
+            @media(max-width:500px)
+            {
+                .new-arrival
+                {
+                    height: 215vh;
+                }
+                .arrival-img img
+                {
+                    width: 50%;
+                    margin-left: 25%;
+                }
+            }
+            @media(max-width:300px)
+            {
+                .new-arrival
+                {
+                    height: 210vh;
+                }
+                .arrival-img img
+                {
+                    width: 50%;
+                    margin-left: 25%;
+                }
+            }
+            /*end new arrival*/
+            /*start best seller section*/
+            @media(max-width:991px)
+            {
+                .best-text
+                {
+                 padding-left: 50px;
+                 padding-top: 1%;
+                 padding-bottom: 90px;
+                 text-align: center;
+                }
+            }
+            /*end best seller section*/
+            /*start kitchen section*/
+            @media(max-width:991px)
+            {
+                .new-kitchen
+                {
+                    width: 100%;
+                    height: 215vh;
+                    background-color: #ccc;
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                }
+            }
+            /*end kitchen section*/
+            /*start shop look section*/
+            @media(max-width:1199px)
+            {
+                .look-button,.lookbut-two,.lookbut-three,.lookbut-four,.lookbut-five,
+                .lookbut-th,.lookbut-fo,.lookbut-fi,.lookbut-thr,.lookbut-fou,.lookbut-fiv
+                {
+                    display: none;
+                }
+                .shop-circle
+                {
+                    display: none;
+                }
+            }
+            /*end shop look section*/
+            /*start recent post*/
+            @media(max-width:991px)
+            {
+                .post-card
+                {
+                    text-align: center;
+                    width: 80%;
+                    display: block;
+                    margin: auto;
+                    margin-bottom: 35px;
+                }
+                .post-card p{
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+            }
+            /*end recent post*/
+            /*start brand*/
+            @media(max-width:570px)
+            {
+                .brand img
+                {
+                    display: block;
+                    margin: auto;
+                    margin-bottom: 10px;
+                }
+            }
+            /*end brand*/
