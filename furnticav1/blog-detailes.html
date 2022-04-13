@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>furnitica</title>
+    <!--css files-->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/all.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/jquery-ui.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/jquery-ui.theme.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/slick-theme.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/slick.css">
+    <link rel="stylesheet" href="libs/nivo-slider/css/animate.css">
+    <link rel="stylesheet" href="libs/nivo-slider/css/nivo-slider.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--css files-->
+    <!--my scss files-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!--end my scss files-->
+    <!--start js files-->
+    <script src="libs/bootstrap/js/jquery-ui.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="libs/bootstrap/js/html5shiv.min.js"></script>
+    <script src="libs/bootstrap/js/respond.min.js"></script>
+    <!--end js files-->
+</head>
+
+<body>
+    <!--start navbar-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/home/logo.png"></a>
+            <a href="#" class="menu-button"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="home2.html">home2</a></li>
+                            <li><a class="dropdown-item" href="home3.html">home3</a></li>
+                            <li><a class="dropdown-item" href="home4.html">home4</a></li>
+                            <li><a class="dropdown-item" href="home5.html">home5</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">blog</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="blog-list-sidebar-left.html">blog list(sidebar-left)</a></li>
+                            <li><a class="dropdown-item" href="blog-list-sidebar-left2.html">blog list(sidebar-left)2</a></li>
+                            <li><a class="dropdown-item" href="blog-list-sidebar-right.html">blog list(sidebar-right)</a></li>
+                            <li><a class="dropdown-item" href="blog-list-nosidebar.html">blog list(no-sidebar)</a></li>
+                            <li><a class="dropdown-item" href="blog-grid.html">blog grid(no-sidebar)</a></li>
+                            <li><a class="dropdown-item" href="blog-detailes.html">blog detailes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                page
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="product-grid-left.html">product grid(sidebar-left)</a></li>
+                            <li><a class="dropdown-item" href="product-grid-right.html">product grid(sidebar-right)</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="product-list-left.html">product list(sidebar-left)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html" tabindex="-1" aria-disabled="true">contact us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <ul class="navbar-nav account me-auto ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link account dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-regular fa-user"></i>account
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="my-account.html"><i class="fa-solid fa-gear"></i>my account</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="user-login.html"><i class="fa-solid fa-right-to-bracket"></i>signin</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="user-register.html"><i class="fa-solid fa-gear"></i>register account</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="checkout.html"><i class="fa-solid fa-check"></i>checkout</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="my-wishlist.html"><i class="fa-solid fa-heart"></i>my wishlist</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="eur">
+                                <span>eur</span>
+                                <span>gbp</span>
+                            </li>
+                            <li class="lg-country">
+                                <img src="img/home/lg1.jpg">
+                                <img src="img/home/lg2.jpg">
+                                <img src="img/home/lg3.jpg">
+                                <img src="img/home/lg4.jpg">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--end navbar-->
+    <!--start blog detailes section-->
+    <section class="blog-detailes">
+        <div class="container">
+            <div class="row">
+                <!--start category list-->
+                <div class="col-md-12 col-lg-3">
+                    <div class="category">
+                        <h3>categories</h3>
+                        <ul class="category-list">
+                            <li class="category-dropdown">
+                                <a href="">living room<i class="fa-solid fa-square-plus"></i></a>
+                                <ul class="drop-menu">
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">side table</a></li>
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">free place</a></li>
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">floor lamp</a></li>
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">cushion</a></li>
+                                </ul>
+                            </li>
+                            <li class="category-dropdown">
+                                <a href="">bathroom<i class="fa-solid fa-square-plus"></i></a>
+                                <ul class="drop-menu">
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">side table</a></li>
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">free place</a></li>
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">floor lamp</a></li>
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">cushion</a></li>
+                                </ul>
+                            </li>
+                            <li class="category-dropdown">
+                                <a href="">dinning room<i class="fa-solid fa-square-plus"></i></a>
+                                <ul class="drop-menu">
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">side table</a></li>
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">free place</a></li>
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">floor lamp</a></li>
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">cushion</a></li>
+                                </ul>
+                            </li>
+                            <li class="category-dropdown">
+                                <a href="#">bedroom<i class="fa-solid fa-square-plus"></i></a>
+                                <ul class="drop-menu">
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">side table</a></li>
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">free place</a></li>
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">floor lamp</a></li>
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">cushion</a></li>
+                                </ul>
+                            </li>
+                            <li class="category-dropdown">
+                                <a href="#">kitchen<i class="fa-solid fa-square-plus"></i></a>
+                                <ul class="drop-menu">
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">side table</a></li>
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">free place</a></li>
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">floor lamp</a></li>
+                                    <li><i class="fa-regular fa-circle-dot"></i><a href="#">cushion</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--start recent post-->
+                    <div class="recent-post">
+                        <h4>recent posts</h4>
+                        <span><i class="fa-regular fa-message"></i>13 comments</span>
+                        <span><i class="fa-regular fa-calendar"></i>6 may 1996</span>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...</p>
+                        <a href="#">read more</a>
+                    </div>
+                    <!--end recent post-->
+                    <!--start recent post-->
+                    <div class="recent-post">
+                        <span><i class="fa-regular fa-message"></i>20 comments</span>
+                        <span><i class="fa-regular fa-calendar"></i>2 june 2002</span>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...</p>
+                        <a href="#">read more</a>
+                    </div>
+                    <!--end recent post-->
+                    <!--start blog tags-->
+                    <ul class="blog-tags">
+                        <li class="tag-head"><h3>blog tags</h3></li>
+                        <li><a href="#">hot trend</a></li>
+                        <li><a href="#">jewlary</a></li>
+                        <li><a href="#">mens</a></li>
+                        <li><a href="#">party</a></li>
+                        <li><a href="#">samsaung</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">shirt dresses</a></li>
+                        <li><a href="#">summer</a></li>
+                        <li><a href="#">winter</a></li>
+                        <li><a href="#">womens</a></li>
+                    </ul>
+                    <!--end blog tags-->
+                    <!--blog tags img-->
+                    <div class="tag-img">
+                        <img src="img/blog/advertising.jpg">
+                    </div>
+                    <!--end blog tags img-->
+                </div>
+                <!--end category list-->
+                <!--start blog content-->
+                <div class="col-md-12 col-lg-9">
+                    <div class="blog-content">
+                        <h3>blog detailes for every one form more information</h3>
+                        <img src="img/blog/detail.jpg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut iaculis arcu. Proin tincidunt, ipsum nec vehicula euismod, neque nibh pretium lorem, at ornare risus sem et risus. Curabitur pulvinar dui viverra libero 
+                            lobortis in dictum velit luctus. Donec imperdiet tincidunt interdum
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam libero
+                             lobortis in dictum velit luctus. Donec imperdiet tincidunt interdum.
+                        </p>
+                        <a href="#">here, we being you a look see:</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut iaculis arcu. Proin tincidunt, ipsum nec vehicula euismod, 
+                            neque nibh pretium lorem, at ornare risus sem et risus.
+                        </p>
+                        <div class="cont-img">
+                            <img src="img/blog/3.jpg">
+                            <img src="img/blog/2.jpg">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut iaculis arcu. Proin tincidunt, ipsum nec vehicula euismod,
+                                 neque nibh pretium lorem, at ornare risus sem et risus.
+                            </p>
+                        </div>
+                        <div class="blog-bar">
+                            <span>3 minutes ago </span> <span>102 comments</span> <span>alaa ahmed</span>
+                            <ul class="bar-links">
+                                <li><a href="#"><i class="fa-solid fa-share-nodes"></i>share</a></li>
+                                <li><a href="#"><i class="fa-solid fa-message"></i>send to a friend</a></li>
+                                <li><a href="#"><i class="fa-solid fa-print"></i>print</a></li>
+                            </ul>
+                        </div>
+                        <div class="bar-comment">
+                            <img src="img/blog/user.jpg">
+                            <div class="user-comment">
+                                <span>ali kortam</span> <span>administrator , web developer</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt. 
+                                    ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="related-news">
+                            <div class="news-card">
+                                <img src="img/blog/7.jpg">
+                                <a href="#">Lorem ipsum dolor sit amet</a>
+                                <p>Proin gravida nibh vel velit auctor aliquet. 
+                                    Aenean sollicudin, lorem quis bibendum auctor.
+                                </p>
+                            </div>
+                            <div class="news-card">
+                                <img src="img/blog/8.jpg">
+                                <a href="#">Lorem ipsum dolor sit amet</a>
+                                <p>Proin gravida nibh vel velit auctor aliquet. 
+                                    Aenean sollicudin, lorem quis bibendum auctor.
+                                </p>
+                            </div>
+                            <div class="news-card">
+                                <img src="img/blog/9.jpg">
+                                <a href="#">Lorem ipsum dolor sit amet</a>
+                                <p>Proin gravida nibh vel velit auctor aliquet. 
+                                    Aenean sollicudin, lorem quis bibendum auctor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <h3>comments</h3>
+                            <div class="comment">
+                                <img src="img/blog/user1.jpg">
+                                <div>
+                                <span>noor ibrahim</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt. 
+                                    ut labore et dolore magna aliqua.
+                                </p>
+                                </div>
+                            </div>
+                            <div class="comment-two">
+                                <img src="img/blog/user2.jpg">
+                                <div>
+                                <span>alaa ahmed</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt. 
+                                    ut labore et dolore magna aliqua.
+                                </p>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <img src="img/blog/user1.jpg">
+                                <div>
+                                <span>jana sayed</span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, do eiusmod tempor incididunt. 
+                                    ut labore et dolore magna aliqua.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-form">
+                            <h3>submit comment</h3>
+                            <form class="add-comment" method="get">
+                                <input type="text" id="add-name" placeholder="your name" required>
+                                <input type="email" id="add-email" placeholder="your email" required>
+                                <input type="text" id="add-web" placeholder="your website" required>
+                                <textarea id="add-message" placeholder="your message" required></textarea>
+                                <input type="submit" value="send message" id="add-sub">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--end blog content-->
+            </div>
+        </div>
+    </section>
+    <!--end blog detailes section-->
+    <!--start footer-->
+      <footer class="footer">
+        <div class="container">
+         <div class="row">
+            <!--start content of footer-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="foot-left">
+                    <img src="img/home/logo.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    </p>
+                    <ul class="left-links">
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">reasons to shop</a></li>
+                        <li><a href="#">What our customers say</a></li>
+                        <li><a href="#">Meet the teaml</a></li>
+                        <li><a href="#">Contact our buyers</a></li>
+                    </ul>
+                    <img src="img/home/payment-footer.png">
+                </div>
+            </div>
+            <!--start content of footer-->
+            <!--start content of footer-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="foot-mid">
+                  <h3>contact us</h3>
+                  <div class="foot-address">
+                      <span><i class="fa-solid fa-house-chimney-window"></i>address:</span>
+                      <p>123 Suspendis matti, Visaosang Building VST District NY Accums, North American</p>
+                  </div>  
+                  <div class="foot-email">
+                    <span><i class="fa-solid fa-envelope"></i>email:</span>
+                    <p>alaaabonema@gmail.com</p>
+                </div>  
+                <div class="foot-phone">
+                    <span><i class="fa-solid fa-phone"></i>phone number:</span>
+                    <p>+02 010 25 299 435</p>
+                </div> 
+                <div class="foot-open">
+                    <span><i class="fa-regular fa-clock"></i>openning hours:</span>
+                    <p>monday-sunday 9.00am-7.00pm<br>(expect holidays)</p>
+                </div>   
+                </div>
+            </div>
+            <!--start content of footer-->
+            <!--start content of footer-->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="foot-right">
+                  <h3>new sellter</h3>
+                  <p>Sign up to our newsletter to get the latest articles, lookbooks voucher
+                       codes direct to your inbox
+                </p>
+                <div class="foot-input">
+                    <input type="email" placeholder="enter your email">
+                    <button type="button" class="btn btn-secondary">subscribe</button>
+                </div>
+                <h5>follow us on</h5>
+                <div class="foot-socilas">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-gofore"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <h6>payment accept</h6>
+                <img src="img/home/payment.png">
+                </div>
+            </div>
+            <!--start content of footer-->
+         </div>
+        </div>
+    </footer>
+    <!-- end  footer-->
+    <!--start scroll to top-->
+    <div class="scroll-top">
+        <a href="#"><i class="fa-solid fa-angles-up"></i></a>
+    </div>
+    <!--start scroll to top-->
+    <!--start js files-->
+    <script src="libs/bootstrap/js/jquery-3.6.0.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/bootstrap/js/all.min.js"></script>
+    <script src="libs/bootstrap/js/slick.min.js"></script>
+    <script src="libs/bootstrap/js/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+    <!--end js files-->
+    <!--aos animation-->
+    <script>
+        AOS.init();
+    </script>
+    <!--aos animation-->
+</body>
+
+</html>
