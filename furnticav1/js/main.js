@@ -246,3 +246,17 @@ $(document).ready(function()
     });
 });
 /*end scroll top*/
+/*start category list*/
+$(document).ready(function()
+{
+    $('.category-dropdown a').click(function(e)
+    {
+        e.preventDefault();
+        $(this).find('svg').toggleClass('fa-square-plus');
+        $(this).find('svg').toggleClass('fa-square-minus');
+        $(this).find('svg').toggleClass('active');
+        $(this).toggleClass('active');
+        $(this).parent().find('.drop-menu').slideToggle();
+    });
+});
+/*end category list*/
