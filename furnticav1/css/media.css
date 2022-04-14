@@ -265,10 +265,10 @@
                 }
             }
             /*end brand*/
-            /*start blog detailes html*/
-            @media(max-width:991px)
-            {
-                /*start blog content */
+/*start blog detailes html*/
+@media(max-width:991px)
+{
+/*start blog content */
 .blog-content h3
 {
      font-size: 14px;

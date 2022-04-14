@@ -2140,3 +2140,44 @@ ul {
 /*end comment form*/
 /*end blog content*/
 /*end blog-detailes html*/
+/*start blog list no sidebar*/
+.noside-list-card
+{
+    text-align: center;
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.noside-list-card img
+{
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+}
+.noside-list-card img:hover
+{
+    filter: brightness(1.2);
+}
+.noside-list-card a
+{
+    text-align: center;
+    display: block;
+    padding-bottom: 15px;
+}
+.noside-list-card span
+{
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    color: #777;
+}
+.noside-list-card p
+{
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    line-height: 25px;
+}
+/*end blo list no side bar*/
