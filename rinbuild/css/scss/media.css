@@ -400,25 +400,25 @@ body {
 /*start event count*/
 @media (max-width: 1199px) {
   .event-count {
-    padding-top: 35vh;
+    padding-top: 65vh;
   }
 }
 
 @media (max-width: 991px) {
   .event-count {
-    padding-top: 205vh;
+    padding-top: 255vh;
   }
 }
 
 @media (max-width: 767px) {
   .event-count {
-    padding-top: 215vh;
+    padding-top: 255vh;
   }
 }
 
 @media (max-width: 570px) {
   .event-count {
-    padding-top: 215vh;
+    padding-top: 255vh;
   }
   .counter {
     width: 50%;
@@ -429,7 +429,7 @@ body {
 
 @media (max-width: 300px) {
   .event-count {
-    padding-top: 135vh;
+    padding-top: 155vh;
   }
   .counter {
     width: 50%;
@@ -471,7 +471,7 @@ body {
     padding-top: 165vh;
   }
   .testimonials .testimonial-banner {
-    background-color: #fd7e14;
+    background-color: #ffc107;
     color: #fff;
     padding-top: 50px;
     padding-bottom: 100px;
@@ -496,10 +496,10 @@ body {
 /*end testimonials*/
 @media (max-width: 767px) {
   .testimonials {
-    padding-top: 305vh;
+    padding-top: 380vh;
   }
   .testimonials .testimonial-banner {
-    background-color: #fd7e14;
+    background-color: #ffc107;
     color: #fff;
     padding-top: 50px;
     padding-bottom: 100px;
