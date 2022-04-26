@@ -444,6 +444,7 @@ body {
   .portfolio {
     padding: 60px 0px;
     width: 100%;
+    height: 100vh;
   }
   .portfolio .portfolio-card {
     display: block;
@@ -455,7 +456,36 @@ body {
   .portfolio {
     padding: 60px 0px;
     width: 100%;
+    height: 330vh;
     margin-bottom: 40px;
+  }
+  .portfolio .portfolio-card {
+    display: block;
+    margin: auto;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 540px) {
+  .portfolio {
+    padding: 60px 0px;
+    width: 100%;
+    height: 300vh;
+    margin-bottom: 40px;
+  }
+  .portfolio .portfolio-card {
+    display: block;
+    margin: auto;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .portfolio {
+    padding: 60px 0px;
+    width: 100%;
+    height: 210vh;
+    margin-bottom: 80px;
   }
   .portfolio .portfolio-card {
     display: block;
@@ -467,9 +497,6 @@ body {
 /*end portfolio*/
 /*testimonials*/
 @media (max-width: 991px) {
-  .testimonials {
-    padding-top: 175vh;
-  }
   .testimonials .testimonial-banner {
     background-color: #ffc107;
     color: #fff;
@@ -495,9 +522,6 @@ body {
 
 /*end testimonials*/
 @media (max-width: 767px) {
-  .testimonials {
-    padding-top: 380vh;
-  }
   .testimonials .testimonial-banner {
     background-color: #ffc107;
     color: #fff;
@@ -518,12 +542,6 @@ body {
   .testimonials .testimonial-text {
     width: 100%;
     text-align: center;
-  }
-}
-
-@media (max-width: 550px) {
-  .testimonials {
-    padding-top: 350vh;
   }
 }
 
