@@ -9,7 +9,7 @@ $(function()
         position:'fixed',
         top:'50px',
         left:'0',
-        zIndex:'9999',
+        zIndex:'99999999',
         width:'100%',
     });
     }
@@ -30,7 +30,7 @@ $(function()
     if($(window).scrollTop()>=600)
     {
     $('.navbar').css({
-        backgroundColor:'#343a40',
+        backgroundColor:'#030e27',
     });
     }
     else
