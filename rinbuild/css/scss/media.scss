@@ -112,7 +112,7 @@ $mob-media:"max-width:767px";
         z-index: 999999;
         color: #fff;
         font-size: 22px;
-        left: 150px;
+        left: 170px;
         bottom: 25px;
         transition: .6s;
         &:hover
@@ -131,6 +131,7 @@ $mob-media:"max-width:767px";
         display: none;
                     #mob-search
                     {
+                        width: 75%;
                         height: 40px;
                         padding-left: 5px;
                         margin: 0px 10px;
@@ -148,7 +149,6 @@ $mob-media:"max-width:767px";
                         color: #28a745;
                         padding-right: 5px;
                         padding-right: 5px;
-                        display: block;
                         margin: auto;
                     }
     }
@@ -480,7 +480,8 @@ $mob-media:"max-width:767px";
         }
         .about-img-three
         {
-            right: 10px;
+            right: -10px;
+            width: 90%;
             display: none;
         }
     }

@@ -94,7 +94,7 @@ body {
     z-index: 999999;
     color: #fff;
     font-size: 22px;
-    left: 150px;
+    left: 170px;
     bottom: 25px;
     transition: .6s;
   }
@@ -111,6 +111,7 @@ body {
     display: none;
   }
   .search-mob-filed #mob-search {
+    width: 75%;
     height: 40px;
     padding-left: 5px;
     margin: 0px 10px;
@@ -127,7 +128,6 @@ body {
     color: #28a745;
     padding-right: 5px;
     padding-right: 5px;
-    display: block;
     margin: auto;
   }
   .mob-bars {
@@ -372,7 +372,8 @@ body {
     width: 80%;
   }
   .about .about-images .about-img-three {
-    right: 10px;
+    right: -10px;
+    width: 90%;
     display: none;
   }
 }
