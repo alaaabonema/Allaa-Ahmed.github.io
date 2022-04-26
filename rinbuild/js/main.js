@@ -1,4 +1,47 @@
 /*start navbar*/
+$(function()
+{
+    $(window).scroll(function()
+    {
+    if($(window).scrollTop()>=600)
+    {
+    $('.my-nav').css({
+        position:'fixed',
+        top:'50px',
+        left:'0',
+        zIndex:'9999',
+        width:'100%',
+    });
+    }
+    else
+    {
+        $('.my-nav').css({
+            width: '100%',
+            position: 'relative',
+            top:'0',
+        });
+    }
+});
+});
+$(function()
+{
+    $(window).scroll(function()
+    {
+    if($(window).scrollTop()>=600)
+    {
+    $('.navbar').css({
+        backgroundColor:'#343a40',
+    });
+    }
+    else
+    {
+        $('.navbar').css({
+            backgroundColor:'#030e27',
+            color:'#fff',
+        });
+    }
+});
+});
 $(document).ready(function()
 {
     $('.nav-item a').click(function(e)
