@@ -468,7 +468,7 @@ body {
 /*testimonials*/
 @media (max-width: 991px) {
   .testimonials {
-    padding-top: 165vh;
+    padding-top: 175vh;
   }
   .testimonials .testimonial-banner {
     background-color: #ffc107;
@@ -518,6 +518,12 @@ body {
   .testimonials .testimonial-text {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .testimonials {
+    padding-top: 350vh;
   }
 }
 
