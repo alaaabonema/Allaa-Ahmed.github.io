@@ -382,7 +382,7 @@ body {
 /*start services*/
 @media (max-width: 991px) {
   .company-card-one {
-    width: 50%;
+    width: 100%;
     display: block;
     margin: auto;
   }
@@ -390,7 +390,7 @@ body {
 
 @media (max-width: 767px) {
   .company-card-one {
-    width: 70%;
+    width: 80%;
     display: block;
     margin: auto;
   }
@@ -449,6 +449,8 @@ body {
   .portfolio .portfolio-card {
     display: block;
     margin: auto;
+    margin-left: 0;
+    width: 100%;
   }
 }
 
@@ -462,7 +464,6 @@ body {
   .portfolio .portfolio-card {
     display: block;
     margin: auto;
-    margin-left: 30px;
   }
 }
 
@@ -517,6 +518,11 @@ body {
   .testimonials .testimonial-text {
     width: 100%;
     text-align: center;
+  }
+  .tesimonial-slider {
+    width: 100%;
+    margin-right: 0%;
+    margin-top: 2%;
   }
 }
 

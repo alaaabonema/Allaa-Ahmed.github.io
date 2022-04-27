@@ -153,7 +153,7 @@ a
                 transition: .6s;
                 &:hover
                 {
-                    color: #20c997;
+                    color: #ffc107;
                 }
             }
         }
@@ -172,11 +172,11 @@ a
         position: absolute;
         top: -40px;
         width: 80%;
-        padding: 25px 0px;
+        padding: 20px;
         border-radius: 15px;
         .home-link,.pages-link,.serv-link,.element-link,.blog-link,.contact-link
         {
-            padding-left: 10px;
+            padding: 10px;
             font-size: 18px;
             color: #fff;
             text-transform: capitalize;
@@ -372,7 +372,7 @@ a
                     top: 58px;
                     left: -150px;
                     width: 250px;
-                    background-color:#343a40;
+                    background-color:#030e27;
                     padding: 25px 0px;
                     border-radius: 10px;
                     display: none;
@@ -457,7 +457,7 @@ a
             font-family: 'Raleway', sans-serif;
         }
         b{
-            color: #dc3545;
+            color: #ffc107;
         }
         span{
             display: inline;
@@ -496,16 +496,16 @@ a
                 transition: .6s;
                 &:hover
                 {
-                    border-color: #dc3545;
-                    color: #dc3545;
+                    border-color: #ffc107;
+                    color: #ffc107;
                     background-color: #fff;
                 }
             }
             .slide-view
             {
                 color: #fff;
-                border: 2px solid   #dc3545 ;
-                background-color: #dc3545;
+                border: 2px solid   #ffc107 ;
+                background-color: #ffc107;
                 padding: 8px 14px;
                 text-transform: capitalize;
                 font-family: 'Raleway', sans-serif;
@@ -517,7 +517,7 @@ a
                 {
                     border-color: #fff;
                     background-color: #fff;
-                    color: #dc3545;
+                    color: #ffc107;
                 }
             }
         }
@@ -556,7 +556,7 @@ a
             font-weight: bold;
             letter-spacing: 1.3px;
             a{
-                color: #dc3545;
+                color: #ffc107;
             }
         }
     }
@@ -583,7 +583,7 @@ a
                 font-size: 16px;
             }
             span{
-                background-color: #e83e8c;
+                background-color: #ffc107;
                 padding: 8px 12px;
                 border-radius: 50%;
                 opacity: .4;
@@ -591,7 +591,7 @@ a
             }
         }
         &:hover span{
-            background-color: #dc3545;
+            background-color: #fd7e14;
             opacity: 1;
             color: #f8f9fa;
         }
@@ -614,6 +614,9 @@ a
             cursor: pointer;
             z-index: 88;
             transition: .6s;
+            img{
+                width: 100%;
+            }
             &::before
             {
                 content: '';
@@ -642,11 +645,14 @@ a
         }
         .about-img-two
         {
-            margin: 10px;
+            margin-bottom: 10px;
             position: relative;
             cursor: pointer;
             z-index: 88;
             transition: .6s;
+            img{
+                width: 90%;
+            }
             &:hover img
             {
                 transform: scale(1.1);
@@ -657,8 +663,11 @@ a
             position: absolute;
             z-index: 1;
             top: 160px;
-            right: -140px;
+            right: -160px;
             transition: .6s;
+            img{
+                width: 100%;
+            }
             cursor: pointer;
             &:hover
             {
@@ -734,8 +743,11 @@ a
             z-index: 999;
             transition: .9s;
             margin-bottom: 25px;
-            margin-top: 45px;
+            margin-top: 125px;
             overflow-x: hidden;
+            img{
+                width: 100%;
+            }
             .project-add
             {
                 display: flex;
@@ -782,7 +794,7 @@ a
             z-index: 8888;
             left: 0;
             top: 0;
-            width: 106%;
+            width: 100%;
             height: 0%;
             background-color: rgba($color: #000000, $alpha: .6);
             transition: 1.2s;
@@ -802,13 +814,13 @@ a
                     color:#ffc107;
                     font-size: 60px;
                     margin-left: 43%;
-                    margin-top: 25%;
-                    margin-bottom: 80px;
+                    margin-top: 5%;
+                    margin-bottom: 20px;
                 }
             }
             .overlay-text
             {
-                padding-top: 100px;
+                padding-top: 50px;
                 a{
                     color: #fff;
                     text-transform: capitalize;
@@ -862,7 +874,7 @@ a
         letter-spacing: 1.2px;
         text-align: center;
         padding: 8px 16px;
-        border: 1px solid #fd7e14;
+        border: 1px solid #ffc107;
         display: block;
         margin: auto;
         width: 220px;
@@ -998,7 +1010,7 @@ a
                 .card-icon
                 {
                     position: absolute;
-                    z-index: 99;
+                    z-index: 9999;
                     left: 0;
                     top: 0;
                     width: 100%;
@@ -1077,6 +1089,26 @@ a
                 }
             }
             }
+            .portofolio-button
+        {
+            position: relative;
+            z-index: 99999999;
+            border: 2px solid #ffc107;
+            color:#ffc107;
+            width: 220px;
+            display: block;
+            margin: auto;
+            padding: 10px 18px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: .6s;
+            &:hover
+            {
+                background-color:#ffc107;
+                color: #fff;
+            }
+        }
         }
         .portfolio-buliding
         {
@@ -1098,24 +1130,6 @@ a
             @extend .portfolio-cases;
             display: none;
         }
-        .portofolio-button
-        {
-            border: 2px solid #ffc107;
-            color:#ffc107;
-            width: 220px;
-            display: block;
-            margin: auto;
-            padding: 10px 18px;
-            text-align: center;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: .6s;
-            &:hover
-            {
-                background-color:#ffc107;
-                color: #fff;
-            }
-        }
     }
     /*end portfolio section*/
     .testimonials
@@ -1129,7 +1143,7 @@ a
             background-color:#ffc107;
             color: #fff;
             padding-top: 100px;
-            padding-bottom: 100px;
+            padding-bottom: 152px;
             padding-left: 50px;
             p{
                 font-size: 14px;
@@ -1145,9 +1159,9 @@ a
     /*start test slider*/
    .tesimonial-slider
    {
-       width: 98%;
-       margin-right: 2%;
-       margin-top: 4%;
+       width: 100%;
+       margin-right: 0%;
+       margin-top: 0%;
        background-color: $main-color;
        .item{
            width: 100%;
@@ -1568,17 +1582,19 @@ a
         margin-top: 45px;
         p{
             background-color:#ffc107;
-            padding: 35px;
-            border-radius: 10px;
+            line-height: 65px;
+            border-radius: 5px;
+            padding: 5px;
             color: #fff;
             font-family: 'Raleway', sans-serif;
             letter-spacing: 1.4px;
-            font-size: 18px;
+            font-size: 15px;
+            text-align: center;
         }
         .copy-links
         {
             display: flex;
-            padding-top: 40px;
+            padding-top: 25px;
             flex-wrap: wrap;
             a{
                 color: $second-color;

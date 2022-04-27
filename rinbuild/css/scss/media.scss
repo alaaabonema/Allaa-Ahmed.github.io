@@ -493,7 +493,7 @@ $mob-media:"max-width:767px";
 {
     .company-card-one
     {
-        width: 50%;
+        width: 100%;
         display: block;
         margin: auto;
     }
@@ -502,7 +502,7 @@ $mob-media:"max-width:767px";
 {
     .company-card-one
     {
-        width: 70%;
+        width: 80%;
         display: block;
         margin: auto;
     }
@@ -569,6 +569,8 @@ $mob-media:"max-width:767px";
         {
             display: block;
             margin: auto;
+            margin-left: 0;
+            width: 100%;
         }
     }
 }
@@ -584,7 +586,6 @@ $mob-media:"max-width:767px";
         {
             display: block;
             margin: auto;
-            margin-left: 30px;
         }
     }
 }
@@ -649,6 +650,12 @@ $mob-media:"max-width:767px";
         text-align: center;
     }
 }
+.tesimonial-slider
+   {
+       width: 100%;
+       margin-right: 0%;
+       margin-top: 2%;
+   }
 }
 /*end testimonials*/
 @media(max-width:767px)

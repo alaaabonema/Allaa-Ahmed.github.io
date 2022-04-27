@@ -157,7 +157,7 @@ a {
 }
 
 .head-mid .head-content .phone a:hover, .head-mid .head-content .open a:hover, .head-mid .head-content .mail a:hover {
-  color: #20c997;
+  color: #ffc107;
 }
 
 /*end head mid*/
@@ -173,12 +173,12 @@ a {
   position: absolute;
   top: -40px;
   width: 80%;
-  padding: 25px 0px;
+  padding: 20px;
   border-radius: 15px;
 }
 
 .my-nav .navbar .home-link, .my-nav .navbar .pages-link, .my-nav .navbar .serv-link, .my-nav .navbar .element-link, .my-nav .navbar .blog-link, .my-nav .navbar .contact-link {
-  padding-left: 10px;
+  padding: 10px;
   font-size: 18px;
   color: #fff;
   text-transform: capitalize;
@@ -378,7 +378,7 @@ a {
   top: 58px;
   left: -150px;
   width: 250px;
-  background-color: #343a40;
+  background-color: #030e27;
   padding: 25px 0px;
   border-radius: 10px;
   display: none;
@@ -469,7 +469,7 @@ a {
 }
 
 .home-slider .home-image .slider-text b {
-  color: #dc3545;
+  color: #ffc107;
 }
 
 .home-slider .home-image .slider-text span {
@@ -513,15 +513,15 @@ a {
 }
 
 .home-slider .home-image .slider-text .slider-btn .slide-quote:hover {
-  border-color: #dc3545;
-  color: #dc3545;
+  border-color: #ffc107;
+  color: #ffc107;
   background-color: #fff;
 }
 
 .home-slider .home-image .slider-text .slider-btn .slide-view {
   color: #fff;
-  border: 2px solid   #dc3545;
-  background-color: #dc3545;
+  border: 2px solid   #ffc107;
+  background-color: #ffc107;
   padding: 8px 14px;
   text-transform: capitalize;
   font-family: 'Raleway', sans-serif;
@@ -534,7 +534,7 @@ a {
 .home-slider .home-image .slider-text .slider-btn .slide-view:hover {
   border-color: #fff;
   background-color: #fff;
-  color: #dc3545;
+  color: #ffc107;
 }
 
 /*end home slider*/
@@ -573,7 +573,7 @@ a {
 }
 
 .services .services-title h1 a {
-  color: #dc3545;
+  color: #ffc107;
 }
 
 .services .single-service {
@@ -598,7 +598,7 @@ a {
 }
 
 .services .single-service .serv-text span {
-  background-color: #e83e8c;
+  background-color: #ffc107;
   padding: 8px 12px;
   border-radius: 50%;
   opacity: .4;
@@ -606,7 +606,7 @@ a {
 }
 
 .services .single-service:hover span {
-  background-color: #dc3545;
+  background-color: #fd7e14;
   opacity: 1;
   color: #f8f9fa;
 }
@@ -629,6 +629,10 @@ a {
   cursor: pointer;
   z-index: 88;
   transition: .6s;
+}
+
+.about .about-images .about-img-one img {
+  width: 100%;
 }
 
 .about .about-images .about-img-one::before {
@@ -657,11 +661,15 @@ a {
 }
 
 .about .about-images .about-img-two {
-  margin: 10px;
+  margin-bottom: 10px;
   position: relative;
   cursor: pointer;
   z-index: 88;
   transition: .6s;
+}
+
+.about .about-images .about-img-two img {
+  width: 90%;
 }
 
 .about .about-images .about-img-two:hover img {
@@ -672,9 +680,13 @@ a {
   position: absolute;
   z-index: 1;
   top: 160px;
-  right: -140px;
+  right: -160px;
   transition: .6s;
   cursor: pointer;
+}
+
+.about .about-images .about-img-three img {
+  width: 100%;
 }
 
 .about .about-images .about-img-three:hover {
@@ -755,8 +767,12 @@ a {
   z-index: 999;
   transition: .9s;
   margin-bottom: 25px;
-  margin-top: 45px;
+  margin-top: 125px;
   overflow-x: hidden;
+}
+
+.about .company-services .company-card-one img {
+  width: 100%;
 }
 
 .about .company-services .company-card-one .project-add {
@@ -807,7 +823,7 @@ a {
   z-index: 8888;
   left: 0;
   top: 0;
-  width: 106%;
+  width: 100%;
   height: 0%;
   background-color: rgba(0, 0, 0, 0.6);
   transition: 1.2s;
@@ -827,12 +843,12 @@ a {
   color: #ffc107;
   font-size: 60px;
   margin-left: 43%;
-  margin-top: 25%;
-  margin-bottom: 80px;
+  margin-top: 5%;
+  margin-bottom: 20px;
 }
 
 .about .company-services .company-overlay .overlay-text {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .about .company-services .company-overlay .overlay-text a {
@@ -885,7 +901,7 @@ a {
   letter-spacing: 1.2px;
   text-align: center;
   padding: 8px 16px;
-  border: 1px solid #fd7e14;
+  border: 1px solid #ffc107;
   display: block;
   margin: auto;
   width: 220px;
@@ -1032,7 +1048,7 @@ a {
 
 .portfolio .portfolio-cases .portfolio-card .card-img .card-icon, .portfolio .portfolio-buliding .portfolio-card .card-img .card-icon, .portfolio .portfolio-bridge .portfolio-card .card-img .card-icon, .portfolio .portfolio-houses .portfolio-card .card-img .card-icon, .portfolio .portfolio-interio .portfolio-card .card-img .card-icon {
   position: absolute;
-  z-index: 99;
+  z-index: 9999;
   left: 0;
   top: 0;
   width: 100%;
@@ -1115,6 +1131,26 @@ a {
   padding-right: 10px;
 }
 
+.portfolio .portfolio-cases .portofolio-button, .portfolio .portfolio-buliding .portofolio-button, .portfolio .portfolio-bridge .portofolio-button, .portfolio .portfolio-houses .portofolio-button, .portfolio .portfolio-interio .portofolio-button {
+  position: relative;
+  z-index: 99999999;
+  border: 2px solid #ffc107;
+  color: #ffc107;
+  width: 220px;
+  display: block;
+  margin: auto;
+  padding: 10px 18px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: .6s;
+}
+
+.portfolio .portfolio-cases .portofolio-button:hover, .portfolio .portfolio-buliding .portofolio-button:hover, .portfolio .portfolio-bridge .portofolio-button:hover, .portfolio .portfolio-houses .portofolio-button:hover, .portfolio .portfolio-interio .portofolio-button:hover {
+  background-color: #ffc107;
+  color: #fff;
+}
+
 .portfolio .portfolio-buliding {
   display: none;
 }
@@ -1131,24 +1167,6 @@ a {
   display: none;
 }
 
-.portfolio .portofolio-button {
-  border: 2px solid #ffc107;
-  color: #ffc107;
-  width: 220px;
-  display: block;
-  margin: auto;
-  padding: 10px 18px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: .6s;
-}
-
-.portfolio .portofolio-button:hover {
-  background-color: #ffc107;
-  color: #fff;
-}
-
 /*end portfolio section*/
 .testimonials {
   position: relative;
@@ -1161,7 +1179,7 @@ a {
   background-color: #ffc107;
   color: #fff;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 152px;
   padding-left: 50px;
 }
 
@@ -1178,9 +1196,9 @@ a {
 
 /*start test slider*/
 .tesimonial-slider {
-  width: 98%;
-  margin-right: 2%;
-  margin-top: 4%;
+  width: 100%;
+  margin-right: 0%;
+  margin-top: 0%;
   background-color: #030e27;
 }
 
@@ -1623,17 +1641,19 @@ a {
 
 .foot .copy-right p {
   background-color: #ffc107;
-  padding: 35px;
-  border-radius: 10px;
+  line-height: 65px;
+  border-radius: 5px;
+  padding: 5px;
   color: #fff;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1.4px;
-  font-size: 18px;
+  font-size: 15px;
+  text-align: center;
 }
 
 .foot .copy-right .copy-links {
   display: flex;
-  padding-top: 40px;
+  padding-top: 25px;
   flex-wrap: wrap;
 }
 
