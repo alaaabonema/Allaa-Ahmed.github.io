@@ -498,6 +498,7 @@ a {
 
 .home-slider .home-image .slider-text .slider-btn {
   display: flex;
+  position: relative;
 }
 
 .home-slider .home-image .slider-text .slider-btn .slide-quote {
@@ -509,6 +510,7 @@ a {
   font-size: 17px;
   letter-spacing: 2px;
   margin-right: 20px;
+  margin-top: 25px;
   transition: .6s;
 }
 
@@ -523,12 +525,14 @@ a {
   border: 2px solid   #ffc107;
   background-color: #ffc107;
   padding: 8px 14px;
+  margin-top: 25px;
   text-transform: capitalize;
   font-family: 'Raleway', sans-serif;
   font-size: 17px;
   letter-spacing: 2px;
   margin-right: 20px;
   transition: .6s;
+  cursor: pointer;
 }
 
 .home-slider .home-image .slider-text .slider-btn .slide-view:hover {
