@@ -374,11 +374,19 @@ $mob-media:"max-width:767px";
     .services{
         padding-top: 135vh;
     }
+    .company-btn
+    {
+        margin-top: 60px;
+    }
 }
 @media(max-width:991px)
 {
     .services{
         padding-top: 135vh;
+    }
+    .company-btn
+    {
+        margin-top: 20px;
     }
 }
 @media(max-width:767px)
@@ -512,11 +520,12 @@ $mob-media:"max-width:767px";
         margin-top: 215vh;
     }
 }
-@media(max-width:570px)
+@media(max-width:550px)
 {
     .event-count
     {
-        margin-top: 165vh;
+        margin-top: 180vh;
+        transform: translateY(80px);
     }
     .counter
     {
@@ -525,11 +534,11 @@ $mob-media:"max-width:767px";
         margin: auto;
     }
 }
-@media(max-width:400px)
+@media(max-width:450px)
 {
     .event-count
     {
-        margin-top: 140vh;
+        margin-top: 150vh;
     }
     .counter
     {

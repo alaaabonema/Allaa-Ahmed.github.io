@@ -280,11 +280,17 @@ body {
   .services {
     padding-top: 135vh;
   }
+  .company-btn {
+    margin-top: 60px;
+  }
 }
 
 @media (max-width: 991px) {
   .services {
     padding-top: 135vh;
+  }
+  .company-btn {
+    margin-top: 20px;
   }
 }
 
@@ -400,9 +406,10 @@ body {
   }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 550px) {
   .event-count {
-    margin-top: 165vh;
+    margin-top: 180vh;
+    transform: translateY(80px);
   }
   .counter {
     width: 50%;
@@ -411,9 +418,9 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .event-count {
-    margin-top: 140vh;
+    margin-top: 150vh;
   }
   .counter {
     width: 50%;
