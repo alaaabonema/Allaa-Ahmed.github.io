@@ -489,38 +489,20 @@ $mob-media:"max-width:767px";
 }
 /*end about*/
 /*start services*/
-@media(max-width:991px)
-{
-    .company-card-one
-    {
-        width: 100%;
-        display: block;
-        margin: auto;
-    }
-}
-@media(max-width:767px)
-{
-    .company-card-one
-    {
-        width: 80%;
-        display: block;
-        margin: auto;
-    }
-}
 /*end services*/
 /*start event count*/
 @media(max-width:1199px)
 {
     .event-count
     {
-        padding-top: 65vh;
+        padding-top: 25vh;
     }
 }
 @media(max-width:991px)
 {
     .event-count
     {
-        padding-top: 255vh;
+        padding-top: 350vh;
     }
 }
 @media(max-width:767px)
@@ -534,7 +516,7 @@ $mob-media:"max-width:767px";
 {
     .event-count
     {
-        padding-top: 200vh;
+        padding-top: 260vh;
     }
     .counter
     {
@@ -543,7 +525,7 @@ $mob-media:"max-width:767px";
         margin: auto;
     }
 }
-@media(max-width:300px)
+@media(max-width:350px)
 {
     .event-count
     {

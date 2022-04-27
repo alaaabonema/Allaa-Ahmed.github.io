@@ -902,7 +902,7 @@ a
 .event-count
 {
     position: relative;
-    padding-top: 55vh;
+    padding-top: 35vh;
     bottom: 0;
     width: 100%;
     overflow-x: hidden;
@@ -1040,6 +1040,7 @@ a
                 {
                     background-color:#ffc107;
                     color: #fff;
+                    box-shadow: 3px 3px 3px $second-color;
                 }
                 &:hover .portfolio-info p,
                 &:hover .portfolio-info a,
@@ -1062,6 +1063,7 @@ a
                     background-color: #fff;
                     border-radius: 5px;
                     transition: 2s;
+                    box-shadow: 3px 3px 3px $main-color;
                     p{
                         background-color:#ffc107;
                         color: #fff;

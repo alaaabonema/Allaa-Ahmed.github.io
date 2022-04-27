@@ -929,7 +929,7 @@ a {
 /*start event count*/
 .event-count {
   position: relative;
-  padding-top: 55vh;
+  padding-top: 35vh;
   bottom: 0;
   width: 100%;
   overflow-x: hidden;
@@ -1079,6 +1079,7 @@ a {
 .portfolio .portfolio-cases .portfolio-card .card-img:hover .portfolio-info, .portfolio .portfolio-buliding .portfolio-card .card-img:hover .portfolio-info, .portfolio .portfolio-bridge .portfolio-card .card-img:hover .portfolio-info, .portfolio .portfolio-houses .portfolio-card .card-img:hover .portfolio-info, .portfolio .portfolio-interio .portfolio-card .card-img:hover .portfolio-info {
   background-color: #ffc107;
   color: #fff;
+  box-shadow: 3px 3px 3px #798795;
 }
 
 .portfolio .portfolio-cases .portfolio-card .card-img:hover .portfolio-info p, .portfolio .portfolio-buliding .portfolio-card .card-img:hover .portfolio-info p, .portfolio .portfolio-bridge .portfolio-card .card-img:hover .portfolio-info p, .portfolio .portfolio-houses .portfolio-card .card-img:hover .portfolio-info p, .portfolio .portfolio-interio .portfolio-card .card-img:hover .portfolio-info p,
@@ -1101,6 +1102,7 @@ a {
   background-color: #fff;
   border-radius: 5px;
   transition: 2s;
+  box-shadow: 3px 3px 3px #030e27;
 }
 
 .portfolio .portfolio-cases .portfolio-card .card-img .portfolio-info p, .portfolio .portfolio-buliding .portfolio-card .card-img .portfolio-info p, .portfolio .portfolio-bridge .portfolio-card .card-img .portfolio-info p, .portfolio .portfolio-houses .portfolio-card .card-img .portfolio-info p, .portfolio .portfolio-interio .portfolio-card .card-img .portfolio-info p {

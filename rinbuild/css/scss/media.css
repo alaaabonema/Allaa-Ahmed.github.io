@@ -380,33 +380,17 @@ body {
 
 /*end about*/
 /*start services*/
-@media (max-width: 991px) {
-  .company-card-one {
-    width: 100%;
-    display: block;
-    margin: auto;
-  }
-}
-
-@media (max-width: 767px) {
-  .company-card-one {
-    width: 80%;
-    display: block;
-    margin: auto;
-  }
-}
-
 /*end services*/
 /*start event count*/
 @media (max-width: 1199px) {
   .event-count {
-    padding-top: 65vh;
+    padding-top: 25vh;
   }
 }
 
 @media (max-width: 991px) {
   .event-count {
-    padding-top: 255vh;
+    padding-top: 350vh;
   }
 }
 
@@ -418,7 +402,7 @@ body {
 
 @media (max-width: 570px) {
   .event-count {
-    padding-top: 200vh;
+    padding-top: 260vh;
   }
   .counter {
     width: 50%;
@@ -427,7 +411,7 @@ body {
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .event-count {
     padding-top: 155vh;
   }
