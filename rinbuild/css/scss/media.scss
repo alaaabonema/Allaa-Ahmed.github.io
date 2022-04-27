@@ -111,13 +111,13 @@ $mob-media:"max-width:767px";
         position: absolute;
         z-index: 999999;
         color: #fff;
-        font-size: 22px;
-        left: 170px;
+        font-size: 20px;
+        left: 160px;
         bottom: 25px;
         transition: .6s;
         &:hover
         {
-            color: #fd7e14;
+            color: #ffc107;
         }
     }
     .search-mob-filed
@@ -495,28 +495,28 @@ $mob-media:"max-width:767px";
 {
     .event-count
     {
-        padding-top: 25vh;
+        margin-top: 15vh;
     }
 }
 @media(max-width:991px)
 {
     .event-count
     {
-        padding-top: 350vh;
+        margin-top: 300vh;
     }
 }
 @media(max-width:767px)
 {
     .event-count
     {
-        padding-top: 255vh;
+        margin-top: 215vh;
     }
 }
 @media(max-width:570px)
 {
     .event-count
     {
-        padding-top: 260vh;
+        margin-top: 165vh;
     }
     .counter
     {
@@ -525,11 +525,11 @@ $mob-media:"max-width:767px";
         margin: auto;
     }
 }
-@media(max-width:350px)
+@media(max-width:400px)
 {
     .event-count
     {
-        padding-top: 155vh;
+        margin-top: 140vh;
     }
     .counter
     {
