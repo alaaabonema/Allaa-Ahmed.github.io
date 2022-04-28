@@ -390,7 +390,7 @@ body {
 /*start event count*/
 @media (max-width: 1199px) {
   .event-count {
-    margin-top: 15vh;
+    margin-top: 20vh;
   }
 }
 
@@ -402,14 +402,15 @@ body {
 
 @media (max-width: 767px) {
   .event-count {
-    margin-top: 215vh;
+    margin-top: 212vh;
   }
 }
 
 @media (max-width: 550px) {
   .event-count {
-    margin-top: 180vh;
+    margin-top: 175vh;
     transform: translateY(80px);
+    margin-bottom: 50px;
   }
   .counter {
     width: 50%;
@@ -420,7 +421,18 @@ body {
 
 @media (max-width: 450px) {
   .event-count {
-    margin-top: 150vh;
+    margin-top: 100vh;
+  }
+  .counter {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 380px) {
+  .event-count {
+    margin-top: 120vh;
   }
   .counter {
     width: 50%;
