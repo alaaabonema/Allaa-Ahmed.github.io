@@ -1,0 +1,859 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+a:hover
+{
+    color: #777;
+}
+ul{
+    list-style: none;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    width: 100%;
+    overflow-x: hidden;
+}
+/*end global rules
+/*start head top*/
+.head-top
+{
+    width: 100%;
+}
+.head-content
+{
+    padding: 20px 0px 40px;
+}
+.head-content a:last-child
+{
+    text-align: center;
+    margin-left: 45%;
+}
+.head-title
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.head-title h3{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    padding-left: 10px;
+}
+.head-links a
+{
+    text-transform: capitalize;
+    font-size: 14px;
+    padding-right: 10px;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+.head-links svg
+{
+    padding-right: 8px;
+}
+.head-links a:hover
+{
+    opacity: .9;
+    color: #777;
+}
+.car-title
+{
+    padding: 20px 10px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: .7s;
+    margin-bottom: 25px;
+}
+.car-title a:hover
+{
+    color: #777;
+    padding-left: 10px;
+}
+/*end head top*/
+/*start head engine top*/
+.head-top
+{
+    width: 100%;
+}
+.head-engine-content
+{
+    padding: 20px 0px 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.engine-links
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.engine-links a
+{
+    font-size: 16px;
+    padding-right: 20px;
+    text-transform: capitalize;
+}
+.search-icon
+{
+    position: absolute;
+    right: 15%;
+    top: 20px;
+    font-size: 26px;
+}
+.engine-fixed-search
+{
+    position: fixed;
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 40vh;
+    display: none;
+}
+.close-engine
+{
+    position: absolute;
+    left: 20%;
+    top: 40px;
+    font-size:24px ;
+}
+#engine-search
+{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translateX(-50%);
+    width: 35%;
+    height: 45px;
+    outline: transparent;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding-left: 15px;
+}
+.search-fixed
+{
+    position: absolute;
+    right: 25%;
+    top: 17%;
+    font-size: 17px;
+    color: #777;
+}
+.engine-fast-link
+{
+    position: absolute;
+    left: 35%;
+    top: 35%;
+}
+.engine-fast-link li
+{
+    font-size: 13px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.engine-fast-link a
+{
+    font-size: 17px;
+}
+.head-title
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.head-title h3{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    padding-left: 10px;
+}
+.head-links a
+{
+    text-transform: capitalize;
+    font-size: 14px;
+    padding-right: 10px;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+.head-links svg
+{
+    padding-right: 8px;
+}
+.head-links a:hover
+{
+    opacity: .9;
+    color: #777;
+}
+.car-title
+{
+    padding: 20px 10px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    transition: .7s;
+    margin-bottom: 25px;
+}
+.car-title a:hover
+{
+    color: #777;
+    padding-left: 10px;
+}
+/*end head  engine top*/
+/*start navbar*/
+.my-nav
+{
+    width: 100%;
+    position: relative;
+}
+.navbar
+{
+    background-color: black;
+    display: flex;
+    height: 50px;
+}
+.navbar a
+{
+    color: #ddd;
+    border-right: 1px solid #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Roboto',sans-serif;
+    text-transform: capitalize;
+    padding: 15px 60px;
+    margin-left: -30px;
+    transition: .6s;
+}
+.navbar a.active
+{
+    background-color: #ddd;
+}
+.navbar a:hover
+{
+    color: #fff;
+}
+.navbar .search-result
+{
+    color: #fff;
+}
+.mob-menu
+{
+    color: #fff;
+}
+@media(min-width:1199px)
+{
+    .mob-menu
+    {
+    display: none;
+    }
+}
+@media(max-width:991px)
+{
+    .navbar a
+    {
+        display: none;
+    }
+    .mob-menu
+    {
+    display: inline;
+    }
+}
+/*end navbar*/
+/*start our box*/
+/*start car price section*/
+.car-price
+{
+    width: 100%;
+    padding-top: 50px;
+}
+.car-price .head-text 
+{
+    margin-bottom: 30px;
+}
+.car-price .head-text h3
+{
+    font-size: 38px;
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: 2px;
+}
+.car-price .head-text p
+{
+    font-size: 14px;
+    padding-bottom: 45px;
+}
+.car-price .head-text span
+{
+    color: crimson;
+}
+.car-price .head-text a
+{
+    border: 1px solid black;
+    text-transform: capitalize;
+    padding: 15px;
+    letter-spacing: 1.6px;
+    transition: .6s;
+}
+.car-price .head-text a:hover
+{
+    color: #777;
+    border-color: #777;
+}
+/*end car price section*/
+/*start price range*/
+.main
+{
+    width: 100%;
+    position: relative;
+    margin: auto;
+    margin:50px 0px 20px;
+}
+.main h3
+{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding-bottom: 100px;
+}
+#slider
+{
+    width: 100%;
+    -webkit-appearance: none;
+    height: 25px;
+    outline: none;
+    border-radius: 3px;
+    background-color: #ddd;
+    border: 2px solid #ddd;
+}
+#slider::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+}
+#selector
+{
+    height: 104px;
+    width: 48px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+.selectBtn
+{
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/1203825.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+}
+#selectvalue
+{
+    width: 100px;
+    height: 48px;
+    position: absolute;
+    z-index: 4;
+    top:-10PX;
+    left: -35px;
+    background: #fff;
+    border: 1px solid #777;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1PX;
+}
+#selectvalue::after
+{
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+}
+#selector-two
+{
+    height: 104px;
+    width: 48px;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+}
+.selectBtntwo
+{
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/1203825\ -\ Copy.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 24px;
+    right: 0;
+}
+#selectvaluetwo
+{
+    width: 120px;
+    height: 48px;
+    position: absolute;
+    z-index: 2;
+    top:-10PX;
+    left: -35px;
+    background: #fff;
+    border: 1px solid #777;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1PX;
+}
+#selectvaluetwo::after
+{
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    right: 0;
+}
+.engine-link
+{
+    position: relative;
+    float: right;
+    border: 1px solid black;
+    text-transform: capitalize;
+    width: 180px;
+    letter-spacing: 1.6px;
+    transition: .6s;
+    text-align: center;
+    padding: 8px;
+    margin: 25px 0px;
+}
+/*end price range*/
+/*start car information*/
+.car-information
+{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #ddd;
+}
+.results-head
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+.results-head h5{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-family: 'Roboto',sans-serif;
+}
+.result-info select
+{
+    border: transparent;
+    outline: transparent;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+.result-info a
+{
+    font-size: 18px;
+    color: black;
+    margin-left: 15px;
+    background-color: #ccc;
+    text-align: center;
+    padding: 4px 6px;
+    border-radius: 10px;
+}
+.result-info a.active,
+.result-info a:hover
+{
+    color: #777;
+}
+/*end car information*/
+/*start car card*/
+.car-show
+{
+    width: 100%;
+    padding-bottom: 25px;
+}
+.car-card
+{
+    width: 98%;
+    margin: 25px 1%;
+}
+.car-card.list
+{
+    display: flex;
+}
+.car-card.list .car-img
+{
+    width: 40%;
+    margin-right: 30px;
+    margin-top:20px;
+}
+.car-card.list .car-img img
+{
+    width: 100%;
+}
+.car-img
+{
+    width: 100%;
+    position: relative;
+}
+.car-img img
+{
+    width: 98%;
+    display: block;
+    margin: auto;
+}
+.car-img .leftslick
+{
+    position: absolute;
+    z-index: 99;
+    bottom: 0px;
+    right: 0px;
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+    background-color: #fff;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+.car-img .rightslick
+{
+    position: absolute;
+    z-index: 999;
+    bottom: 0px;
+    right: 40px;
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+    background-color: #fff;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+/*start car info*/
+.car-info
+{
+    width: 100%;
+}
+.car-info >a
+{
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    display: block;
+    font-size: 22px;
+    padding-top: 15px;
+}
+.car-info small
+{
+    color: #777;
+    display: block;
+}
+.car-info .car-price
+{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+}
+.car-location
+{
+    display: flex;
+    padding: 10px 0px;
+}
+.car-location svg
+{
+    margin: 15px 15px 0px 0px;
+}
+.car-location span
+{
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.car-distance span
+{
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.car-distance svg
+{
+    padding-right: 10px;
+}
+.car-buttons
+{
+    display: flex;
+    margin-top: 25px;
+    border-bottom: 1px solid #777;
+    padding-bottom: 10px;
+}
+.car-buttons .car-explore
+{
+    width:48%;
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 6px 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.car-buttons .car-order
+{
+    width:48%;
+    background-color: black;
+    border: 1px solid black;
+    color: #fff;
+    padding: 6px 10px;
+    text-align: center;
+    margin-left: 2%;
+    transition: .6s;
+    text-transform: capitalize;
+}
+.car-buttons .car-order:hover
+{
+    background-color: #777;
+    border-color: #777;
+}
+.car-compare
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+.car-compare a
+{
+    padding-right: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 1.2px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.car-compare svg{
+    padding-right: 5px;
+}
+/*end car info*/
+/*end car card*/
+/*start car tile*/
+.car-tile
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.tile-icon
+{
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+/*end car tile*/
+/*end our box*/
+/*start footer*/
+footer{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+    padding: 50px 0px;
+}
+.model-links .main-link,
+.ownership-links .main-link,
+.try-links .main-link
+{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: bold;
+}
+.model-links li,
+.ownership-links li,
+.try-links li
+{
+    margin: 10px 0px;
+}
+.model-links a,
+.ownership-links a,
+.try-links a
+{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 13px;
+    color: #fff;
+}
+.ownership-links
+{
+    margin-top: 40px;
+}
+.try-links
+{
+    margin-bottom: 150px;
+}
+.model-links
+{
+    position: relative;
+}
+.foot-social
+{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+.foot-social a
+{
+    color: #fff;
+    padding-left: 10px;
+}
+.foot-advice
+{
+    padding-top: 50px;
+    border-top: 2px solid #ddd;
+}
+.advice-head
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.advice-head p
+{
+    color: #fff;
+    letter-spacing: 1px;
+}
+.advice-head a
+{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 12px;
+    padding-left: 25px;
+    padding-top: 5px;
+    transition: .6s;
+}
+.advice-head a:hover
+{
+    color: #ddd;
+}
+.advice-text
+{
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    padding-top: 30px;
+}
+/*end footer*/
+/*start our engine box*/
+/*start car price section*/
+.car-engine
+{
+    width: 100%;
+    padding-top: 50px;
+}
+.car-engine .head-text 
+{
+    margin-bottom: 30px;
+}
+.car-engine .head-text h3
+{
+    font-size: 38px;
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: 2px;
+}
+.car-engine .head-text p
+{
+    font-size: 14px;
+    padding-bottom: 45px;
+}
+.car-engine .head-text span
+{
+    color: crimson;
+}
+.car-engine .head-text a
+{
+    border: 1px solid black;
+    text-transform: capitalize;
+    padding: 15px;
+    letter-spacing: 1.6px;
+    transition: .6s;
+}
+.car-engine .head-text a:hover
+{
+    color: #777;
+    border-color: #777;
+}
+.drivetrain
+{
+    padding:50px 0px;
+}
+.drivetrain h3
+{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.drivetrain svg
+{
+    font-size: 26px;
+    background-color: #ddd;
+    padding: 12px;
+    border-radius: 50%;
+    margin-top: 25px;
+    transform: translateY(30px);
+    margin-left: 25px;
+}
+.drivetrain label
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+.fuel
+{
+    padding: 60px 0px ;
+}
+.fuel h3
+{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+.form-check
+{
+    display: inline-block;
+    margin-left: 30px;
+}
+.fuel .form-check-label
+{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    color: #777;
+}
+.form-check-input
+{
+    width: 20px;
+    height: 20px;
+}
+/*end car price section*/
+/*end our engine box*/
