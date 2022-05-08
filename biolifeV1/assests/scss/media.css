@@ -434,6 +434,7 @@ body {
   }
   .chef-advice .chef-img img {
     position: absolute;
+    z-index: 99999999999;
     width: 150%;
     top: 100px;
     left: -50px;
@@ -456,6 +457,7 @@ body {
   .chef-advice .chef-img img {
     width: 90%;
     position: absolute;
+    z-index: 99999999999;
     top: -100px;
     left: 0px;
   }

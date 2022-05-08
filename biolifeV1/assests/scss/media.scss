@@ -515,6 +515,7 @@ body
         position: relative;
         img{
         position: absolute;
+        z-index: 99999999999;
         width: 150%;
         top: 100px;
         left: -50px;
@@ -540,6 +541,7 @@ body
         img{
         width: 90%;
         position: absolute;
+        z-index: 99999999999;
         top: -100px;
         left: 0px;
         }
