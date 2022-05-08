@@ -385,12 +385,15 @@ body {
 
 /*end fresh-fruits section*/
 /*start wrapper slider*/
-@media (max-width: 767px) {
-  .slider-wrapper {
-    display: none;
-  }
+/*
+@media(max-width:767px)
+{
+    .slider-wrapper
+    {
+        display: none;
+    }
 }
-
+*/
 /*end wrapper slider*/
 /*start vegtables-banner */
 @media (max-width: 767px) {
