@@ -379,7 +379,6 @@ body
     .pomegrante
     {
         position: relative;
-        margin-bottom: 25px;
     }
 }
 @media(max-width:767px)
@@ -387,7 +386,7 @@ body
     .pomegrante
     {
         position: relative;
-        margin-top: 82vh;
+        margin-top: 80vh;
     }
 }
 @media(max-width:450px)
@@ -456,27 +455,25 @@ body
 }
 /*end fresh-fruits section*/
 /*start wrapper slider*/
-/*
 @media(max-width:767px)
 {
     .slider-wrapper
     {
-        display: none;
+        margin-top: 120vh;
     }
 }
-*/
 /*end wrapper slider*/
 /*start vegtables-banner */
 @media(max-width:767px)
 {
     .vegtables-banner
     {
+        height: 80vh;
         .vegta-text
         {
             width: 70%;
             display: block;
             margin: auto;
-            padding: 2%;
             h2{
                 font-size: 34px;
             }

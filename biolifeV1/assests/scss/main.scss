@@ -1507,13 +1507,13 @@ $third-color:#FF5733;
 }
 /*end fresh-fruits section*/
 /*start slider wrapper*/
-/*
 .slider-wrapper
 {
+    width: 100%;
+    height: 100%;
     position: relative;
-    margin-top: 125vh;
+    margin-top: 135vh;
 }
-*/
 /*end slider wrappr*/
 /*start fixed-product */
 .fixed-product
@@ -1749,15 +1749,18 @@ $third-color:#FF5733;
 .vegtables-banner
 {
     background-image: url(../images/home-03/bg_banner_pomotion_org.png);
+    background-size: cover;
     position: relative;
     padding-top: 100px;
-    height: 100vh;
+    height: 90vh;
     margin-bottom: 50px;
     .vegta-text
     {
-        padding-top: 8%;
+        padding-top: 4%;
         padding-left: 10%;
-        width: 60%;
+        width: 70%;
+        display: block;
+        margin: auto;
         h3{
             color: #fff;
             font-weight: lighter;
