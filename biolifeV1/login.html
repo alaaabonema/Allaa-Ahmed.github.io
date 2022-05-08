@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>biolife/login</title>
+    <!--start css files-->
+    <link rel="stylesheet" href="assests/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assests/bootstrap/css/all.min.css">
+    <link rel="stylesheet" href="assests/bootstrap/css/jquery-ui.css">
+    <link rel="stylesheet" href="assests/bootstrap/css/slick-theme.css">
+    <link rel="stylesheet" href="assests/bootstrap/css/slick.css">
+    <link rel="stylesheet" href="assests/scss/dark.css">
+    <link rel="stylesheet" href="assests/scss/nivo-slider.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assests/scss/main.css">
+    <link rel="stylesheet" href="assests/scss/media.css">
+    <!--end css files-->
+    <!--start js files-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assests/bootstrap/js/html5shiv.min.js"></script>
+    <script src="assests/bootstrap/js/respond.min.js"></script>
+    <!--end js files-->
+</head>
+<body>
+    <!--start head top-->
+    <div class="head-top">
+        <div class="container">
+            <div class="head-links">
+                <a href="gmail.com"><i class="fa-solid fa-envelope"></i>alaaahmed659696@gmail.com</a>
+                <a href="#">free shipping for all order of $99</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div class="head-select">
+                <select class="currency">
+                    <option>eur(euro)</option>
+                    <option>$usd(dollar)</option>
+                    <option>gbp(pound</option>
+                    <option selected>jpy(yen)</option>
+                </select>
+                <select class="language">
+                    <option>english</option>
+                    <option selected>french</option>
+                    <option>germany</option>
+                    <option>jpan(jpn)</option>
+                </select>
+                <a href="login.html" class="reg"><i class="fa-solid fa-user-gear"></i>register/login</a>
+            </div>
+        </div>
+    </div>
+    <!--end head top-->
+    <!--start head nav-->
+    <div class="head-nav">
+        <div class="container">
+            <!--start navbar-->
+            <nav class="my-nav">
+                    <ul class="navbar">
+                        <li class="brand"><a href="index.html"><img src="assests/images/organic-3.png"></a></li>
+                        <li class="nav-item active"><a href="#">home</a></li>
+                        <li class="nav-item sho"><a href="#">shop<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="shop-menu">
+                                <ul class="flex-menu">
+                                    <li><h5>fresh berries</h5></li>
+                                    <li><a href="#">fruites&nut gifts</a></li>
+                                    <li><a href="#">mixed fruties</a></li>
+                                    <li><a href="#">oranges</a></li>
+                                    <li><a href="#">bananes&plantines</a></li>
+                                    <li><a href="#">fresh apples</a></li>
+                                </ul>
+                                <ul class="flex-menu">
+                                    <li><h5>vegtables</h5></li>
+                                    <li><a href="#">berries</a></li>
+                                    <li><a href="#">pears</a></li>
+                                    <li><a href="#">chilie bears</a></li>
+                                    <li><a href="#">fresh avacodo</a></li>
+                                    <li><a href="#">graps</a></li>
+                                </ul>
+                                <ul class="flex-menu">
+                                    <li><h5>fresh products</h5></li>
+                                    <li><a href="#">Coffee Creamers</a></li>
+                                    <li><a href="#">Mayonnaise</a></li>
+                                    <li><a href="#">Almond Milk</a></li>
+                                    <li><a href="#">Fruit Jam</a></li>
+                                    <li><a href="#">Beverages</a></li>
+                                </ul>
+                                <ul class="flex-menu">
+                                    <li><h5>fresh fruites</h5></li>
+                                    <li><a href="#">basket of apples</a></li>
+                                    <li><a href="#">strawberry</a></li>
+                                    <li><a href="#">blueberry</a></li>
+                                    <li><a href="#">orange</a></li>
+                                    <li><a href="#">pineapple</a></li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="nav-item pro"><a href="#">products<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="product-menu">
+                                <ul class="flex-menu">
+                                    <li><a href="#">omelettes</a></li>
+                                    <li><a href="#">brakfast scramples</a></li>
+                                    <li class="right-toggle-one"><a href="#">eggs&other considrations<i class="fa-solid fa-angle-right"></i></a>
+                                        <ul class="right-menu-one">
+                                            <li><a href="#">classic breakfast</a></li>
+                                            <li><a href="#">Huevos Rancheros</a></li>
+                                            <li><a href="#">Everything Egg Sandwich</a></li>
+                                            <li><a href="#">Egg Sandwich</a></li>
+                                            <li><a href="#">Vegan Burrito</a></li>
+                                            <li><a href="#">Biscuits and Gravy</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">griddle</a></li>
+                                    <li><a href="#">biskutes</a></li>
+                                    <li class="right-toggle-two"><a href="#">sides&extras<i class="fa-solid fa-angle-right"></i></a>
+                                        <ul class="right-menu-two">
+                                            <li><a href="#">Breakfast Burrito</a></li>
+                                            <li><a href="#">Crab Cake Benedict</a></li>
+                                            <li><a href="#">Corned Beef Hash</a></li>
+                                            <li><a href="#">Steak & Eggs</a></li>
+                                            <li><a href="#">Fruit & Yogurt Parfait</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Seasonal Fruit Plate</a></li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="nav-item dem"><a href="#">demo<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="demo-menu">
+                                <ul class="flex-menu">
+                                    <li><h5>home page</h5></li>
+                                    <li><a href="#">home 1</a></li>
+                                    <li><a href="#">home 2</a></li>
+                                    <li><a href="#">home 3</a></li>
+                                    <li><a href="#">home 3 green</a></li>
+                                    <li><a href="#">home 4</a></li>
+                                    <li><a href="#">home 4 light</a></li>
+                                    <li><a href="#">home 5</a></li>
+                                </ul>
+                                <ul class="flex-menu">
+                                    <li><h5>inner pages</h5></li>
+                                    <li><a href="#">blog single</a></li>
+                                    <li><a href="#">blog style 1</a></li>
+                                    <li><a href="#">blog style 2</a></li>
+                                    <li><a href="#">blog style 3</a></li>
+                                    <li><a href="#">contact us</a></li>
+                                    <li><a href="about-us.html">about us</a></li>
+                                    <li><a href="#">check out</a></li>
+                                    <li><a href="shopping-cart.html">shopping cart</a></li>
+                                    <li><a href="login.html">login/register</a></li>
+                                    <li><a href="#">404</a></li>
+                                </ul>
+                                <ul class="flex-menu">
+                                    <li><h5>category pages</h5></li>
+                                    <li><a href="#">grid 3columns</a></li>
+                                    <li><a href="#">grid 4columns</a></li>
+                                    <li><a href="#">grid 6columns</a></li>
+                                    <li><a href="#">grid left  sidebar</a></li>
+                                    <li><a href="#">grid right sidebar</a></li>
+                                    <li><a href="#">list full</a></li>
+                                    <li><a href="#">list leftt sidebar</a></li>
+                                    <li><a href="#">list right sidebar</a></li>
+                                </ul>
+                                <ul class="flex-menu">
+                                    <li><h5>product types</h5></li>
+                                    <li><a href="#">simple</a></li>
+                                    <li><a href="#">grouped</a></li>
+                                    <li><a href="#">external/effiliate</a></li>
+                                    <li><a href="#">Variable</a></li>
+                                    <li><a href="#">Countdown</a></li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="nav-item blo"><a href="#">blog<i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="blog-menu">
+                                <ul class="flex-menu">
+                                    <li><h5>blog categories</h5></li>
+                                    <li><a href="#">Beauty (30)</a></li>
+                                    <li><a href="#">Fashion (50)</a></li>
+                                    <li><a href="#">Food (10)</a></li>
+                                    <li><a href="#">Life Style (60)</a></li>
+                                    <li><a href="#">Nutrition (35)</a></li>
+                                    <li><a href="#">Food Decoration (45)</a></li>
+                                </ul>
+                                <ul class="flex-menu">
+                                    <li><h5>features post</h5></li>
+                                    <li><a href="#">#post 1</a></li>
+                                    <li><a href="#">#post 2</a></li>
+                                    <li><a href="#">#post 3</a></li>
+                                    <li><a href="#">#post 4</a></li>
+                                    <li><a href="#">#post 5</a></li>
+                                    <li><a href="#">#post 6</a></li>
+                                    <li><a href="#">#post 7</a></li>
+                                    <li><a href="#">#post 8</a></li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#">contact</a></li>
+                    </ul>
+                    <ul class="cart-icons">
+                        <li><a href="#"><i class="fa-solid fa-heart"></i>wishlist</a></li>
+                        <li class="cart-list"><a href="#" class="menu-open"><i class="fa-solid fa-bag-shopping"></i>my cart</a>
+                            <div class="cart-menu">
+                                <!--start card-->
+                                <a href="#" class="menu-close"><i class="fa-solid fa-circle-xmark"></i></a>
+                                <div class="cart-detailes">
+                                    <img src="assests/images/minicart/pr-01.jpg">
+                                    <div class="cart-edit">
+                                        <a href="#"><i class="fa-solid fa-pen"></i></a>
+                                        <a href="#" class="menu-del"><i class="fa-regular fa-trash-can"></i></a>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="#">National Fresh Fruit</a>
+                                        <p>$85 <del>$100</del></p>
+                                        <span>qty:</span>
+                                        <input type="number" value="1" min="0">
+                                    </div>
+                                </div>
+                                <!--end card-->
+                                <!--start card-->
+                                <div class="cart-detailes">
+                                    <img src="assests/images/minicart/pr-02.jpg">
+                                    <div class="cart-edit">
+                                        <a href="#"><i class="fa-solid fa-pen"></i></a>
+                                        <a href="#"><i class="fa-regular fa-trash-can"></i></a>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="#">National Fresh Fruit</a>
+                                        <p>$85 <del>$100</del></p>
+                                        <span>qty:</span>
+                                        <input type="number" value="1" min="0">
+                                    </div>
+                                </div>
+                                <!--end card-->
+                                <!--start card-->
+                                <div class="cart-detailes">
+                                    <img src="assests/images/minicart/pr-03.jpg">
+                                    <div class="cart-edit">
+                                        <a href="#"><i class="fa-solid fa-pen"></i></a>
+                                        <a href="#"><i class="fa-regular fa-trash-can"></i></a>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="#">National Fresh Fruit</a>
+                                        <p>$85 <del>$100</del></p>
+                                        <span>qty:</span>
+                                        <input type="number" value="1" min="0">
+                                    </div>
+                                </div>
+                                <!--end card-->
+                                 <!--start card-->
+                                 <div class="cart-detailes">
+                                    <img src="assests/images/minicart/pr-04.jpg">
+                                    <div class="cart-edit">
+                                        <a href="#"><i class="fa-solid fa-pen"></i></a>
+                                        <a href="#"><i class="fa-regular fa-trash-can"></i></a>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="#">National Fresh Fruit</a>
+                                        <p>$85 <del>$100</del></p>
+                                        <span>qty:</span>
+                                        <input type="number" value="1" min="0">
+                                    </div>
+                                </div>
+                                <!--end card-->
+                                <!--start card-->
+                                <div class="cart-detailes">
+                                    <img src="assests/images/minicart/pr-05.jpg">
+                                    <div class="cart-edit">
+                                        <a href="#"><i class="fa-solid fa-pen"></i></a>
+                                        <a href="#"><i class="fa-regular fa-trash-can"></i></a>
+                                    </div>
+                                    <div class="cart-text">
+                                        <a href="#">National Fresh Fruit</a>
+                                        <p>$85 <del>$100</del></p>
+                                        <span>qty:</span>
+                                        <input type="number" value="1" min="0">
+                                    </div>
+                                </div>
+                                <!--end card-->
+                                <div class="cart-buttons">
+                                    <a href="#">view cart</a>
+                                    <a href="#">check out</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+            </nav>
+            <!--end nabar-->
+        </div>
+    </div>
+    <!--end head nav-->
+    <!--start head search-->
+    <div class="head-search">
+        <div class="container">
+            <div class="row">
+                <!--start department menu-->
+                <div class="col-md-12 col-lg-3">
+                    <div class="department">
+                            <a href="#" class="depart-head"><i class="fa-solid fa-align-justify"></i>all departments
+                                <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                            <ul class="department-menu">
+                                <li><a href="#"><i class="fa-solid fa-apple-whole"></i>fruites&nut gifts</a></li>
+                                <li><a href="#"><i class="fa-solid fa-pepper-hot"></i>vegtables</a></li>
+                                <li><a href="#"><i class="fa-solid fa-leaf"></i>fresh berries</a></li>
+                                <li><a href="#"><i class="fa-solid fa-fish"></i>ocean foods</a></li>
+                                <li><a href="#"><i class="fa-solid fa-egg"></i>butter eggs</a></li>
+                                <li><a href="#"><i class="fa-solid fa-carrot"></i>vegtables</a></li>
+                                <li><a href="#"><i class="fa-solid fa-cheese"></i>fast food</a></li>
+                                <li><a href="#"><i class="fa-solid fa-drumstick-bite"></i>fresh meat</a></li>
+                                <li><a href="#"><i class="fa-solid fa-carrot"></i>papya&crips</a></li>
+                                <li><a href="#"><i class="fa-solid fa-pizza-slice"></i>otameal</a></li>
+                            </ul>
+                    </div>
+                </div>
+                <!--end department menu-->
+                <!--start depat search-->
+                <div class="col-md-12 col-lg-6">
+                    <div class="depart-search">
+                        <input type="search" placeholder="search here">
+                        <select class="depart-list">
+                            <option>all categories</option>
+                            <option>vegtables</option>
+                            <option>fresh berries</option>
+                            <option>ocean foods</option>
+                            <option>butter&eggs</option>
+                            <option>fast food</option>
+                            <option>fresh meat</option>
+                            <option>frsh onian</option>
+                            <option>papya&crips</option>
+                            <option>oatmeal</option>
+                        </select>
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                </div>
+                <!--end depart search-->
+                <!--start phone number-->
+                <div class="col-md-12 col-lg-3">
+                    <div class="phone-number">
+                        <a href="#"><i class="fa-solid fa-phone"></i>+02 010 25 299 435</a>
+                        <p>Mon-Fri: 8:30am-7:30pm; Sat-Sun: 9:30am-4:30pm</p>
+                    </div>
+                </div>
+                <!--end phone number-->
+            </div>
+        </div>
+    </div>
+    <!--end head search-->
+    <!--start navbar for mobile screen-->
+    <div class="mob-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 hidden-md hidden-lg">
+                    <a href="index.html"><img src="assests/images/organic-3.png"></a>
+                    <a href="#" class="search-it"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" class="mob-menu"><i class="fa-solid fa-bars-staggered"></i></a>
+                    <div class="search-box">
+                        <a href="#" class="search-close"><i class="fa-solid fa-xmark"></i></a>
+                        <input type="search" placeholder="search here">
+                        <select class="depart-list">
+                            <option>all categories</option>
+                            <option>vegtables</option>
+                            <option>fresh berries</option>
+                            <option>ocean foods</option>
+                            <option>butter&eggs</option>
+                            <option>fast food</option>
+                            <option>fresh meat</option>
+                            <option>frsh onian</option>
+                            <option>papya&crips</option>
+                            <option>oatmeal</option>
+                        </select>
+                        <a href="#">go</a>
+                    </div>
+                    <div class="shopping">
+                    <a href="#" class="shopinng-bag"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <!--start shop cart list-->
+                    <div class="shopinng-menu">
+                        <!--start card-->
+                        <div class="cart-detailes">
+                            <img src="assests/images/minicart/pr-01.jpg">
+                            <div class="cart-edit">
+                                <a href="#"><i class="fa-solid fa-pen"></i></a>
+                                <a href="#"><i class="fa-regular fa-trash-can"></i></a>
+                            </div>
+                            <div class="cart-text">
+                                <a href="#">National Fresh Fruit</a>
+                                <p>$85 <del>$100</del></p>
+                                <span>qty:</span>
+                                <input type="number" value="1" min="0">
+                            </div>
+                        </div>
+                        <!--end card-->
+                        <!--start card-->
+                        <div class="cart-detailes">
+                            <img src="assests/images/minicart/pr-02.jpg">
+                            <div class="cart-edit">
+                                <a href="#"><i class="fa-solid fa-pen"></i></a>
+                                <a href="#"><i class="fa-regular fa-trash-can"></i></a>
+                            </div>
+                            <div class="cart-text">
+                                <a href="#">National Fresh Fruit</a>
+                                <p>$85 <del>$100</del></p>
+                                <span>qty:</span>
+                                <input type="number" value="1" min="0">
+                            </div>
+                        </div>
+                        <!--end card-->
+                        <!--start card-->
+                        <div class="cart-detailes">
+                            <img src="assests/images/minicart/pr-03.jpg">
+                            <div class="cart-edit">
+                                <a href="#"><i class="fa-solid fa-pen"></i></a>
+                                <a href="#"><i class="fa-regular fa-trash-can"></i></a>
+                            </div>
+                            <div class="cart-text">
+                                <a href="#">National Fresh Fruit</a>
+                                <p>$85 <del>$100</del></p>
+                                <span>qty:</span>
+                                <input type="number" value="1" min="0">
+                            </div>
+                        </div>
+                        <!--end card-->
+                         <!--start card-->
+                         <div class="cart-detailes">
+                            <img src="assests/images/minicart/pr-04.jpg">
+                            <div class="cart-edit">
+                                <a href="#"><i class="fa-solid fa-pen"></i></a>
+                                <a href="#"><i class="fa-regular fa-trash-can"></i></a>
+                            </div>
+                            <div class="cart-text">
+                                <a href="#">National Fresh Fruit</a>
+                                <p>$85 <del>$100</del></p>
+                                <span>qty:</span>
+                                <input type="number" value="1" min="0">
+                            </div>
+                        </div>
+                        <!--end card-->
+                        <!--start card-->
+                        <div class="cart-detailes">
+                            <img src="assests/images/minicart/pr-05.jpg">
+                            <div class="cart-edit">
+                                <a href="#"><i class="fa-solid fa-pen"></i></a>
+                                <a href="#"><i class="fa-regular fa-trash-can"></i></a>
+                            </div>
+                            <div class="cart-text">
+                                <a href="#">National Fresh Fruit</a>
+                                <p>$85 <del>$100</del></p>
+                                <span>qty:</span>
+                                <input type="number" value="1" min="0">
+                            </div>
+                        </div>
+                        <!--end card-->
+                        <div class="cart-buttons">
+                            <a href="#">view cart</a>
+                            <a href="#">check out</a>
+                        </div>
+                    </div>
+                    <!--end shop cart list-->
+                    <!--start mobile home menu-->
+                    <div class="mobile-home">
+                    <!--start home list-->
+                     <div class="home-list">
+                         <div class="list-head">
+                             <h3>main panel</h3>
+                             <a href="#" class="panel-close"><i class="fa-solid fa-xmark"></i></a>
+                         </div>
+                         <ul class="panel-links">
+                             <li><a href="index.html">home</a></li>
+                             <li><a href="#" class="shop-open">shop<i class="fa-solid fa-chevron-right"></i></a>
+                                <!--start fixed shop menu-->
+                                <ul class="shop-mobile-menu">
+                                    <div class="shop-head">
+                                        <a href="#" class="back-home"><i class="fa-solid fa-chevron-left"></i></a>
+                                        <h3>shop links</h3>
+                                        <a href="#" class="panel-close"><i class="fa-solid fa-xmark"></i></a>
+                                    </div>
+                                    <ul class="shop-mob-menu">
+                                        <li><h5>fresh berries</h5></li>
+                                        <li><a href="#">fruites&nut gifts</a></li>
+                                        <li><a href="#">mixed fruties</a></li>
+                                        <li><a href="#">oranges</a></li>
+                                        <li><a href="#">bananes&plantines</a></li>
+                                        <li><a href="#">fresh apples</a></li>
+                                    </ul>
+                                    <ul class="shop-mob-menu">
+                                        <li><h5>vegtables</h5></li>
+                                        <li><a href="#">berries</a></li>
+                                        <li><a href="#">pears</a></li>
+                                        <li><a href="#">chilie bears</a></li>
+                                        <li><a href="#">fresh avacodo</a></li>
+                                        <li><a href="#">graps</a></li>
+                                    </ul>
+                                    <ul class="shop-mob-menu">
+                                        <li><h5>fresh products</h5></li>
+                                        <li><a href="#">Coffee Creamers</a></li>
+                                        <li><a href="#">Mayonnaise</a></li>
+                                        <li><a href="#">Almond Milk</a></li>
+                                        <li><a href="#">Fruit Jam</a></li>
+                                        <li><a href="#">Beverages</a></li>
+                                    </ul>
+                                    <ul class="shop-mob-menu">
+                                        <li><h5>fresh fruites</h5></li>
+                                        <li><a href="#">basket of apples</a></li>
+                                        <li><a href="#">strawberry</a></li>
+                                        <li><a href="#">blueberry</a></li>
+                                        <li><a href="#">orange</a></li>
+                                        <li><a href="#">pineapple</a></li>
+                                    </ul>
+                                </ul>
+                                <!--end fixed shop menu-->
+                            </li>
+                             <li><a href="#" class="product-open">products<i class="fa-solid fa-chevron-right"></i></a>
+                                <!--start product menu mobile-->
+                                <ul class="product-mobile-menu">
+                                    <div class="product-head">
+                                        <a href="#" class="back-home"><i class="fa-solid fa-chevron-left"></i></a>
+                                        <h3>products</h3>
+                                        <a href="#" class="panel-close"><i class="fa-solid fa-xmark"></i></a>
+                                    </div>
+                                    <ul class="product-mob-menu">
+                                        <li><a href="#">ommeletes</a></li>
+                                        <li><a href="#">Breakfast Scrambles</a></li>
+                                        <li><a href="#">Eggs & Other Considerations</a></li>
+                                        <li><a href="#">classic breakfast</a></li>
+                                        <li><a href="#">Huevos Rancheros</a></li>
+                                        <li><a href="#">Everything Egg Sandwich</a></li>
+                                        <li><a href="#">Egg Sandwich</a></li>
+                                        <li><a href="#">Vegan Burrito</a></li>
+                                        <li><a href="#">Biscuits and Gravy</a></li>
+                                        <li><a href="#">Griddle</a></li>
+                                        <li><a href="#">Sides & Extras</a></li>
+                                        <li><a href="#">Breakfast Burrito</a></li>
+                                        <li><a href="#">Crab Cake Benedict</a></li>
+                                        <li><a href="#">Corned Beef Hash</a></li>
+                                        <li><a href="#">Steak & Eggs</a></li>
+                                        <li><a href="#">Fruit & Yogurt Parfait</a></li>
+                                        <li><a href="#">Biscuits</a></li>
+                                        <li><a href="#">Seasonal Fruit Plate</a></li>
+                                    </ul>
+                                </ul>
+                                <!--end product menu mobile-->
+                            </li>
+                             <li><a href="#" class="demo-open">demo<i class="fa-solid fa-chevron-right"></i></a>
+                                <!--start demo menu mobile-->
+                                <ul class="demo-mobile-menu">
+                                    <div class="demo-head">
+                                        <a href="#" class="back-home"><i class="fa-solid fa-chevron-left"></i></a>
+                                        <h3>demo</h3>
+                                        <a href="#" class="panel-close"><i class="fa-solid fa-xmark"></i></a>
+                                    </div>
+                                    <ul class="demo-mob-menu">
+                                        <li><a href="#">ommeletes</a></li>
+                                        <li><a href="#">Breakfast Scrambles</a></li>
+                                        <li><a href="#">Eggs & Other Considerations</a></li>
+                                        <li><a href="#">classic breakfast</a></li>
+                                        <li><a href="#">Huevos Rancheros</a></li>
+                                        <li><a href="#">Everything Egg Sandwich</a></li>
+                                        <li><a href="#">Egg Sandwich</a></li>
+                                        <li><a href="#">Vegan Burrito</a></li>
+                                        <li><a href="#">Biscuits and Gravy</a></li>
+                                        <li><a href="#">Griddle</a></li>
+                                        <li><a href="#">Sides & Extras</a></li>
+                                        <li><a href="#">Breakfast Burrito</a></li>
+                                        <li><a href="#">Crab Cake Benedict</a></li>
+                                        <li><a href="#">Corned Beef Hash</a></li>
+                                        <li><a href="#">Steak & Eggs</a></li>
+                                        <li><a href="#">Fruit & Yogurt Parfait</a></li>
+                                        <li><a href="#">Biscuits</a></li>
+                                        <li><a href="#">Seasonal Fruit Plate</a></li>
+                                    </ul>
+                                </ul>
+                                <!--end demo menu mobile-->
+                            </li>
+                             <li><a href="#" class="blog-open">blog<i class="fa-solid fa-chevron-right"></i></a>
+                                <!--start blog menu mobile-->
+                                <ul class="blog-mobile-menu">
+                                    <div class="blog-head">
+                                        <a href="#" class="back-home"><i class="fa-solid fa-chevron-left"></i></a>
+                                        <h3>blog</h3>
+                                        <a href="#" class="panel-close"><i class="fa-solid fa-xmark"></i></a>
+                                    </div>
+                                    <ul class="blog-mob-menu">
+                                    <li><h5>blog categories</h5></li>
+                                    <li><a href="#">Beauty (30)</a></li>
+                                    <li><a href="#">Fashion (50)</a></li>
+                                    <li><a href="#">Food (10)</a></li>
+                                    <li><a href="#">Life Style (60)</a></li>
+                                    <li><a href="#">Nutrition (35)</a></li>
+                                    <li><a href="#">Food Decoration (45)</a></li>
+                                    <li><h5>features post</h5></li>
+                                    <li><a href="#">#post 1</a></li>
+                                    <li><a href="#">#post 2</a></li>
+                                    <li><a href="#">#post 3</a></li>
+                                    <li><a href="#">#post 4</a></li>
+                                    <li><a href="#">#post 5</a></li>
+                                    <li><a href="#">#post 6</a></li>
+                                    <li><a href="#">#post 7</a></li>
+                                    <li><a href="#">#post 8</a></li>
+                                    </ul>
+                                </ul>
+                                <!--end blog menu mobile-->
+                            </li>
+                             <li><a href="contact.html">contact</a></li>
+                             <li><a href="#">furites&nut gifts<i class="fa-solid fa-chevron-right"></i></a></li>
+                             <li><a href="#">Vegetables<i class="fa-solid fa-chevron-right"></i></a></li>
+                             <li><a href="#">Fresh Berries<i class="fa-solid fa-chevron-right"></i></a></li>
+                             <li><a href="#">oceanfoods</a></li>
+                             <li><a href="#">Butter & Eggs<i class="fa-solid fa-chevron-right"></i></a></li>
+                             <li><a href="#">Fastfood</a></li>
+                             <li><a href="#">Fresh Meat</a></li>
+                             <li><a href="#">Fresh Onion</a></li>
+                             <li><a href="#">Papaya & Crisps</a></li>
+                             <li><a href="#">Oatmeal</a></li>
+                             <li><a href="#">Fresh Bananas & Plantains</a></li>
+                         </ul>
+                     </div>
+                    <!--end home list-->
+                    </div>
+                    <!--end mobile home menu-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end navbar for mobile screen-->
+    <!--start login section-->
+    <section class="login">
+        <div class="login-banner">
+            <h3>organic fruites</h3>
+        </div>
+        <div class="container">
+            <div class="home-return">
+                <a href="index.html">home</a>
+                <span>/authentication</span>
+            </div>
+            <div class="row">
+                <!--start form-->
+                <div class="col-sm-12 col-md-8 col-lg-6">
+                    <div class="log-form">
+                        <form method="post">
+                            <label for="#log-mail">
+                                email address:*
+                            </label>
+                            <input type="email" placeholder="@example.com" id="log-mail" required>
+                            <label for="#log-mail">
+                                password:*
+                            </label>
+                            <input type="password" id="log-pass" required>
+                            <input type="submit" id="log-sub" value="sign in">
+                            <a href="#">forget your password?</a>
+                        </form>
+                    </div>
+                </div>
+                <!--end form-->
+                <!--start log information-->
+                <div class="col-sm-12 col-md-4 col-lg-6">
+                    <div class="log-info">
+                        <h3>new customer?</h3>
+                        <p>Create an account with us and you’ll be able to:</p>
+                        <ul class="info-list">
+                            <li>Check out faster</li>
+                            <li>Save multiple shipping anddesses</li>
+                            <li>Access your order history</li>
+                            <li>Track new orders</li>
+                            <li>Save items to your Wishlist</li>
+                        </ul>
+                        <a href="#">create an account</a>
+                    </div>
+                </div>
+                <!--end log information-->
+            </div>
+        </div>
+    </section>
+    <!--end login section-->
+      <!--start footer-->
+      <footer>
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12 col-lg-4">
+            <div class="new-seletter">
+                <a href="index.html"><img src="assests/images/logo-biolife-1.png"></a>
+                <i class="fa-solid fa-headset"></i>
+                <div class="quation">
+                    <span>get quations?</span>
+                    <span>(700)  9001-1909 (900) 689 -66</span>
+                </div>
+                <div class="seletter-form">
+                    <h3>new seletter signup</h3>
+                    <input type="email" placeholder="your email here" id="seltter-mail">
+                    <input type="submit" value="sign up" id="seltter-sub">
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-2">
+                    <ul class="first-list">
+                        <li><h3>useful links</h3></li>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">about our shop</a></li>
+                        <li><a href="#">Secure Shopping</a></li>
+                        <li><a href="#">Delivery infomation</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Our Sitemap</a></li>
+                    </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-2">
+                <ul class="second-list">
+                    <li><a href="#">who we are</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contacts Us</a></li>
+                    <li><a href="#">Innovation</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <div class="transport">
+                    <h3>transport office</h3>
+                    <span class="location"><i class="fa-solid fa-location-dot"></i>
+                        7563 St. Vicent Place, Glasgow, Greater Newyork NH7689, UK
+                    </span>
+                    <span class="phone"><i class="fa-solid fa-mobile"></i>
+                        Phone: (+067) 234 789 (+068) 222 888
+                    </span>
+                    <span class="email"><i class="fa-solid fa-envelope"></i>
+                        Email: contact@company.com
+                    </span>
+                    <span class="hours"><i class="fa-solid fa-clock"></i>
+                        Hours: 7 Days a week from 10:00 am
+                    </span>
+                    <div class="transport-social">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-12">
+                <div class="foot-end">
+                    <a href="#"><img src="assests/images/card1.jpg"></a>
+                    <a href="#"><img src="assests/images/card2.jpg"></a>
+                    <a href="#"><img src="assests/images/card3.jpg"></a>
+                    <a href="#"><img src="assests/images/card4.jpg"></a>
+                    <a href="#"><img src="assests/images/card5.jpg"></a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <!--end footer-->
+     <!--start js files-->
+     <script>
+        AOS.init();
+    </script>
+    <script src="assests/bootstrap/js/jquery-3.6.0.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="assests/js/jquery.nivo.slider.pack.js"></script>
+    <script src="assests/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assests/bootstrap/js/all.min.js"></script>
+    <script src="assests/bootstrap/js/slick.min.js"></script>
+    <script src="assests/js/main.js"></script>
+    <!--end js files-->
+</body>
+</html>
