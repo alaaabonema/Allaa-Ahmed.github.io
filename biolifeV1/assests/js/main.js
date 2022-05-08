@@ -532,3 +532,28 @@ $(document).ready(function() {
     })
 });
 /*end shopping slider*/
+/*start scroll to top*/
+$(function()
+{
+    $(window).scroll(function()
+    {
+        if($(window).scrollTop() >= 400)
+        {
+            $('.scroll-to-top').fadeIn();
+        }
+        else
+        {
+            $('.scroll-to-top').fadeOut();
+        }
+    });
+});
+$(function()
+{
+    $('.scroll-to-top').click(function()
+    {
+        $('html , body').animate({
+            scrollTop:0,
+        })
+    });
+});
+/*end scrollto top*/

@@ -38,6 +38,7 @@ ul
     }
 }
 /*start anim*/
+/*start scroll to top*/
 @include keyf(img-anim)
 {
     from{
@@ -2513,6 +2514,25 @@ footer
         }
     }
 /*end footer*/
+.scroll-to-top
+{
+    position: fixed;
+    z-index: 999999999999999999;
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+    display: none;
+}
+.scroll-to-top svg
+{
+    color: #F3112D;
+    background-color: #fff;
+    border: 1px solid #F3112D;
+    padding: 12px;
+    font-size: 19px;
+    border-radius: 10px;
+}
+/* end scroll to top*/
 /*end index.html*/
 /* start login html*/
 .login-banner
