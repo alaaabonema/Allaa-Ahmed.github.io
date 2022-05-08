@@ -327,7 +327,7 @@ body {
 @media (max-width: 450px) {
   .pomegrante {
     position: relative;
-    margin-top: 65vh;
+    margin-top: 62vh;
   }
 }
 
@@ -385,9 +385,9 @@ body {
 
 /*end fresh-fruits section*/
 /*start wrapper slider*/
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .slider-wrapper {
-    margin-top: 170vh;
+    display: none;
   }
 }
 
