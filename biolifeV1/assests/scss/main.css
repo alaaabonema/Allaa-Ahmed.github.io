@@ -22,7 +22,6 @@ ul {
 }
 
 /*start anim*/
-/*start scroll to top*/
 @-webkit-keyframes img-anim {
   from {
     left: 2%;
@@ -1716,7 +1715,7 @@ body {
     transform: translatex(50px);
   }
   100% {
-    transform: translatex(-20px);
+    transform: translatex(10px);
   }
 }
 
@@ -1728,7 +1727,7 @@ body {
     transform: translatex(50px);
   }
   100% {
-    transform: translatex(-20px);
+    transform: translatex(10px);
   }
 }
 
@@ -1745,8 +1744,6 @@ body {
   padding-top: 4%;
   padding-left: 10%;
   width: 70%;
-  display: block;
-  margin: auto;
 }
 
 .vegtables-banner .vegta-text h3 {
@@ -2553,7 +2550,7 @@ footer {
 .scroll-to-top {
   position: fixed;
   z-index: 999999999999999999;
-  bottom: 25px;
+  bottom: 35px;
   right: 25px;
   cursor: pointer;
   display: none;

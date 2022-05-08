@@ -462,13 +462,21 @@ body
         margin-top: 120vh;
     }
 }
+@media(max-width:380px)
+{
+    .slider-wrapper
+    {
+        margin-top: 150vh;
+        overflow: hidden;
+    }
+}
 /*end wrapper slider*/
 /*start vegtables-banner */
 @media(max-width:767px)
 {
     .vegtables-banner
     {
-        height: 80vh;
+        height: 100vh;
         .vegta-text
         {
             width: 70%;
@@ -494,7 +502,7 @@ body
         .moving-three
         {
             img{
-                width: 80%;
+                width: 70%;
             }
         }
     }

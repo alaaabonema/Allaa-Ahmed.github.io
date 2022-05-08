@@ -38,7 +38,6 @@ ul
     }
 }
 /*start anim*/
-/*start scroll to top*/
 @include keyf(img-anim)
 {
     from{
@@ -1743,7 +1742,7 @@ $third-color:#FF5733;
     }
     100%
     {
-        transform: translatex(-20px);
+        transform: translatex(10px);
     }
 }
 .vegtables-banner
@@ -1759,8 +1758,6 @@ $third-color:#FF5733;
         padding-top: 4%;
         padding-left: 10%;
         width: 70%;
-        display: block;
-        margin: auto;
         h3{
             color: #fff;
             font-weight: lighter;
@@ -2523,7 +2520,7 @@ footer
 {
     position: fixed;
     z-index: 999999999999999999;
-    bottom: 25px;
+    bottom: 35px;
     right: 25px;
     cursor: pointer;
     display: none;
